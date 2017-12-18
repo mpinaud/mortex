@@ -1,0 +1,38 @@
+#new-game {
+  background-image: url(../img/landscape/spheres.jpg);
+  @include level-board-size;
+  // display: none;
+}
+
+.new-game-foreground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69%;
+  height: 66%;
+  background-color: #0000009e;
+  position: absolute;
+  padding: 98px;
+}
+
+form#new-game-start {
+    width: 100%;
+    height: 111px;
+    text-align: center;
+}
+
+button {
+    width: 19%;
+    height: 50px;
+    font-size: 28px;
+    background-color: hotpink;
+    border-radius: 10px;
+}
+
+input#player-name {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 47px;
+    font-size: 50px;
+    border-radius: 20px;
+}

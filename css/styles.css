@@ -1,17 +1,177 @@
+.countdown {
+  font-size: 2em;
+  padding: 5px;
+  margin: 0 auto;
+  color: teal; }
+
+@keyframes floating {
+  0% {
+    top: 5px; }
+  25% {
+    top: -5px; }
+  50% {
+    top: 5px; }
+  75% {
+    top: -5px; }
+  100% {
+    top: 5px; } }
+@keyframes wiggle {
+  0% {
+    left: 5px; }
+  25% {
+    left: -5px; }
+  50% {
+    left: 5px; }
+  75% {
+    left: -5px; }
+  100% {
+    left: 5px; } }
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
-  border: 1px dashed green; }
+  box-sizing: border-box; }
 
-.game-board {
-  max-width: 100%;
-  max-height: 100%;
-  background-color: black;
+#new-game {
+  background-image: url(../img/landscape/spheres.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top: 100%;
+  top: 0;
   left: 0;
   right: 0;
   bottom: 0; }
+
+.new-game-foreground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69%;
+  height: 66%;
+  background-color: #0000009e;
+  position: absolute;
+  padding: 98px; }
+
+form#new-game-start {
+  width: 100%;
+  height: 111px;
+  text-align: center; }
+
+button {
+  width: 19%;
+  height: 50px;
+  font-size: 28px;
+  background-color: hotpink;
+  border-radius: 10px; }
+
+input#player-name {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 47px;
+  font-size: 50px;
+  border-radius: 20px; }
+
+#level-1 {
+  background-image: url(../img/landscape/geoplane.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-1-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
+
+#level-2 {
+  background-image: url(../img/landscape/ocean.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-2-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
+
+#level-3 {
+  background-image: url(../img/landscape/storm.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-3-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
+
+#level-4 {
+  background-image: url(../img/landscape/tree.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-4-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
+
+#level-5 {
+  background-image: url(../img/landscape/birds.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-5-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
 
 /*# sourceMappingURL=styles.css.map */
