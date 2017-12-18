@@ -2,4 +2,16 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px dashed green;
+}
+
+.game-board {
+  max-width: 100%;
+  max-height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
