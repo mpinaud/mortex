@@ -1,0 +1,52 @@
+@mixin rotate-y($rotate) {
+  -webkit-transform: rotateY($rotate);
+  -moz-transform: rotateY($rotate);
+  -ms-transform: rotateY($rotate);
+  transform: rotateY($rotate);
+}
+@mixin rotate-x($rotate) {
+  -webkit-transform: rotatex($rotate);
+  -moz-transform: rotatex($rotate);
+  -ms-transform: rotatex($rotate);
+  transform: rotatex($rotate);
+}
+@mixin rotate($rotate) {
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
+  -ms-transform: rotate($rotate);
+  transform: rotate($rotate);
+}
+@keyframes floating {
+  0% {
+    top: 5px;
+  }
+  25% {
+    top: -5px;
+  }
+  50% {
+    top: 5px;
+  }
+  75% {
+    top: -5px;
+  }
+  100% {
+    top: 5px;
+  }
+}
+@keyframes wiggle {
+  0% {
+    left: 5px;
+  }
+  25% {
+    left: -5px;
+  }
+  50% {
+    left: 5px;
+  }
+  75% {
+    left: -5px;
+  }
+  100% {
+    left: 5px;
+  }
+}
