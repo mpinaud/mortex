@@ -1,8 +1,6 @@
+// Rotating mixins
 @mixin rotate-y($rotate) {
-  -webkit-transform: rotateY($rotate);
-  -moz-transform: rotateY($rotate);
-  -ms-transform: rotateY($rotate);
-  transform: rotateY($rotate);
+  transform: rotatey($rotate);
 }
 @mixin rotate-x($rotate) {
   -webkit-transform: rotatex($rotate);
@@ -16,6 +14,22 @@
   -ms-transform: rotate($rotate);
   transform: rotate($rotate);
 }
+// classis with animation
+@for $i from 1 through 16 {
+  .card-#{$i}{
+    position: relative;
+    transition: transform 2s;
+    animation: floating 3s infinite;
+  }
+  .card-#{$i}:active{
+    @include rotate-y(180deg);
+  }
+
+}
+
+
+
+// Car back animation
 $scale-1: 90px;
 $scale-2: 80px;
 $scale-3: 30px;
@@ -88,7 +102,8 @@ $wheel: black;
 }
 .icon-card {
     animation: rotate-right 3s linear infinite;
-} 
+}
+// floating animation
 @keyframes floating {
   0% {
     top: 5px;

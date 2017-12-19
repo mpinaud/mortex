@@ -1,7 +1,7 @@
 #level-1 {
   background-image: url(../img/landscape/geoplane.jpg);
   @include level-board-size;
-  display: none;
+  // display: none;
 }
 
 .level-1-foreground {

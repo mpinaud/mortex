@@ -4,6 +4,134 @@
   margin: 0 auto;
   color: teal; }
 
+.card-1 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-1:active {
+  transform: rotatey(180deg); }
+
+.card-2 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-2:active {
+  transform: rotatey(180deg); }
+
+.card-3 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-3:active {
+  transform: rotatey(180deg); }
+
+.card-4 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-4:active {
+  transform: rotatey(180deg); }
+
+.card-5 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-5:active {
+  transform: rotatey(180deg); }
+
+.card-6 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-6:active {
+  transform: rotatey(180deg); }
+
+.card-7 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-7:active {
+  transform: rotatey(180deg); }
+
+.card-8 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-8:active {
+  transform: rotatey(180deg); }
+
+.card-9 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-9:active {
+  transform: rotatey(180deg); }
+
+.card-10 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-10:active {
+  transform: rotatey(180deg); }
+
+.card-11 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-11:active {
+  transform: rotatey(180deg); }
+
+.card-12 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-12:active {
+  transform: rotatey(180deg); }
+
+.card-13 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-13:active {
+  transform: rotatey(180deg); }
+
+.card-14 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-14:active {
+  transform: rotatey(180deg); }
+
+.card-15 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-15:active {
+  transform: rotatey(180deg); }
+
+.card-16 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 3s infinite; }
+
+.card-16:active {
+  transform: rotatey(180deg); }
+
 .icon-card {
   position: relative;
   width: 90px;
@@ -213,8 +341,7 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: none; }
+  bottom: 0; }
 
 .level-1-foreground {
   width: 69%;
@@ -275,7 +402,8 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
 
 .level-4-foreground {
   width: 69%;
@@ -294,7 +422,8 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
 
 .level-5-foreground {
   width: 69%;
