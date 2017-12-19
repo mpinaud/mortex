@@ -1,0 +1,26 @@
+.round-two-cards {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column:nth-child(1) {
+  justify-content: space-around;
+}
+
+.column:nth-child(2) {
+  align-self: center;
+}
+
+.column:nth-child(3) {
+  align-self: center;
+}
+
+.column:nth-child(4) {
+  justify-content: space-around;
+}
