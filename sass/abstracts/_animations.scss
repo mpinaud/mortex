@@ -50,3 +50,38 @@
     left: 5px;
   }
 }
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(.75);
+  }
+
+  50% {
+    transform: scale(.50);
+  }
+  75% {
+    transform: scale(.25);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes rotate-left {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-320deg);
+  }
+}
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
