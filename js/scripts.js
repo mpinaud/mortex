@@ -86,7 +86,6 @@ function newRound() {
     cardOutput(round);
     round++;
   }
-
 }
 
 // Shuffle Cards
@@ -113,7 +112,7 @@ function findPlayCards(_round) {
 function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + '.card-' + i).html('<div class="glyph">' +
+    $('#level-' + _round + '.column.card-' + i).append('<div class="glyph">' +
                                                 '<i>' + card.svg + '</i>' +
                                               '</div>'
                                               ).addClass(card.name);
