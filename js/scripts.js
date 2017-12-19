@@ -135,7 +135,7 @@ function cardFlip(cardName) {
       gameScore += 7;
       numOfMatchedCards += 2;
     } else if (cardName !== flippedCard) {
-      // TOGGLE ANIMATION FOR NOT MATCHING
+      // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
     }
     flippedCard = "";
