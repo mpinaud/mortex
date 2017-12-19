@@ -1,7 +1,7 @@
 #level-1 {
   .memory-card {
     width: 250px;
-    height: 350px;
+    min-height: 350px;
     @include card-flex-style;
   }
 }
@@ -9,28 +9,28 @@
 #level-2 {
   .memory-card {
     width: 250px;
-    height: 350px;
+    min-height: 350px;
     @include card-flex-style;
   }
 }
 #level-3 {
   .memory-card {
     width: 250px;
-    height: 350px;
+    min-height: 350px;
     @include card-flex-style;
   }
 }
 #level-4 {
   .memory-card {
     width: 140px;
-    height: 200px;
+    min-height: 200px;
     @include card-flex-style;
   }
 }
 #level-5 {
   .memory-card {
     width: 50px;
-    height: 75px;
+    min-height: 75px;
     @include card-flex-style;
   }
 }
