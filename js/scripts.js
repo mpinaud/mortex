@@ -108,19 +108,11 @@ function findPlayCards(_round) {
   return playCards;
 }
 
-// Card Output -----------INCOMPLETE
+// Card Output
 function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + '.column.card-' + i).append('<div class="glyph">' +
-                                                '<i>' + card.svg + '</i>' +
-                                              '</div>'
-                                              ).addClass(card.name);
-
-    // Console Logs for testing
-    console.log('round ' + _round + ', card ' + i + ' ' + card.name);
-    console.log('#level-' + _round + '.memory-card-' + i);
-
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<i>' + card.svg + '</i>').addClass(card.name);
     i++;
   });
 }
