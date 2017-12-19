@@ -213,7 +213,8 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
 
 .level-1-foreground {
   width: 69%;
@@ -274,8 +275,7 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: none; }
+  bottom: 0; }
 
 .level-4-foreground {
   width: 69%;
@@ -301,7 +301,7 @@ input#player-name {
   height: 66%;
   background-color: #ffffff3d; }
 
-.round-one-cards {
+#level-1 .round-one-cards {
   width: 100%;
   display: flex;
   justify-content: center; }
@@ -339,8 +339,8 @@ input#player-name {
 #level-4 .round-four-cards {
   display: flex;
   width: 100%;
-  height: 100vh;
-  background-color: lightgray; }
+  height: 100%;
+  justify-content: center; }
 #level-4 .column {
   display: flex;
   flex-direction: column;
@@ -371,10 +371,42 @@ input#player-name {
   flex-direction: column;
   justify-content: center; }
 
-.memory-card {
+#level-1 .memory-card {
+  width: 250px;
+  height: 350px;
   display: flex;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+
+#level-2 .memory-card {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+
+#level-3 .memory-card {
+  width: 250px;
+  height: 350px;
+  display: flex;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+
+#level-4 .memory-card {
+  width: 140px;
+  height: 200px;
+  display: flex;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+
+#level-5 .memory-card {
   width: 50px;
   height: 75px;
+  display: flex;
   border: 2px solid black;
   background-color: teal;
   margin: 30px 30px; }
