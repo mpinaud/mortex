@@ -3,7 +3,6 @@
 var deckOfCards = [];
 var userName;
 var round = 0;
-var roundScore = 0;
 var gameScore = 0;
 var previousGameScores = [];
 var topScores = [];
@@ -84,11 +83,22 @@ function shuffleDeck(deck) {
 }
 
 // Card Output -----------INCOMPLETE
-function cardOutput(round) {
-  //Choose number of cards by round and make new array of play cards ------INCOMPLETE
-  //Double each card in the array and shuffle --------INCOMPLETE
+function cardOutput(_round) {
+  $('.game-board').empty();
   var playCards = [];
-  deckOfCards.map(function(card) {
+  var doubledCards = [];
+
+  shuffleDeck(deckOfCards);
+  //Choose number of cards by round and make new array of play cards ------INCOMPLETE
+
+
+  //Double each card in the array and shuffle --------INCOMPLETE
+  for (i = 0; i < (Math.pow(2, (_round - 1))); i++) {
+    playCards.push(deckOfCards[i], deckOfCards[i]);
+  }
+  shuffleDeck(playCards);
+
+  playCards.map(function(card) {
     $('.game-board').append('<div class="card ' + card.name + '">' +
                               '<div class="glyph">' +
                                 '<i>' + card.svg + '</i>' +
@@ -97,11 +107,15 @@ function cardOutput(round) {
   });
 }
 
-// Game Start -------------INCOMPLETE
-function gameStart() {
-  round = 1;
-
-  // Clear/remove game start form -------- INCOMPLETE
+// Game Play -------------INCOMPLETE
+// Start
+function newRound() {
+  if (round === 5) {
+    console.log('END OF GAME');
+  } else if (round < 5) {
+    cardOutput(round);
+    round++;
+  }
 }
 
 // // // Front end logic // // //
@@ -110,11 +124,15 @@ $(function() {
   $('#new-game-start').submit(function(event) {
     event.preventDefault();
     userName = $('#player-name').val();
-    gameStart();
+    gameScore = 0;
+    newRound();
   });
 // Play Another Round
   $('#play-again').click(function() {
     endGame(userName, gameScore);
     // output top scores --------------INCOMPLETE
   });
+
+// Quit Game
+
 })
