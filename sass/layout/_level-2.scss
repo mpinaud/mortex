@@ -1,0 +1,11 @@
+#level-2 {
+  background-image: url(../img/landscape/ocean.jpg);
+  @include level-board-size;
+  display: none;
+}
+
+.level-2-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d;
+}
