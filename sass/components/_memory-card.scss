@@ -1,8 +1,51 @@
-.memory-card {
-  display: flex;
-  width: 100px;
-  height: 150px;
-  border: 2px solid black;
-  background-color: teal;
-  margin: 30px 30px;
+#level-1 {
+  .memory-card {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    border: 2px solid black;
+    background-color: teal;
+    margin: 30px 30px;
+  }
+}
+
+#level-2 {
+  .memory-card {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    border: 2px solid black;
+    background-color: teal;
+    margin: 30px 30px;
+  }
+}
+#level-3 {
+  .memory-card {
+    width: 250px;
+    height: 350px;
+    display: flex;
+    border: 2px solid black;
+    background-color: teal;
+    margin: 30px 30px;
+  }
+}
+#level-4 {
+  .memory-card {
+    width: 140px;
+    height: 200px;
+    display: flex;
+    border: 2px solid black;
+    background-color: teal;
+    margin: 30px 30px;
+  }
+}
+#level-5 {
+  .memory-card {
+    width: 50px;
+    height: 75px;
+    display: flex;
+    border: 2px solid black;
+    background-color: teal;
+    margin: 30px 30px;
+  }
 }
