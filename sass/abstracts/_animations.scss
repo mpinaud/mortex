@@ -15,16 +15,18 @@
   transform: rotate($rotate);
 }
 // classis with animation
-@for $i from 1 through 16 {
+@for $i from 1 through 32 {
+  $number1: random(500) + ms;
+  $number2: random(20) / 10;
+  $number3: $number2 + 5s;
   .card-#{$i}{
     position: relative;
     transition: transform 2s;
-    animation: floating 3s infinite;
+    animation: floating $number3 $number1 infinite;
   }
   .card-#{$i}:active{
     @include rotate-y(180deg);
   }
-
 }
 
 
