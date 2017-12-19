@@ -74,6 +74,7 @@ function topScore(scoreArray) {
 // End game function
 function endGame(name, score) {
   previousGameScores.push(new ScoreStore(name, score));
+  localStorage.setItem("previousScores", JSON.stringify(new ScoreStore(name, score)));
   topScore(previousGameScores);
 }
 
@@ -126,6 +127,10 @@ function newRound() {
 
 // // // Front end logic // // //
 $(function() {
+// Local Storage for score
+  if (localStorage.previousScores) {
+  previousGameScores = JSON.parse(localStorage.previousScores);
+}
 // New Game
   $('#new-game-start').submit(function(event) {
     event.preventDefault();
