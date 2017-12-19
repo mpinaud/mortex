@@ -11,3 +11,10 @@
   right: 0;
   bottom: 0;
 }
+
+@mixin card-flex-style {
+  display: flex;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px;
+}

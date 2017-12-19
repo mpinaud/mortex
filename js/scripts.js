@@ -75,6 +75,7 @@ function topScore(scoreArray) {
   //------------Output to top ten-------------INCOMPLETE
 }
 
+
 // Game Play Functions-------------INCOMPLETE
 // Start Game Function
 function newRound() {
@@ -85,6 +86,7 @@ function newRound() {
     cardOutput(round);
     round++;
   }
+
 }
 
 // Shuffle Cards
@@ -156,6 +158,10 @@ function endGame(name, score) {
 
 // // // Front end logic // // //
 $(function() {
+// Local Storage for score
+  if (localStorage.previousScores) {
+  previousGameScores = JSON.parse(localStorage.previousScores);
+}
 // New Game
   $('#new-game-start').submit(function(event) {
     event.preventDefault();

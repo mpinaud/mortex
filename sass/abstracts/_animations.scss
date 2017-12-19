@@ -16,6 +16,79 @@
   -ms-transform: rotate($rotate);
   transform: rotate($rotate);
 }
+$scale-1: 90px;
+$scale-2: 80px;
+$scale-3: 30px;
+$line: white;
+$wheel: black;
+
+.icon-card {
+  position: relative;
+  width: $scale-1;
+  height: $scale-1;
+  .out {
+    position: absolute;
+    width: $scale-1;
+    height: $scale-1;
+    border-radius: 50%;
+    background-color: $wheel;
+    .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .one, .two {
+      position: relative;
+      background-color: $line;
+      width: $scale-1;
+      height: $scale-1 - $scale-2;
+    }
+    .one {
+      transform: rotate(90deg);
+    }
+  }
+  .in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: $scale-1 - $scale-3;
+    height: $scale-1 - $scale-3;
+    border-radius: 50%;
+    background-color: $wheel;
+    .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    .one, .two {
+      position: relative;
+      border-radius: 5px;
+      background-color: $line;
+      width: $scale-1 - $scale-3;
+      height: $scale-1 - $scale-2;
+    }
+    .one {
+      transform: rotate(45deg);
+    }
+    .two {
+      transform: rotate(-45deg);
+    }
+  }
+}
+.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotate-left 1.3s linear infinite;
+}
+.icon-card {
+    animation: rotate-right 3s linear infinite;
+} 
 @keyframes floating {
   0% {
     top: 5px;

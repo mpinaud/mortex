@@ -1,8 +1,36 @@
-.memory-card {
-  display: flex;
-  width: 100px;
-  height: 150px;
-  border: 2px solid black;
-  background-color: teal;
-  margin: 30px 30px;
+#level-1 {
+  .memory-card {
+    width: 250px;
+    height: 350px;
+    @include card-flex-style;
+  }
+}
+
+#level-2 {
+  .memory-card {
+    width: 250px;
+    height: 350px;
+    @include card-flex-style;
+  }
+}
+#level-3 {
+  .memory-card {
+    width: 250px;
+    height: 350px;
+    @include card-flex-style;
+  }
+}
+#level-4 {
+  .memory-card {
+    width: 140px;
+    height: 200px;
+    @include card-flex-style;
+  }
+}
+#level-5 {
+  .memory-card {
+    width: 50px;
+    height: 75px;
+    @include card-flex-style;
+  }
 }
