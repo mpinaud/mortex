@@ -4,6 +4,262 @@
   margin: 0 auto;
   color: teal; }
 
+.card-1 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.4s 428ms infinite; }
+
+.card-1:active {
+  transform: rotatey(180deg); }
+
+.card-2 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.8s 3ms infinite; }
+
+.card-2:active {
+  transform: rotatey(180deg); }
+
+.card-3 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.6s 292ms infinite; }
+
+.card-3:active {
+  transform: rotatey(180deg); }
+
+.card-4 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.1s 28ms infinite; }
+
+.card-4:active {
+  transform: rotatey(180deg); }
+
+.card-5 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 7s 215ms infinite; }
+
+.card-5:active {
+  transform: rotatey(180deg); }
+
+.card-6 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.8s 383ms infinite; }
+
+.card-6:active {
+  transform: rotatey(180deg); }
+
+.card-7 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.7s 476ms infinite; }
+
+.card-7:active {
+  transform: rotatey(180deg); }
+
+.card-8 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.6s 305ms infinite; }
+
+.card-8:active {
+  transform: rotatey(180deg); }
+
+.card-9 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.2s 332ms infinite; }
+
+.card-9:active {
+  transform: rotatey(180deg); }
+
+.card-10 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.9s 104ms infinite; }
+
+.card-10:active {
+  transform: rotatey(180deg); }
+
+.card-11 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.4s 220ms infinite; }
+
+.card-11:active {
+  transform: rotatey(180deg); }
+
+.card-12 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.9s 26ms infinite; }
+
+.card-12:active {
+  transform: rotatey(180deg); }
+
+.card-13 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.7s 125ms infinite; }
+
+.card-13:active {
+  transform: rotatey(180deg); }
+
+.card-14 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 7s 159ms infinite; }
+
+.card-14:active {
+  transform: rotatey(180deg); }
+
+.card-15 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.5s 249ms infinite; }
+
+.card-15:active {
+  transform: rotatey(180deg); }
+
+.card-16 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 7s 363ms infinite; }
+
+.card-16:active {
+  transform: rotatey(180deg); }
+
+.card-17 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.4s 500ms infinite; }
+
+.card-17:active {
+  transform: rotatey(180deg); }
+
+.card-18 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.9s 152ms infinite; }
+
+.card-18:active {
+  transform: rotatey(180deg); }
+
+.card-19 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.1s 445ms infinite; }
+
+.card-19:active {
+  transform: rotatey(180deg); }
+
+.card-20 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.1s 283ms infinite; }
+
+.card-20:active {
+  transform: rotatey(180deg); }
+
+.card-21 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.8s 45ms infinite; }
+
+.card-21:active {
+  transform: rotatey(180deg); }
+
+.card-22 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.9s 67ms infinite; }
+
+.card-22:active {
+  transform: rotatey(180deg); }
+
+.card-23 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.8s 18ms infinite; }
+
+.card-23:active {
+  transform: rotatey(180deg); }
+
+.card-24 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.6s 106ms infinite; }
+
+.card-24:active {
+  transform: rotatey(180deg); }
+
+.card-25 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.7s 10ms infinite; }
+
+.card-25:active {
+  transform: rotatey(180deg); }
+
+.card-26 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6s 79ms infinite; }
+
+.card-26:active {
+  transform: rotatey(180deg); }
+
+.card-27 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.8s 128ms infinite; }
+
+.card-27:active {
+  transform: rotatey(180deg); }
+
+.card-28 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6s 399ms infinite; }
+
+.card-28:active {
+  transform: rotatey(180deg); }
+
+.card-29 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.4s 177ms infinite; }
+
+.card-29:active {
+  transform: rotatey(180deg); }
+
+.card-30 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.7s 200ms infinite; }
+
+.card-30:active {
+  transform: rotatey(180deg); }
+
+.card-31 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.9s 370ms infinite; }
+
+.card-31:active {
+  transform: rotatey(180deg); }
+
+.card-32 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.7s 51ms infinite; }
+
+.card-32:active {
+  transform: rotatey(180deg); }
+
 .icon-card {
   position: relative;
   width: 90px;
@@ -255,8 +511,7 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: none; }
+  bottom: 0; }
 
 .level-3-foreground {
   width: 69%;
@@ -295,7 +550,8 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
 
 .level-5-foreground {
   width: 69%;
