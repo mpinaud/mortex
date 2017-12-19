@@ -169,7 +169,8 @@ table {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
 
 .new-game-foreground {
   display: flex;
@@ -212,13 +213,14 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: none; }
+  bottom: 0; }
 
 .level-1-foreground {
   width: 69%;
   height: 66%;
-  background-color: #ffffff3d; }
+  background-color: #ffffff3d;
+  display: flex;
+  align-items: center; }
 
 #level-2 {
   background-image: url(../img/landscape/ocean.jpg);
@@ -305,6 +307,7 @@ input#player-name {
   display: flex;
   justify-content: center; }
 
+
 .round-two-cards {
   display: flex;
   width: 100%;
@@ -327,10 +330,44 @@ input#player-name {
   justify-content: space-around; }
 
 .round-three-cards {
+=======
+#level-2 .round-two-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-2 .column {
+  display: flex;
+  flex-direction: column; }
+#level-2 .column:nth-child(1) {
+  justify-content: center; }
+#level-2 .column:nth-child(2) {
+  justify-content: center; }
+
+#level-3 .round-three-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-3 .column {
+  display: flex;
+  flex-direction: column; }
+#level-3 .column:nth-child(1) {
+  justify-content: space-around; }
+#level-3 .column:nth-child(2) {
+  align-self: center; }
+#level-3 .column:nth-child(3) {
+  align-self: center; }
+#level-3 .column:nth-child(4) {
+  justify-content: space-around; }
+
+#level-4 .round-four-cards {
+
   display: flex;
   width: 100%;
   height: 100vh;
   background-color: lightgray; }
+
 
 .column {
   display: flex;
@@ -359,6 +396,27 @@ input#player-name {
   justify-content: space-around; }
 
 .column .memory-card:nth-child(7) {
+
+#level-4 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+#level-4 .column .memory-card:nth-child(1) {
+  align-self: flex-start; }
+#level-4 .column .memory-card:nth-child(2) {
+  align-self: flex-end; }
+#level-4 .column:nth-child(2) {
+  justify-content: space-around; }
+#level-4 .column:nth-child(3) {
+  align-self: center; }
+#level-4 .column:nth-child(4) {
+  justify-content: space-between; }
+#level-4 .column:nth-child(5) {
+  align-self: center; }
+#level-4 .column:nth-child(6) {
+  justify-content: space-around; }
+#level-4 .column .memory-card:nth-child(7) {
+
   align-self: flex-end; }
 
 .round-four-cards {
