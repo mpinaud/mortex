@@ -77,6 +77,19 @@ function topScore(scoreArray) {
 
 
 // Game Play Functions-------------INCOMPLETE
+//Toggle Level Visibility
+function toggleLevel(_round) {
+  if (_round === 1) {
+    $('#level-' + _round).css('display', 'block');
+    $('#new-game').css('display', 'none');
+  } else if ((_round > 1) && (_round <= 5)) {
+    $('#level-' + _round).css('display', 'block');
+    $('#level-' + (_round - 1)).css('display', 'none');
+  } else if (_round > 5) {
+    console.log('ERROR @function toggleLevel');
+  }
+}
+
 // Start Game Function
 function newRound() {
   playCards = [];
@@ -84,6 +97,8 @@ function newRound() {
     endGame(userName, gameScore);
   } else if (round <= 5) {
     cardOutput(round);
+    toggleLevel(round);
+    numOfMatchedCards = 0;
     round++;
   }
 }
@@ -108,13 +123,21 @@ function findPlayCards(_round) {
   return playCards;
 }
 
+// Card Click Listener
+function cardClick() {
+  $('.memory-card').off('click').on('click', function() {
+    cardFlip($(this).find('div').attr('class'));
+  });
+}
+
 // Card Output
 function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<i >' + card.svg + '</i>')
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="' + card.name + '"<i>' + card.svg + '</i></div>');
     i++;
   });
+  cardClick();
 }
 
 // Turn Play Function ---------- INCOMPLETE
@@ -127,16 +150,16 @@ function cardFlip(cardName) {
       // TOGGLE CARD VISIBILITY BY CLASS
       gameScore += 7;
       numOfMatchedCards += 2;
+      console.log("match! gameScore=" + gameScore + " & numOfMatchedCards=" + numOfMatchedCards);
     } else if (cardName !== flippedCard) {
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
+      console.log("not a match!")
     }
     flippedCard = "";
   };
-
-  if (numOfMatchedCards < playCards) {
-    flippedCard = "";
-  } else if (numOfMatchedCards >= playCards) {
+  console.log(flippedCard);
+  if (numOfMatchedCards >= playCards.length) {
     newRound();
   }
 }
@@ -167,5 +190,4 @@ $(function() {
   });
 
 // Quit Game
-
 })
