@@ -2,19 +2,22 @@
 // Global Variables
 var userName;
 var deckOfCards = [];
+var playCards = [];
 var previousGameScores = [];
 var amountOfTopScores = 10;
 var topScores = [];
 var round = 1;
 var gameScore = 0;
+var flippedCard = "";
+var numOfMatchedCards = 0;
 
-// Scores constructor
+// Stored Scores Constructor
 function ScoreStore(name, score) {
   this.name = name;
   this.score = score;
 }
 
-// Card constructor
+// Card Constructor
 function Card(name, color, background, svg) {
   this.name = name;
   this.color = color;
@@ -40,20 +43,21 @@ deckOfCards.push(new Card('tongue', 'red', 'white', '<img src="img/svg/tongue.sv
 deckOfCards.push(new Card('triangle', 'red', 'white', '<img src="img/svg/triangle-.svg" alt="Memory card image">'));
 deckOfCards.push(new Card('wave', 'red', 'white', '<img src="img/svg/wave.svg" alt="Memory card image">'));
 
-// Fake Previous Scores
-previousGameScores.push(new ScoreStore('Harry', 500));
-previousGameScores.push(new ScoreStore('Perry', 700));
-previousGameScores.push(new ScoreStore('Larry', 800));
-previousGameScores.push(new ScoreStore('Terry', 900));
-previousGameScores.push(new ScoreStore('Mary', 300));
-previousGameScores.push(new ScoreStore('Barry', 600));
-previousGameScores.push(new ScoreStore('Shari', 400));
+// Default Previous Scores
 previousGameScores.push(new ScoreStore('Jerry', 1000));
+previousGameScores.push(new ScoreStore('Terry', 900));
+previousGameScores.push(new ScoreStore('Larry', 800));
+previousGameScores.push(new ScoreStore('Perry', 700));
+previousGameScores.push(new ScoreStore('Barry', 600));
+previousGameScores.push(new ScoreStore('Harry', 500));
+previousGameScores.push(new ScoreStore('Shari', 400));
+previousGameScores.push(new ScoreStore('Mary', 300));
 previousGameScores.push(new ScoreStore('Gary', 200));
 previousGameScores.push(new ScoreStore('Carrie', 100));
 
-// // // Front end functions // // //
+// // // Game functions // // //
 
+// Scoring Functions -----------------INCOMPLETE
 // Sort Scores Array (from high to low)
 function sortScores(scoreArray) {
   scoreArray.sort(function(a, b) {
@@ -71,13 +75,19 @@ function topScore(scoreArray) {
   //------------Output to top ten-------------INCOMPLETE
 }
 
-// End game function
-function endGame(name, score) {
-  previousGameScores.push(new ScoreStore(name, score));
-  topScore(previousGameScores);
+// Game Play Functions-------------INCOMPLETE
+// Start Game Function
+function newRound() {
+  playCards = [];
+  if (round > 5) {
+    endGame(userName, gameScore);
+  } else if (round <= 5) {
+    cardOutput(round);
+    round++;
+  }
 }
 
-// Shuffle Deck of Cards
+// Shuffle Cards
 function shuffleDeck(deck) {
   for (var i = deck.length - 1; i > 0; i--) {
     var j = Math.floor(Math.random() * (i + 1));
@@ -87,9 +97,8 @@ function shuffleDeck(deck) {
   }
 }
 
-// Find Play Cards -----------INCOMPLETE
+// Find Cards To Play
 function findPlayCards(_round) {
-  var playCards = [];
   shuffleDeck(deckOfCards);
   for (i = 0; i < (Math.pow(2, (_round - 1))); i++) {
     playCards.push(deckOfCards[i], deckOfCards[i]);
@@ -103,25 +112,46 @@ function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
     $('#level-' + _round + '.card-' + i).html('<div class="glyph">' +
-                                                       '<i>' + card.svg + '</i>' +
-                                                     '</div>'
+                                                '<i>' + card.svg + '</i>' +
+                                              '</div>'
                                               ).addClass(card.name);
+
+    // Console Logs for testing
     console.log('round ' + _round + ', card ' + i + ' ' + card.name);
-    console.log('#level-' + _round + '.memory-card-' + i)
+    console.log('#level-' + _round + '.memory-card-' + i);
+
     i++;
   });
 }
 
-// Game Play -------------INCOMPLETE
-// Start
-function newRound() {
+// Turn Play Function ---------- INCOMPLETE
+function cardFlip(cardName) {
+  if (!flippedCard) {
+    // TOGGLE CARD FLIP ANIMATION
+    flippedCard = cardName;
+  } else if (flippedCard) {
+    if (cardName === flippedCard) {
+      // TOGGLE CARD VISIBILITY BY CLASS
+      gameScore += 7;
+      numOfMatchedCards += 2;
+    } else if (cardName !== flippedCard) {
+      // TOGGLE ANIMATION FOR NOT MATCHING
+      // FLIP CARDS BACK
+    }
+    flippedCard = "";
+  };
 
-  if (round > 5) {
-    endGame(userName, gameScore);
-  } else if (round <= 5) {
-    cardOutput(round);
-    round++;
+  if (numOfMatchedCards < playCards) {
+    flippedCard = "";
+  } else if (numOfMatchedCards >= playCards) {
+    newRound();
   }
+}
+
+// End Game Function
+function endGame(name, score) {
+  previousGameScores.push(new ScoreStore(name, score));
+  topScore(previousGameScores);
 }
 
 // // // Front end logic // // //
@@ -133,7 +163,7 @@ $(function() {
     gameScore = 0;
     newRound();
   });
-// Play Another Round
+// Play Another Game
   $('#play-again').click(function() {
     endGame(userName, gameScore);
     // output top scores --------------INCOMPLETE
