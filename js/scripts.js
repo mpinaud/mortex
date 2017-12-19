@@ -5,7 +5,7 @@ var deckOfCards = [];
 var previousGameScores = [];
 var amountOfTopScores = 10;
 var topScores = [];
-var round = 0;
+var round = 1;
 var gameScore = 0;
 
 // Scores constructor
@@ -91,7 +91,7 @@ function shuffleDeck(deck) {
 function findPlayCards(_round) {
   var playCards = [];
   shuffleDeck(deckOfCards);
-  for (i = 0; i < (Math.pow(2, (_round))); i++) {
+  for (i = 0; i < (Math.pow(2, (_round - 1))); i++) {
     playCards.push(deckOfCards[i], deckOfCards[i]);
   }
   shuffleDeck(playCards);
@@ -100,22 +100,25 @@ function findPlayCards(_round) {
 
 // Card Output -----------INCOMPLETE
 function cardOutput(_round) {
+  var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('.game-board').append('<div class="memory-card ' + card.name + '">' +
-                              '<div class="glyph">' +
-                                '<i>' + card.svg + '</i>' +
-                              '</div>' +
-                            '</div>');
+    $('#level-' + _round + '.card-' + i).html('<div class="glyph">' +
+                                                       '<i>' + card.svg + '</i>' +
+                                                     '</div>'
+                                              ).addClass(card.name);
+    console.log('round ' + _round + ', card ' + i + ' ' + card.name);
+    console.log('#level-' + _round + '.memory-card-' + i)
+    i++;
   });
 }
 
 // Game Play -------------INCOMPLETE
 // Start
 function newRound() {
-  $('.game-board').empty();
-  if (round === 5) {
-    console.log('END OF GAME');
-  } else if (round < 5) {
+
+  if (round > 5) {
+    endGame(userName, gameScore);
+  } else if (round <= 5) {
     cardOutput(round);
     round++;
   }
