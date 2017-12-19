@@ -294,8 +294,7 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: none; }
+  bottom: 0; }
 
 .level-5-foreground {
   width: 69%;
@@ -307,30 +306,6 @@ input#player-name {
   display: flex;
   justify-content: center; }
 
-
-.round-two-cards {
-  display: flex;
-  width: 100%;
-  height: 100vh; }
-
-.column {
-  display: flex;
-  flex-direction: column; }
-
-.column:nth-child(1) {
-  justify-content: space-around; }
-
-.column:nth-child(2) {
-  align-self: center; }
-
-.column:nth-child(3) {
-  align-self: center; }
-
-.column:nth-child(4) {
-  justify-content: space-around; }
-
-.round-three-cards {
-=======
 #level-2 .round-two-cards {
   display: flex;
   width: 100%;
@@ -362,41 +337,10 @@ input#player-name {
   justify-content: space-around; }
 
 #level-4 .round-four-cards {
-
   display: flex;
   width: 100%;
   height: 100vh;
   background-color: lightgray; }
-
-
-.column {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; }
-
-.column .memory-card:nth-child(1) {
-  align-self: flex-start; }
-
-.column .memory-card:nth-child(2) {
-  align-self: flex-end; }
-
-.column:nth-child(2) {
-  justify-content: space-around; }
-
-.column:nth-child(3) {
-  align-self: center; }
-
-.column:nth-child(4) {
-  justify-content: space-between; }
-
-.column:nth-child(5) {
-  align-self: center; }
-
-.column:nth-child(6) {
-  justify-content: space-around; }
-
-.column .memory-card:nth-child(7) {
-
 #level-4 .column {
   display: flex;
   flex-direction: column;
@@ -416,18 +360,21 @@ input#player-name {
 #level-4 .column:nth-child(6) {
   justify-content: space-around; }
 #level-4 .column .memory-card:nth-child(7) {
-
   align-self: flex-end; }
 
-.round-four-cards {
+#level-5 .round-five-cards {
   display: flex;
   width: 100%;
-  height: 100vh; }
+  height: 100%; }
+#level-5 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 
 .memory-card {
   display: flex;
-  width: 100px;
-  height: 150px;
+  width: 50px;
+  height: 75px;
   border: 2px solid black;
   background-color: teal;
   margin: 30px 30px; }
