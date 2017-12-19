@@ -4,6 +4,64 @@
   margin: 0 auto;
   color: teal; }
 
+.icon-card {
+  position: relative;
+  width: 90px;
+  height: 90px; }
+  .icon-card .out {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: black; }
+    .icon-card .out .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .icon-card .out .one, .icon-card .out .two {
+      position: relative;
+      background-color: white;
+      width: 90px;
+      height: 10px; }
+    .icon-card .out .one {
+      transform: rotate(90deg); }
+  .icon-card .in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black; }
+    .icon-card .in .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .icon-card .in .one, .icon-card .in .two {
+      position: relative;
+      border-radius: 5px;
+      background-color: white;
+      width: 60px;
+      height: 10px; }
+    .icon-card .in .one {
+      transform: rotate(45deg); }
+    .icon-card .in .two {
+      transform: rotate(-45deg); }
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotate-left 1.3s linear infinite; }
+
+.icon-card {
+  animation: rotate-right 3s linear infinite; }
+
 @keyframes floating {
   0% {
     top: 5px; }
@@ -249,6 +307,30 @@ input#player-name {
   display: flex;
   justify-content: center; }
 
+
+.round-two-cards {
+  display: flex;
+  width: 100%;
+  height: 100vh; }
+
+.column {
+  display: flex;
+  flex-direction: column; }
+
+.column:nth-child(1) {
+  justify-content: space-around; }
+
+.column:nth-child(2) {
+  align-self: center; }
+
+.column:nth-child(3) {
+  align-self: center; }
+
+.column:nth-child(4) {
+  justify-content: space-around; }
+
+.round-three-cards {
+=======
 #level-2 .round-two-cards {
   display: flex;
   width: 100%;
@@ -280,10 +362,41 @@ input#player-name {
   justify-content: space-around; }
 
 #level-4 .round-four-cards {
+
   display: flex;
   width: 100%;
   height: 100vh;
   background-color: lightgray; }
+
+
+.column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+
+.column .memory-card:nth-child(1) {
+  align-self: flex-start; }
+
+.column .memory-card:nth-child(2) {
+  align-self: flex-end; }
+
+.column:nth-child(2) {
+  justify-content: space-around; }
+
+.column:nth-child(3) {
+  align-self: center; }
+
+.column:nth-child(4) {
+  justify-content: space-between; }
+
+.column:nth-child(5) {
+  align-self: center; }
+
+.column:nth-child(6) {
+  justify-content: space-around; }
+
+.column .memory-card:nth-child(7) {
+
 #level-4 .column {
   display: flex;
   flex-direction: column;
@@ -303,6 +416,7 @@ input#player-name {
 #level-4 .column:nth-child(6) {
   justify-content: space-around; }
 #level-4 .column .memory-card:nth-child(7) {
+
   align-self: flex-end; }
 
 .round-four-cards {
