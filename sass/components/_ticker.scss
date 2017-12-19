@@ -1,0 +1,38 @@
+#hall-of-fame {
+  width: 100%;
+
+  @keyframes scroll {
+    0% {
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0);
+      }
+  }
+
+  .ticker {
+    display: inline-block;
+    height: 4em;
+    line-height: 3em;
+    white-space: nowrap;
+    animation: scroll 10s linear infinite;
+    padding-left: 100%;
+  }
+
+  .ticker-wrapper {
+    height: 3em;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+  }
+  
+  .ticker-item {
+    color: white;
+    padding: 2px 2px;
+    font-size: 2em;
+    display: inline-block;
+  }
+}
