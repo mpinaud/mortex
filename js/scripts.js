@@ -113,11 +113,39 @@ function findPlayCards(_round) {
   return playCards;
 }
 
+// Card Click Listener
+function cardClick() {
+  $('.memory-card').off('click').on('click', function() {
+    cardFlip(this, $(this).find('div').attr('class'));
+  });
+
+}
+
+// Card Output
+function cardOutput(_round) {
+  var i = 1;
+  findPlayCards(_round).map(function(card) {
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id="card" class=' +  card.name +  '>'+
+                                                                '<figure class="front">1</figure>'+
+                                                                '<figure class="back">' + card.svg + '</figure>'+
+                                                              '</div>');
+    i++;
+  });
+  cardClick();
+}
+//
+
+// Turn Play Function ---------- INCOMPLETE
+function cardFlip(card, cardName) {
+  if (!flippedCard) {
+
 // Turn Play Function ---------- INCOMPLETE
 function cardFlip(card, cardName) {
   if (!flippedCard) {
     $(card).css('transform', 'rotatey(180deg)');
     $(card).off('click');
+    $(card).find('div').addClass('flipped');
+
     flippedCard = cardName;
     cardOne = card;
     turnEnd();
@@ -136,13 +164,9 @@ function cardFlip(card, cardName) {
       cardClick('off');
       $(card).css('transform', 'rotatey(180deg)');
       setTimeout(function () {
-        $(card).css('animation', 'wiggle 0.3s');
-        $(cardOne).css('animation', 'wiggle 0.3s');
+        $('.memory-card').css('animation', 'wiggle 0.3s');
         setTimeout(function () {
-          $(card).css('animation', 'none');
-          $(cardOne).css('animation', 'none');
-          $(".memory-card").css('transform', 'none');
-          cardClick('on');
+          $('.memory-card').css('animation', 'none');
         }, 1000);
         turnEnd();
         console.log("not a match!");
@@ -151,6 +175,9 @@ function cardFlip(card, cardName) {
     livesOutput();
     flippedCard = "";
   };
+  setTimeout(function () {
+    turnEnd();
+  }, 4000);
 }
 
 function turnEnd() {
