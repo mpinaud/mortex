@@ -80,10 +80,10 @@ function topScore(scoreArray) {
 //Toggle Level Visibility
 function toggleLevel(_round) {
   if (_round === 1) {
-    $('#level-' + _round).css('display', 'block');
+    $('#level-' + _round).css('display', 'flex');
     $('#new-game').css('display', 'none');
   } else if ((_round > 1) && (_round <= 5)) {
-    $('#level-' + _round).css('display', 'block');
+    $('#level-' + _round).css('display', 'flex');
     $('#level-' + (_round - 1)).css('display', 'none');
   }
 }
@@ -125,35 +125,45 @@ function findPlayCards(_round) {
 // Card Click Listener
 function cardClick() {
   $('.memory-card').off('click').on('click', function() {
-    cardFlip($(this).find('div').attr('class'));
+    cardFlip(this, $(this).find('div').attr('class'));
   });
+
 }
 
 // Card Output
 function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="' + card.name + '"<div>' + card.svg + '</div></div>');
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id"card-card" class="' + card.name + '"><div>' + card.svg + '</div></div>');
     i++;
   });
   cardClick();
 }
 
 // Turn Play Function ---------- INCOMPLETE
-function cardFlip(cardName) {
+function cardFlip(card, cardName) {
   if (!flippedCard) {
-    // TOGGLE CARD FLIP ANIMATION
+    $(card).css('transform', 'rotatey(180deg)');
     flippedCard = cardName;
+    cardOne = card;
   } else if (flippedCard) {
     if (cardName === flippedCard) {
-      // TOGGLE CARD VISIBILITY BY CLASS
+      $(card).css('transform', 'rotatey(180deg)');
+      
       gameScore += 7;
       numOfMatchedCards += 2;
       console.log("match! gameScore=" + gameScore + " & numOfMatchedCards=" + numOfMatchedCards);
     } else if (cardName !== flippedCard) {
-      // TOGGLE ERROR ANIMATION
-      // FLIP CARDS BACK
-      // -1up
+      $(card).css('transform', 'rotatey(180deg)');
+      setTimeout(function () {
+        $(card).css('animation', 'wiggle 0.3s');
+        $(cardOne).css('animation', 'wiggle 0.3s');
+        setTimeout(function () {
+          $(card).css('animation', 'none');
+          $(cardOne).css('animation', 'none');
+          $(".memory-card").css('transform', 'none');
+        }, 1000);
+      }, 2000);
       console.log("not a match!");
     }
     flippedCard = "";
