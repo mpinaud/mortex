@@ -73,21 +73,10 @@ function topScore(scoreArray) {
   for (i = 0; i < amountOfTopScores; i++) {
     topScores.push(previousGameScores[i]);
   };
-  //------------Output to top ten-------------INCOMPLETE
+  ticker();
 }
 
-
-// Game Play Functions-------------INCOMPLETE
-//Toggle Level Visibility
-function toggleLevel(_round) {
-  if (_round === 1) {
-    $('#level-' + _round).css('display', 'block');
-    $('#new-game').css('display', 'none');
-  } else if ((_round > 1) && (_round <= 5)) {
-    $('#level-' + _round).css('display', 'block');
-    $('#level-' + (_round - 1)).css('display', 'none');
-  }
-}
+// Game Play Functions
 
 // Start Game Function
 function newRound() {
@@ -98,6 +87,7 @@ function newRound() {
     cardOutput(round);
     toggleLevel(round);
     lives = round;
+    livesOutput();
     numOfMatchedCards = 0;
     round++;
   }
@@ -123,36 +113,36 @@ function findPlayCards(_round) {
   return playCards;
 }
 
-// Card Click Listener
-function cardClick() {
-  $('.memory-card').off('click').on('click', function() {
-    cardFlip($(this).find('div').attr('class'));
-  });
-}
-
-// Card Output
-function cardOutput(_round) {
-  var i = 1;
-  findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="' + card.name + '"<div>' + card.svg + '</div></div>');
-    i++;
-  });
-  cardClick();
-}
-
-// Turn Play Functions ---------- INCOMPLETE
-function cardFlip(cardName) {
+// Turn Play Function ---------- INCOMPLETE
+function cardFlip(card, cardName) {
   if (!flippedCard) {
-    // TOGGLE CARD FLIP ANIMATION
+    $(card).css('transform', 'rotatey(180deg)');
+    $(card).off('click');
     flippedCard = cardName;
+    cardOne = card;
   } else if (flippedCard) {
     if (cardName === flippedCard) {
-      // TOGGLE CARD VISIBILITY BY CLASS
+      $(card).css('transform', 'rotatey(180deg)');
+      hideCards(cardName);
       gameScore += 7;
       numOfMatchedCards += 2;
+      scoreOutput();
     } else if (cardName !== flippedCard) {
+      cardClick('off');
+      $(card).css('transform', 'rotatey(180deg)');
+      setTimeout(function () {
+        $(card).css('animation', 'wiggle 0.3s');
+        $(cardOne).css('animation', 'wiggle 0.3s');
+        setTimeout(function () {
+          $(card).css('animation', 'none');
+          $(cardOne).css('animation', 'none');
+          $(".memory-card").css('transform', 'none');
+          cardClick('on');
+        }, 1000);
+      }, 2000);
+      console.log("not a match!");
       lives -= 1;
-      // Output new number of 1ups to screen, maybe error message?
+      livesOutput();
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
     }
@@ -163,14 +153,11 @@ function cardFlip(cardName) {
 
 function turnEnd() {
   if (lives === 0) {
-    console.log("game over")
     gameEnd("lose");
   } else if (lives > 0) {
+
     if (numOfMatchedCards >= playCards.length) {
       newRound();
-      console.log("new round")
-    } else if (numOfMatchedCards < playCards.length) {
-      console.log("take another turn")
     }
   }
 }
@@ -184,16 +171,77 @@ function gameEnd(winOrLose) {
   winnerLoserScreen(winOrLose);
 }
 
+// // // Front End Functions // // //
+//Toggle Level Visibility
+function toggleLevel(_round) {
+  if (_round === 1) {
+    $('#level-' + _round).css('display', 'flex').addClass('animation-' + _round);
+    $('#new-game').css('display', 'none');
+  } else if ((_round > 1) && (_round <= 5)) {
+    $('#level-' + _round).css('display', 'flex').addClass('animation-' + _round);
+    $('#level-' + (_round - 1)).css('display', 'none').removeClass('animation-' + (_round - 1));
+  }
+}
+
+// Ticker Output
+function ticker() {
+  var i = 1;
+  $('.ticker').empty();
+  $('.ticker').append('<span class="ticker-item">Top Scores: </span>');
+  topScores.map(function(topScore) {
+    $('.ticker').append('<span class="ticker-item"> - - - - ' + i + ': ' + topScore.name + ' - '+ topScore.score + '</span>');
+    i++;
+  });
+}
+
+// Card Click Listener
+function cardClick(toggle) {
+  if (toggle === 'on') {
+    console.log('click on');
+    $('.memory-card').off('click').on('click', function() {
+      cardFlip(this, $(this).find('div').attr('class'));
+    });
+  } else if (toggle === 'off') {
+    console.log('click off');
+    $('.memory-card').off('click');
+  }
+}
+
+// Card Output
+function cardOutput(_round) {
+  var i = 1;
+  findPlayCards(_round).map(function(card) {
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id"card-card" class="' + card.name + '"><div>' + card.svg + '</div></div>');
+    i++;
+  });
+  cardClick('on');
+}
+
 // Winner/Loser screen
 function winnerLoserScreen(didWinOrLose) {
-  $('.game-board').css('display', 'none');
+  $('#level-' + (round - 1)).css('display', 'none').removeClass('animation-' + (round - 1));
   if (didWinOrLose === "win") {
     alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
-    alert('you idiot! You can\'t remember shit!');
+    alert('You shit-for-brains! Try harder next time!');
     $('#loser-screen').css('display', 'flex');
   }
+}
+
+// Score output
+function scoreOutput() {
+  $('#score').html('<h3>Score: ' + gameScore + '</h3>');
+}
+
+// Lives output
+function livesOutput() {
+  $('#life').html('<h3>Lives: ' + lives + '</h3>');
+}
+
+// Hide Cards
+function hideCards(card) {
+  $('.' + card).parent().css('visibility', 'hidden');
 }
 
 // // // Front end logic // // //
@@ -201,18 +249,21 @@ $(function() {
 // Local Storage for score
   if (localStorage.previousScores) {
   previousGameScores = JSON.parse(localStorage.previousScores);
-}
+  }
+
+  topScore();
 // New Game
   $('#new-game-start').submit(function(event) {
     event.preventDefault();
     userName = $('#player-name').val();
+    $('#player').html('<h3>Player: ' + userName + '</h3>');
     gameScore = 0;
     newRound();
   });
 // Play Another Game
   $('#play-again').click(function() {
     gameEnd(userName, gameScore);
-    // output top scores --------------INCOMPLETE
+    topScore();
   });
 
 // Quit Game

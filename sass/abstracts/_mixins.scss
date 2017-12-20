@@ -13,15 +13,21 @@
 }
 
 @mixin card-flex-style {
+  position: relative;
   display: flex;
   align-items: center;
   border: 2px solid black;
-  background-color: teal;
+  background-color: #ffffff8a;
   margin: 30px 30px;
+  z-index: 20;
   div {
+    position: relative;
+    z-index: -1;
     width: 100%;
     height: 100%;
     img {
+      position: relative;
+      z-index: -10;
       height: auto;
       width: 100%;
     }

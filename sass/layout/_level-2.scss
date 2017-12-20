@@ -10,68 +10,69 @@
   display: none;
 }
 
+.level-2-foreground {
+  position: absolute;
+  width: 69%;
+  height: 66%;
+}
+
+.animation-2 {
+  .rings-two {
+    .ring-two {
+      position: absolute;
+      animation: rotateTwo 10000ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite alternate;
+      transform-style: preserve-3d;
+      .ring_inner-two {
+        border-radius: 100%;
+      }
+      @for $i from 0 through 30 {
+        &:nth-child(#{$i + 1}) .ring_inner-two {
+          width: $i * 50px;
+          height: $i * 20px;
+          border: 15px solid rgb(255, 0, 178);
+          animation: waveTwo 5000ms $i * 50ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite;
+          filter: blur(30px);
+        }
+      }
+    }
+  }
+
+  @keyframes rotateTwo {
+    0% {
+      transform: translate(-50%, -50%) rotateX(50deg);
+    }
+    100% {
+      transform: translate(-50%, -50%) rotateX(50deg);
+    }
+  }
+
+  @keyframes waveTwo {
+    0% {
+      transform: translateZ(0px);
+    }
+    8% {
+      transform: translateZ(-60px);
+    }
+    20% {
+      transform: translateZ(40px);
+    }
+    30% {
+      transform: translateZ(-20px);
+    }
+    50% {
+      transform: translateZ(10px);
+    }
+    80% {
+      transform: translateZ(-5px);
+    }
+    100% {
+      transform: translateZ(2px);
+    }
+  }
+}
+
 // #level-2 {
 //   background-image: url(../img/landscape/ocean.jpg);
 //   @include level-board-size;
 //   // display: none;
 // }
-
-.level-2-foreground {
-  position: absolute;
-  width: 69%;
-  height: 66%;
-  // background-color: #ffffff3d;
-}
-
-.rings {
-  .ring {
-    position: absolute;
-    animation: rotate 10000ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite alternate;
-    transform-style: preserve-3d;
-    .ring_inner {
-      border-radius: 100%;
-    }
-    @for $i from 0 through 30 {
-      &:nth-child(#{$i + 1}) .ring_inner {
-        width: $i * 50px;
-        height: $i * 20px;
-        border: 15px solid rgb(255, 0, 178);
-        animation: wave 5000ms $i * 50ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite;
-        filter: blur(30px);
-      }
-    }
-  }
-}
-
-@keyframes rotate {
-  0% {
-    transform: translate(-50%, -50%) rotateX(50deg);
-  }
-  100% {
-    transform: translate(-50%, -50%) rotateX(50deg);
-  }
-}
-
-@keyframes wave {
-  0% {
-    transform: translateZ(0px);
-  }
-  8% {
-    transform: translateZ(-60px);
-  }
-  20% {
-    transform: translateZ(40px);
-  }
-  30% {
-    transform: translateZ(-20px);
-  }
-  50% {
-    transform: translateZ(10px);
-  }
-  80% {
-    transform: translateZ(-5px);
-  }
-  100% {
-    transform: translateZ(2px);
-  }
-}
