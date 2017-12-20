@@ -1,11 +1,16 @@
 #level-5 {
   background-image: url(../img/landscape/birds.jpg);
   @include level-board-size;
-  display: none;
+  // display: none;
+  overflow: hidden;
 }
 
 .level-5-foreground {
   width: 69%;
   height: 66%;
   background-color: #ffffff3d;
+  animation: rotate-right 10s linear infinite;
 }
+// .level-5-foreground:active {
+//   animation: rotate-left 10s linear infinite;
+// }
