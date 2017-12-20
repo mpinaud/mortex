@@ -87,6 +87,7 @@ function newRound() {
     cardOutput(round);
     toggleLevel(round);
     lives = round;
+    livesOutput();
     numOfMatchedCards = 0;
     round++;
   }
@@ -116,6 +117,7 @@ function findPlayCards(_round) {
 function cardFlip(card, cardName) {
   if (!flippedCard) {
     $(card).css('transform', 'rotatey(180deg)');
+    $(card).off('click');
     flippedCard = cardName;
     cardOne = card;
   } else if (flippedCard) {
@@ -126,6 +128,7 @@ function cardFlip(card, cardName) {
       numOfMatchedCards += 2;
       scoreOutput();
     } else if (cardName !== flippedCard) {
+      cardClick('off');
       $(card).css('transform', 'rotatey(180deg)');
       setTimeout(function () {
         $(card).css('animation', 'wiggle 0.3s');
@@ -134,11 +137,12 @@ function cardFlip(card, cardName) {
           $(card).css('animation', 'none');
           $(cardOne).css('animation', 'none');
           $(".memory-card").css('transform', 'none');
+          cardClick('on');
         }, 1000);
       }, 2000);
       console.log("not a match!");
-
       lives -= 1;
+      livesOutput();
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
     }
@@ -151,6 +155,7 @@ function turnEnd() {
   if (lives === 0) {
     gameEnd("lose");
   } else if (lives > 0) {
+
     if (numOfMatchedCards >= playCards.length) {
       newRound();
     }
@@ -184,16 +189,22 @@ function ticker() {
   $('.ticker').empty();
   $('.ticker').append('<span class="ticker-item">Top Scores: </span>');
   topScores.map(function(topScore) {
-    $('.ticker').append('<span class="ticker-item">#' + i + ': "' + topScore.name + '" '+ topScore.score + '</span>');
+    $('.ticker').append('<span class="ticker-item"> - - - - ' + i + ': ' + topScore.name + ' - '+ topScore.score + '</span>');
     i++;
   });
 }
 
 // Card Click Listener
-function cardClick() {
-  $('.memory-card').off('click').on('click', function() {
-    cardFlip(this, $(this).find('div').attr('class'));
-  });
+function cardClick(toggle) {
+  if (toggle === 'on') {
+    console.log('click on');
+    $('.memory-card').off('click').on('click', function() {
+      cardFlip(this, $(this).find('div').attr('class'));
+    });
+  } else if (toggle === 'off') {
+    console.log('click off');
+    $('.memory-card').off('click');
+  }
 }
 
 // Card Output
@@ -203,17 +214,17 @@ function cardOutput(_round) {
     $('#level-' + _round + ' .memory-card.card-' + i).append('<div id"card-card" class="' + card.name + '"><div>' + card.svg + '</div></div>');
     i++;
   });
-  cardClick();
+  cardClick('on');
 }
 
 // Winner/Loser screen
 function winnerLoserScreen(didWinOrLose) {
-  $('#level-' + (_round - 1)).css('display', 'none').removeClass('animation-' + (_round - 1));
+  $('#level-' + (round - 1)).css('display', 'none').removeClass('animation-' + (round - 1));
   if (didWinOrLose === "win") {
     alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
-    alert('you idiot! You can\'t remember shit!');
+    alert('You shit-for-brains! Try harder next time!');
     $('#loser-screen').css('display', 'flex');
   }
 }
@@ -225,7 +236,7 @@ function scoreOutput() {
 
 // Lives output
 function livesOutput() {
-  $('#lives').html('<h3>Lives: ' + lives + '</h3>');
+  $('#life').html('<h3>Lives: ' + lives + '</h3>');
 }
 
 // Hide Cards
@@ -238,7 +249,9 @@ $(function() {
 // Local Storage for score
   if (localStorage.previousScores) {
   previousGameScores = JSON.parse(localStorage.previousScores);
-}
+  }
+
+  topScore();
 // New Game
   $('#new-game-start').submit(function(event) {
     event.preventDefault();
@@ -250,7 +263,7 @@ $(function() {
 // Play Another Game
   $('#play-again').click(function() {
     gameEnd(userName, gameScore);
-    // output top scores --------------INCOMPLETE
+    topScore();
   });
 
 // Quit Game
