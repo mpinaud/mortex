@@ -33,7 +33,8 @@
   .ticker-item {
     color: white;
     padding: 2px 2px;
-    font-size: 2em;
+    font-size: $font-ticker;
     display: inline-block;
+    font-family: sans-serif;
   }
 }
