@@ -1,0 +1,695 @@
+.countdown {
+  font-size: 2em;
+  padding: 5px;
+  margin: 0 auto;
+  color: teal; }
+
+.card-1 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.9s 498ms infinite; }
+
+.card-1:active {
+  transform: rotatey(180deg); }
+
+.card-2 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.4s 105ms infinite; }
+
+.card-2:active {
+  transform: rotatey(180deg); }
+
+.card-3 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6s 482ms infinite; }
+
+.card-3:active {
+  transform: rotatey(180deg); }
+
+.card-4 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 7s 224ms infinite; }
+
+.card-4:active {
+  transform: rotatey(180deg); }
+
+.card-5 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.1s 249ms infinite; }
+
+.card-5:active {
+  transform: rotatey(180deg); }
+
+.card-6 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.3s 226ms infinite; }
+
+.card-6:active {
+  transform: rotatey(180deg); }
+
+.card-7 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.3s 194ms infinite; }
+
+.card-7:active {
+  transform: rotatey(180deg); }
+
+.card-8 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.5s 280ms infinite; }
+
+.card-8:active {
+  transform: rotatey(180deg); }
+
+.card-9 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.5s 234ms infinite; }
+
+.card-9:active {
+  transform: rotatey(180deg); }
+
+.card-10 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.4s 277ms infinite; }
+
+.card-10:active {
+  transform: rotatey(180deg); }
+
+.card-11 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.2s 437ms infinite; }
+
+.card-11:active {
+  transform: rotatey(180deg); }
+
+.card-12 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.6s 86ms infinite; }
+
+.card-12:active {
+  transform: rotatey(180deg); }
+
+.card-13 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.5s 301ms infinite; }
+
+.card-13:active {
+  transform: rotatey(180deg); }
+
+.card-14 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.4s 70ms infinite; }
+
+.card-14:active {
+  transform: rotatey(180deg); }
+
+.card-15 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6s 485ms infinite; }
+
+.card-15:active {
+  transform: rotatey(180deg); }
+
+.card-16 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.5s 102ms infinite; }
+
+.card-16:active {
+  transform: rotatey(180deg); }
+
+.card-17 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.2s 268ms infinite; }
+
+.card-17:active {
+  transform: rotatey(180deg); }
+
+.card-18 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6s 292ms infinite; }
+
+.card-18:active {
+  transform: rotatey(180deg); }
+
+.card-19 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.8s 326ms infinite; }
+
+.card-19:active {
+  transform: rotatey(180deg); }
+
+.card-20 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.2s 435ms infinite; }
+
+.card-20:active {
+  transform: rotatey(180deg); }
+
+.card-21 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.9s 116ms infinite; }
+
+.card-21:active {
+  transform: rotatey(180deg); }
+
+.card-22 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.8s 44ms infinite; }
+
+.card-22:active {
+  transform: rotatey(180deg); }
+
+.card-23 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.1s 280ms infinite; }
+
+.card-23:active {
+  transform: rotatey(180deg); }
+
+.card-24 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.6s 345ms infinite; }
+
+.card-24:active {
+  transform: rotatey(180deg); }
+
+.card-25 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.9s 287ms infinite; }
+
+.card-25:active {
+  transform: rotatey(180deg); }
+
+.card-26 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.8s 447ms infinite; }
+
+.card-26:active {
+  transform: rotatey(180deg); }
+
+.card-27 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.2s 430ms infinite; }
+
+.card-27:active {
+  transform: rotatey(180deg); }
+
+.card-28 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.1s 460ms infinite; }
+
+.card-28:active {
+  transform: rotatey(180deg); }
+
+.card-29 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 6.9s 358ms infinite; }
+
+.card-29:active {
+  transform: rotatey(180deg); }
+
+.card-30 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.6s 310ms infinite; }
+
+.card-30:active {
+  transform: rotatey(180deg); }
+
+.card-31 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.1s 202ms infinite; }
+
+.card-31:active {
+  transform: rotatey(180deg); }
+
+.card-32 {
+  position: relative;
+  transition: transform 2s;
+  animation: floating 5.9s 414ms infinite; }
+
+.card-32:active {
+  transform: rotatey(180deg); }
+
+.icon-card {
+  position: relative;
+  width: 90px;
+  height: 90px; }
+  .icon-card .out {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: black; }
+    .icon-card .out .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .icon-card .out .one, .icon-card .out .two {
+      position: relative;
+      background-color: white;
+      width: 90px;
+      height: 10px; }
+    .icon-card .out .one {
+      transform: rotate(90deg); }
+  .icon-card .in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black; }
+    .icon-card .in .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .icon-card .in .one, .icon-card .in .two {
+      position: relative;
+      border-radius: 5px;
+      background-color: white;
+      width: 60px;
+      height: 10px; }
+    .icon-card .in .one {
+      transform: rotate(45deg); }
+    .icon-card .in .two {
+      transform: rotate(-45deg); }
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotate-left 1.3s linear infinite; }
+
+.icon-card {
+  animation: rotate-right 3s linear infinite; }
+
+@keyframes floating {
+  0% {
+    top: 5px; }
+  25% {
+    top: -5px; }
+  50% {
+    top: 5px; }
+  75% {
+    top: -5px; }
+  100% {
+    top: 5px; } }
+@keyframes wiggle {
+  0% {
+    left: 5px; }
+  25% {
+    left: -5px; }
+  50% {
+    left: 5px; }
+  75% {
+    left: -5px; }
+  100% {
+    left: 5px; } }
+@keyframes scale {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(0.75); }
+  50% {
+    transform: scale(0.5); }
+  75% {
+    transform: scale(0.25); }
+  100% {
+    transform: scale(0); } }
+@keyframes rotate-left {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-320deg); } }
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+#new-game {
+  background-image: url(../img/landscape/spheres.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.new-game-foreground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69%;
+  height: 66%;
+  background-color: #0000009e;
+  position: absolute;
+  padding: 98px; }
+
+form#new-game-start {
+  width: 100%;
+  height: 111px;
+  text-align: center; }
+
+button {
+  width: 19%;
+  height: 50px;
+  font-size: 28px;
+  background-color: hotpink;
+  border-radius: 10px; }
+
+input#player-name {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 47px;
+  font-size: 50px;
+  border-radius: 20px; }
+
+#level-1 {
+  background-image: url(../img/landscape/geoplane.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-1-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d;
+  display: flex;
+  align-items: center; }
+
+#level-2 {
+  background-image: url(../img/landscape/ocean.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-2-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
+
+#level-3 {
+  background-image: url(../img/landscape/storm.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-3-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
+
+#level-4 {
+  background-image: url(../img/landscape/tree.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-4-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d; }
+
+#level-5 {
+  background-image: url(../img/landscape/birds.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden; }
+
+.level-5-foreground {
+  width: 69%;
+  height: 66%;
+  background-color: #ffffff3d;
+  animation: rotate-right 10s linear infinite; }
+
+#level-1 .round-one-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+#level-2 .round-two-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-2 .column {
+  display: flex;
+  flex-direction: column; }
+#level-2 .column:nth-child(1) {
+  justify-content: center; }
+#level-2 .column:nth-child(2) {
+  justify-content: center; }
+
+#level-3 .round-three-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-3 .column {
+  flex-direction: column; }
+#level-3 .column:nth-child(1) {
+  justify-content: space-around; }
+#level-3 .column:nth-child(2) {
+  align-self: center; }
+#level-3 .column:nth-child(3) {
+  align-self: center; }
+#level-3 .column:nth-child(4) {
+  justify-content: space-around; }
+
+#level-4 .round-four-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-4 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+#level-4 .column .memory-card:nth-child(1) {
+  align-self: flex-start; }
+#level-4 .column .memory-card:nth-child(2) {
+  align-self: flex-end; }
+#level-4 .column:nth-child(2) {
+  justify-content: space-around; }
+#level-4 .column:nth-child(3) {
+  align-self: center; }
+#level-4 .column:nth-child(4) {
+  justify-content: space-between; }
+#level-4 .column:nth-child(5) {
+  align-self: center; }
+#level-4 .column:nth-child(6) {
+  justify-content: space-around; }
+#level-4 .column .memory-card:nth-child(7) {
+  align-self: flex-end; }
+
+#level-5 .round-five-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-5 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+#level-5 .column:nth-child(2), #level-5 .column:nth-child(8) {
+  justify-content: unsafe; }
+
+#level-1 .memory-card {
+  width: 250px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+  #level-1 .memory-card i {
+    width: 100%;
+    height: auto; }
+
+#level-2 .memory-card {
+  width: 250px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+  #level-2 .memory-card i {
+    width: 100%;
+    height: auto; }
+
+#level-3 .memory-card {
+  width: 250px;
+  min-height: 350px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+  #level-3 .memory-card i {
+    width: 100%;
+    height: auto; }
+
+#level-4 .memory-card {
+  width: 140px;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+  #level-4 .memory-card i {
+    width: 100%;
+    height: auto; }
+
+#level-5 .memory-card {
+  width: 50px;
+  min-height: 75px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  background-color: teal;
+  margin: 30px 30px; }
+  #level-5 .memory-card i {
+    width: 100%;
+    height: auto; }
+
+/*# sourceMappingURL=styles.css.map */
