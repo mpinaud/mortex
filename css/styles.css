@@ -7,7 +7,7 @@
 .card-1 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6.4s 428ms infinite; }
+  animation: floating 7s 11ms infinite; }
 
 .card-1:active {
   transform: rotatey(180deg); }
@@ -15,7 +15,7 @@
 .card-2 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.8s 3ms infinite; }
+  animation: floating 5.4s 445ms infinite; }
 
 .card-2:active {
   transform: rotatey(180deg); }
@@ -23,7 +23,7 @@
 .card-3 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6.6s 292ms infinite; }
+  animation: floating 5.7s 210ms infinite; }
 
 .card-3:active {
   transform: rotatey(180deg); }
@@ -31,7 +31,7 @@
 .card-4 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.1s 28ms infinite; }
+  animation: floating 6.3s 248ms infinite; }
 
 .card-4:active {
   transform: rotatey(180deg); }
@@ -39,7 +39,7 @@
 .card-5 {
   position: relative;
   transition: transform 2s;
-  animation: floating 7s 215ms infinite; }
+  animation: floating 5.8s 205ms infinite; }
 
 .card-5:active {
   transform: rotatey(180deg); }
@@ -47,7 +47,7 @@
 .card-6 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6.8s 383ms infinite; }
+  animation: floating 6.6s 336ms infinite; }
 
 .card-6:active {
   transform: rotatey(180deg); }
@@ -55,7 +55,7 @@
 .card-7 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.7s 476ms infinite; }
+  animation: floating 6.2s 62ms infinite; }
 
 .card-7:active {
   transform: rotatey(180deg); }
@@ -63,7 +63,7 @@
 .card-8 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.6s 305ms infinite; }
+  animation: floating 5.4s 438ms infinite; }
 
 .card-8:active {
   transform: rotatey(180deg); }
@@ -71,7 +71,7 @@
 .card-9 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.2s 332ms infinite; }
+  animation: floating 5.9s 441ms infinite; }
 
 .card-9:active {
   transform: rotatey(180deg); }
@@ -79,7 +79,7 @@
 .card-10 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6.9s 104ms infinite; }
+  animation: floating 6.3s 193ms infinite; }
 
 .card-10:active {
   transform: rotatey(180deg); }
@@ -87,7 +87,7 @@
 .card-11 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.4s 220ms infinite; }
+  animation: floating 5.4s 265ms infinite; }
 
 .card-11:active {
   transform: rotatey(180deg); }
@@ -95,7 +95,7 @@
 .card-12 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.9s 26ms infinite; }
+  animation: floating 6s 84ms infinite; }
 
 .card-12:active {
   transform: rotatey(180deg); }
@@ -103,7 +103,7 @@
 .card-13 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.7s 125ms infinite; }
+  animation: floating 6.9s 14ms infinite; }
 
 .card-13:active {
   transform: rotatey(180deg); }
@@ -111,7 +111,7 @@
 .card-14 {
   position: relative;
   transition: transform 2s;
-  animation: floating 7s 159ms infinite; }
+  animation: floating 6s 125ms infinite; }
 
 .card-14:active {
   transform: rotatey(180deg); }
@@ -119,7 +119,7 @@
 .card-15 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.5s 249ms infinite; }
+  animation: floating 5.4s 237ms infinite; }
 
 .card-15:active {
   transform: rotatey(180deg); }
@@ -127,7 +127,7 @@
 .card-16 {
   position: relative;
   transition: transform 2s;
-  animation: floating 7s 363ms infinite; }
+  animation: floating 6.7s 396ms infinite; }
 
 .card-16:active {
   transform: rotatey(180deg); }
@@ -135,7 +135,7 @@
 .card-17 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.4s 500ms infinite; }
+  animation: floating 5.5s 254ms infinite; }
 
 .card-17:active {
   transform: rotatey(180deg); }
@@ -143,7 +143,7 @@
 .card-18 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6.9s 152ms infinite; }
+  animation: floating 6.3s 247ms infinite; }
 
 .card-18:active {
   transform: rotatey(180deg); }
@@ -151,7 +151,7 @@
 .card-19 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.1s 445ms infinite; }
+  animation: floating 5.2s 441ms infinite; }
 
 .card-19:active {
   transform: rotatey(180deg); }
@@ -159,7 +159,7 @@
 .card-20 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.1s 283ms infinite; }
+  animation: floating 5.5s 68ms infinite; }
 
 .card-20:active {
   transform: rotatey(180deg); }
@@ -167,7 +167,7 @@
 .card-21 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6.8s 45ms infinite; }
+  animation: floating 5.5s 411ms infinite; }
 
 .card-21:active {
   transform: rotatey(180deg); }
@@ -175,7 +175,7 @@
 .card-22 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.9s 67ms infinite; }
+  animation: floating 5.7s 326ms infinite; }
 
 .card-22:active {
   transform: rotatey(180deg); }
@@ -183,7 +183,7 @@
 .card-23 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.8s 18ms infinite; }
+  animation: floating 6.4s 238ms infinite; }
 
 .card-23:active {
   transform: rotatey(180deg); }
@@ -191,7 +191,7 @@
 .card-24 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6.6s 106ms infinite; }
+  animation: floating 6.5s 236ms infinite; }
 
 .card-24:active {
   transform: rotatey(180deg); }
@@ -199,7 +199,7 @@
 .card-25 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.7s 10ms infinite; }
+  animation: floating 5.6s 233ms infinite; }
 
 .card-25:active {
   transform: rotatey(180deg); }
@@ -207,7 +207,7 @@
 .card-26 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6s 79ms infinite; }
+  animation: floating 6.6s 362ms infinite; }
 
 .card-26:active {
   transform: rotatey(180deg); }
@@ -215,7 +215,7 @@
 .card-27 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.8s 128ms infinite; }
+  animation: floating 5.4s 46ms infinite; }
 
 .card-27:active {
   transform: rotatey(180deg); }
@@ -223,7 +223,7 @@
 .card-28 {
   position: relative;
   transition: transform 2s;
-  animation: floating 6s 399ms infinite; }
+  animation: floating 6.3s 323ms infinite; }
 
 .card-28:active {
   transform: rotatey(180deg); }
@@ -231,7 +231,7 @@
 .card-29 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.4s 177ms infinite; }
+  animation: floating 5.4s 231ms infinite; }
 
 .card-29:active {
   transform: rotatey(180deg); }
@@ -239,7 +239,7 @@
 .card-30 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.7s 200ms infinite; }
+  animation: floating 6.7s 107ms infinite; }
 
 .card-30:active {
   transform: rotatey(180deg); }
@@ -247,7 +247,7 @@
 .card-31 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.9s 370ms infinite; }
+  animation: floating 7s 66ms infinite; }
 
 .card-31:active {
   transform: rotatey(180deg); }
@@ -255,7 +255,7 @@
 .card-32 {
   position: relative;
   transition: transform 2s;
-  animation: floating 5.7s 51ms infinite; }
+  animation: floating 5.3s 489ms infinite; }
 
 .card-32:active {
   transform: rotatey(180deg); }
@@ -458,7 +458,7 @@ input#player-name {
   border-radius: 20px; }
 
 #level-1 {
-  background-image: url(../img/landscape/geoplane.jpg);
+  background-image: url(../img/landscape/tron.jpeg);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -469,8 +469,7 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0;
-  display: none; }
+  bottom: 0; }
 
 .level-1-foreground {
   width: 69%;
@@ -478,6 +477,75 @@ input#player-name {
   background-color: #ffffff3d;
   display: flex;
   align-items: center; }
+
+#level-1 {
+  min-width: 320px;
+  min-height: 320px;
+  height: 100vh;
+  background-color: #220446;
+  overflow: hidden; }
+
+@keyframes wave-y {
+  0%,
+	40%,
+	80% {
+    transform: scaleX(1) scaleY(1); }
+  20%,
+	60%,
+	100% {
+    transform: scaleX(1.2) scaleY(1.3); } }
+.agua {
+  position: absolute;
+  width: 83%;
+  height: 101vh;
+  margin: 0 auto;
+  perspective: 0vh;
+  perspective-origin: 50% 80vh; }
+
+.agua__warp {
+  display: flex;
+  flex-wrap: wrap;
+  width: inherit;
+  height: inherit;
+  transform-style: preserve-3d;
+  transform: rotateX(3deg);
+  transform-origin: 50% 65vh; }
+
+.agua__block {
+  width: 100%;
+  height: 24vh;
+  background-image: linear-gradient(to right, #220446 45%, #62019D 50%, #220446 55%);
+  animation: wave-y 2.5s linear infinite alternate forwards; }
+
+.agua__block:nth-child(1) {
+  animation-delay: 0s; }
+
+.agua__block:nth-child(2) {
+  animation-delay: 0.1s; }
+
+.agua__block:nth-child(3) {
+  animation-delay: 0.35s; }
+
+.agua__block:nth-child(4) {
+  animation-delay: 0.9s; }
+
+.agua__block:nth-child(5) {
+  animation-delay: 0.7s; }
+
+.agua__block:nth-child(6) {
+  animation-delay: 0.5s; }
+
+.agua__block:nth-child(7) {
+  animation-delay: 0.9s; }
+
+.agua__block:nth-child(8) {
+  animation-delay: 0.2s; }
+
+.agua__block:nth-child(9) {
+  animation-delay: 0.52s; }
+
+.agua__block:nth-child(10) {
+  animation-delay: 0.9s; }
 
 #level-2 {
   background-image: url(../img/landscape/ocean.jpg);
@@ -511,7 +579,8 @@ input#player-name {
   top: 0;
   left: 0;
   right: 0;
-  bottom: 0; }
+  bottom: 0;
+  display: none; }
 
 .level-3-foreground {
   width: 69%;
@@ -551,7 +620,8 @@ input#player-name {
   left: 0;
   right: 0;
   bottom: 0;
-  display: none; }
+  display: none;
+  overflow: hidden; }
 
 .level-5-foreground {
   width: 69%;
@@ -582,7 +652,6 @@ input#player-name {
   height: 100%;
   justify-content: center; }
 #level-3 .column {
-  display: flex;
   flex-direction: column; }
 #level-3 .column:nth-child(1) {
   justify-content: space-around; }
@@ -633,7 +702,7 @@ input#player-name {
 
 #level-1 .memory-card {
   width: 250px;
-  height: 350px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   border: 2px solid black;
@@ -645,7 +714,7 @@ input#player-name {
 
 #level-2 .memory-card {
   width: 250px;
-  height: 350px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   border: 2px solid black;
@@ -657,7 +726,7 @@ input#player-name {
 
 #level-3 .memory-card {
   width: 250px;
-  height: 350px;
+  min-height: 350px;
   display: flex;
   align-items: center;
   border: 2px solid black;
@@ -669,7 +738,7 @@ input#player-name {
 
 #level-4 .memory-card {
   width: 140px;
-  height: 200px;
+  min-height: 200px;
   display: flex;
   align-items: center;
   border: 2px solid black;
@@ -681,7 +750,7 @@ input#player-name {
 
 #level-5 .memory-card {
   width: 50px;
-  height: 75px;
+  min-height: 75px;
   display: flex;
   align-items: center;
   border: 2px solid black;
