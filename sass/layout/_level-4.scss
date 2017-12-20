@@ -2,12 +2,11 @@
   background: black;
   height: 100vh;
   overflow: hidden;
-  display: flex;
   justify-content: center;
   align-items: center;
   perspective: 75px;
   @include level-board-size;
-  // display: none;
+  display: none;
 }
 
 // #level-4 {

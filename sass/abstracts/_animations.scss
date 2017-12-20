@@ -21,17 +21,11 @@
   $number3: $number2 + 5s;
   .card-#{$i}{
     position: relative;
-    transition: transform 2s;
+    transition: transform 1.2s;
     animation: floating $number3 $number1 infinite;
   }
 }
-.flip{
-  @include rotate-y(180deg);
-}
-#card-card {
-  @include rotate-y(0deg);
-  transition: transform 1s;
-}
+
 
 
 
