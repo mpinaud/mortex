@@ -11,13 +11,10 @@
   </head>
   <body>
     <main>
-      <!-- <div class="game-name">
-        <h1>extreme match</h1>
-        <div class="test"></div>
-      </div> -->
       <div class="game-board">
         <div id="new-game">
           <div class="new-game-foreground">
+            <h1>extreme match</h1>
             <form id="new-game-start">
               <input id="player-name" required type="text" placeholder="N A M E .  .  .">
               <button type="submit" name="button">Start</button>
@@ -376,23 +373,35 @@
             </div>
           </div>
         </div>
-      </div>
-      <div id="player">
-      </div>
-      <div id="score">
-      </div>
-      <div id="life">
-      </div>
-      <div id="hint">
-      </div>
-      <div class="reset-game">
+        <div class="scoreboard-static">
+          <div id="player">
+            <h3>Player: </h3>
+          </div>
+          <div id="score">
+            <h3>Score: </h3>
+          </div>
+          <div id="life">
+            <h3>Lives: </h3>
+          </div>
+          <div id="hint">
+            <button type="button" name="button">Hint</button>
+          </div>
+        </div>
       </div>
 
+
+      <div class="reset-game">
+      </div>
       <div id="winner-screen">
       </div>
       <div id="loser-screen">
       </div>
       <div id="hall-of-fame">
+        <div class="ticker-wrapper">
+          <div class="ticker">
+            <div class="ticker-item">test</div>
+          </div>
+        </div>
       </div>
       <div id="master-ending">
       </div>
