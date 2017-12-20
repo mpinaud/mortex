@@ -1,5 +1,5 @@
 #level-2 {
-  background: #001dff;
+  background: #000b5d;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -7,7 +7,7 @@
   align-items: center;
   perspective: 75px;
   @include level-board-size;
-  // display: none;
+  display: none;
 }
 
 // #level-2 {
