@@ -1,5 +1,5 @@
 #level-4 {
-  background: #001dff;
+  background: black;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -26,18 +26,18 @@
 .rings {
   .ring {
     position: absolute;
-    animation: rotate 10000ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite alternate;
+    animation: rotate 500ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite alternate;
     transform-style: preserve-3d;
     .ring_inner {
       border-radius: 0%;
     }
     @for $i from 0 through 30 {
       &:nth-child(#{$i + 1}) .ring_inner {
-        width: $i * 45px;
-        height: $i * 45px;
-        border: 30px solid rgb(255, 0, 178);
-        animation: wave 5000ms $i * 50ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite;
-        filter: blur(100px);
+        width: $i * 90px;
+        height: $i * 30px;
+        border: 30px solid rgb(0, 97, 255);
+        animation: wave 5000ms $i * 150ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite;
+        filter: blur(40px);
       }
     }
   }
