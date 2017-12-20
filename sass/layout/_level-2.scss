@@ -1,5 +1,5 @@
 #level-2 {
-  background: #001dff;
+  background: #000b5d;
   height: 100vh;
   overflow: hidden;
   display: flex;
@@ -12,6 +12,7 @@
 
 // #level-2 {
 //   background-image: url(../img/landscape/ocean.jpg);
+//   @include level-board-size;
 //   // display: none;
 // }
 

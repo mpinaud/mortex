@@ -7,6 +7,7 @@ var previousGameScores = [];
 var amountOfTopScores = 10;
 var topScores = [];
 var round = 1;
+var lives = 0;
 var gameScore = 0;
 var flippedCard = "";
 var numOfMatchedCards = 0;
@@ -72,9 +73,19 @@ function topScore(scoreArray) {
   for (i = 0; i < amountOfTopScores; i++) {
     topScores.push(previousGameScores[i]);
   };
-  //------------Output to top ten-------------INCOMPLETE
+  ticker();
 }
 
+// Ticker Output
+function ticker() {
+  $('.ticker').empty();
+  var i = 1;
+  $('.ticker').append('<span class="ticker-item">Top Scores: </span>');
+  topScores.map(function(topScore) {
+    $('.ticker').append('<span class="ticker-item">#' + i + ': "' + topScore.name + '" '+ topScore.score + '</span>');
+    i++;
+  });
+}
 
 // Game Play Functions-------------INCOMPLETE
 //Toggle Level Visibility
@@ -92,11 +103,11 @@ function toggleLevel(_round) {
 function newRound() {
   playCards = [];
   if (round > 5) {
-    console.log("calling end game")
-    endGame(userName, gameScore);
+    gameEnd("win");
   } else if (round <= 5) {
     cardOutput(round);
     toggleLevel(round);
+    lives = round;
     numOfMatchedCards = 0;
     round++;
   }
@@ -140,6 +151,7 @@ function cardOutput(_round) {
   cardClick();
 }
 
+
 // Turn Play Function ---------- INCOMPLETE
 function cardFlip(card, cardName) {
   if (!flippedCard) {
@@ -152,8 +164,9 @@ function cardFlip(card, cardName) {
       
       gameScore += 7;
       numOfMatchedCards += 2;
-      console.log("match! gameScore=" + gameScore + " & numOfMatchedCards=" + numOfMatchedCards);
+      scoreOutput();
     } else if (cardName !== flippedCard) {
+
       $(card).css('transform', 'rotatey(180deg)');
       setTimeout(function () {
         $(card).css('animation', 'wiggle 0.3s');
@@ -165,31 +178,59 @@ function cardFlip(card, cardName) {
         }, 1000);
       }, 2000);
       console.log("not a match!");
+
+      lives -= 1;
+      // TOGGLE ERROR ANIMATION
+      // FLIP CARDS BACK
+
     }
     flippedCard = "";
   };
-  console.log(flippedCard);
-  if (numOfMatchedCards >= playCards.length) {
-    newRound();
-    console.log("new round")
-  } else if (numOfMatchedCards < playCards.length) {
-    console.log("another turn")
+  turnEnd();
+}
+
+function turnEnd() {
+  if (lives === 0) {
+    console.log("game over")
+    gameEnd("lose");
+  } else if (lives > 0) {
+    if (numOfMatchedCards >= playCards.length) {
+      newRound();
+      console.log("new round")
+    } else if (numOfMatchedCards < playCards.length) {
+      console.log("take another turn")
+    }
   }
 }
 
 // End Game Function
-function endGame(name, score) {
-  previousGameScores.push(new ScoreStore(name, score));
-  topScore(previousGameScores);
-  // send to function to show winner/loser screen -------- INCOMPLETE
+function gameEnd(winOrLose) {
+  if (winOrLose === "win") {
+    previousGameScores.push(new ScoreStore(userName, gameScore));
+    topScore(previousGameScores);
+  };
+  winnerLoserScreen(winOrLose);
 }
 
 // Winner/Loser screen
-function winnerScreen(boolean) {
+function winnerLoserScreen(didWinOrLose) {
   $('.game-board').css('display', 'none');
-  if (boolean) {
-
+  if (didWinOrLose === "win") {
+    alert('"Winner winner, chicken dinner!" - Guy Fieri');
+    $('#winner-screen').css('display', 'flex');
+  } else if (didWinOrLose === "lose") {
+    alert('you idiot! You can\'t remember shit!');
+    $('#loser-screen').css('display', 'flex');
   }
+}
+
+// Score output
+function scoreOutput() {
+  $('#score').html('<h3>Score: ' + gameScore + '</h3>');
+}
+
+function livesOutput() {
+  $('#lives').html('<h3>Lives: ' + lives + '</h3>');
 }
 
 // // // Front end logic // // //
@@ -202,12 +243,13 @@ $(function() {
   $('#new-game-start').submit(function(event) {
     event.preventDefault();
     userName = $('#player-name').val();
+    $('#player').html('<h3>Player: ' + userName + '</h3>');
     gameScore = 0;
     newRound();
   });
 // Play Another Game
   $('#play-again').click(function() {
-    endGame(userName, gameScore);
+    gameEnd(userName, gameScore);
     // output top scores --------------INCOMPLETE
   });
 
