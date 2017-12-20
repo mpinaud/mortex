@@ -6,9 +6,9 @@
 //   @include level-board-size;
 // }
 
-#level-3 {
-  background-image: url(../img/landscape/storm.jpg);
-  
+// #level-3 {
+//   background-image: url(../img/landscape/storm.jpg);
+
 #level-3 {
   background: #19151f;
   overflow: hidden;
@@ -89,8 +89,8 @@ body {
 
 }
 
-// #level-3 {
-//   background-image: url(../img/landscape/storm.jpg);
-//   @include level-board-size;
-//   display: none;
-// }
+#level-3 {
+  background-image: url(../img/landscape/storm.jpg);
+  @include level-board-size;
+  display: none;
+}
