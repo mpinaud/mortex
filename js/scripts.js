@@ -85,8 +85,6 @@ function toggleLevel(_round) {
   } else if ((_round > 1) && (_round <= 5)) {
     $('#level-' + _round).css('display', 'block');
     $('#level-' + (_round - 1)).css('display', 'none');
-  } else if (_round > 5) {
-    console.log('ERROR @function toggleLevel');
   }
 }
 
@@ -154,7 +152,7 @@ function cardFlip(cardName) {
     } else if (cardName !== flippedCard) {
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
-      console.log("not a match!")
+      console.log("not a match!");
     }
     flippedCard = "";
   };
