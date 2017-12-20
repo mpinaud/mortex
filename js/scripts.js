@@ -73,7 +73,18 @@ function topScore(scoreArray) {
   for (i = 0; i < amountOfTopScores; i++) {
     topScores.push(previousGameScores[i]);
   };
-  //------------Output to top ten-------------INCOMPLETE
+  ticker();
+}
+
+// Ticker Output
+function ticker() {
+  $('.ticker').empty();
+  var i = 1;
+  $('.ticker').append('<span class="ticker-item">Top Scores: </span>');
+  topScores.map(function(topScore) {
+    $('.ticker').append('<span class="ticker-item">#' + i + ': "' + topScore.name + '" '+ topScore.score + '</span>');
+    i++;
+  });
 }
 
 
