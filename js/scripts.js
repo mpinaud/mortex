@@ -117,6 +117,7 @@ function findPlayCards(_round) {
 function cardFlip(card, cardName) {
   if (!flippedCard) {
     $(card).css('transform', 'rotatey(180deg)');
+    $(card).off('click');
     flippedCard = cardName;
     cardOne = card;
   } else if (flippedCard) {
@@ -127,6 +128,7 @@ function cardFlip(card, cardName) {
       numOfMatchedCards += 2;
       scoreOutput();
     } else if (cardName !== flippedCard) {
+      cardClick('off');
       $(card).css('transform', 'rotatey(180deg)');
       setTimeout(function () {
         $(card).css('animation', 'wiggle 0.3s');
@@ -135,10 +137,10 @@ function cardFlip(card, cardName) {
           $(card).css('animation', 'none');
           $(cardOne).css('animation', 'none');
           $(".memory-card").css('transform', 'none');
+          cardClick('on');
         }, 1000);
       }, 2000);
       console.log("not a match!");
-
       lives -= 1;
       livesOutput();
       // TOGGLE ERROR ANIMATION
@@ -153,6 +155,7 @@ function turnEnd() {
   if (lives === 0) {
     gameEnd("lose");
   } else if (lives > 0) {
+
     if (numOfMatchedCards >= playCards.length) {
       newRound();
     }
@@ -192,10 +195,16 @@ function ticker() {
 }
 
 // Card Click Listener
-function cardClick() {
-  $('.memory-card').off('click').on('click', function() {
-    cardFlip(this, $(this).find('div').attr('class'));
-  });
+function cardClick(toggle) {
+  if (toggle === 'on') {
+    console.log('click on');
+    $('.memory-card').off('click').on('click', function() {
+      cardFlip(this, $(this).find('div').attr('class'));
+    });
+  } else if (toggle === 'off') {
+    console.log('click off');
+    $('.memory-card').off('click');
+  }
 }
 
 // Card Output
@@ -205,7 +214,7 @@ function cardOutput(_round) {
     $('#level-' + _round + ' .memory-card.card-' + i).append('<div id"card-card" class="' + card.name + '"><div>' + card.svg + '</div></div>');
     i++;
   });
-  cardClick();
+  cardClick('on');
 }
 
 // Winner/Loser screen
@@ -227,7 +236,7 @@ function scoreOutput() {
 
 // Lives output
 function livesOutput() {
-  $('#life').html('<h3>Lives: ' + (lives - 1) + '</h3>');
+  $('#life').html('<h3>Lives: ' + lives + '</h3>');
 }
 
 // Hide Cards
