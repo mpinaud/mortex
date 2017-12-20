@@ -24,9 +24,13 @@
     transition: transform 2s;
     animation: floating $number3 $number1 infinite;
   }
-  .card-#{$i}:active{
-    @include rotate-y(180deg);
-  }
+}
+.flip{
+  @include rotate-y(180deg);
+}
+#card-card {
+  @include rotate-y(0deg);
+  transition: transform 1s;
 }
 
 
@@ -125,19 +129,19 @@ $wheel: black;
 }
 @keyframes wiggle {
   0% {
-    left: 5px;
+    left: 15px;
   }
   25% {
-    left: -5px;
+    left: -15px;
   }
   50% {
-    left: 5px;
+    left: 15px;
   }
   75% {
-    left: -5px;
+    left: -15px;
   }
   100% {
-    left: 5px;
+    left: 15px;
   }
 }
 @keyframes scale {
