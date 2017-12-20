@@ -113,31 +113,65 @@ function findPlayCards(_round) {
   return playCards;
 }
 
+// Card Click Listener
+function cardClick() {
+  $('.memory-card').off('click').on('click', function() {
+    cardFlip(this, $(this).find('div').attr('class'));
+  });
+
+}
+
+// Card Output
+function cardOutput(_round) {
+  var i = 1;
+  findPlayCards(_round).map(function(card) {
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id="card" class=' +  card.name +  '>'+
+                                                                '<figure class="front">1</figure>'+
+                                                                '<figure class="back">' + card.svg + '</figure>'+
+                                                              '</div>');
+    i++;
+  });
+  cardClick();
+}
+//
+
+// Turn Play Function ---------- INCOMPLETE
+function cardFlip(card, cardName) {
+  if (!flippedCard) {
+
 // Turn Play Function ---------- INCOMPLETE
 function cardFlip(card, cardName) {
   if (!flippedCard) {
     $(card).css('transform', 'rotatey(180deg)');
     $(card).off('click');
+    $(card).find('div').addClass('flipped');
+
     flippedCard = cardName;
     cardOne = card;
   } else if (flippedCard) {
     if (cardName === flippedCard) {
+      $(card).find('div').addClass('flipped');
       $(card).css('transform', 'rotatey(180deg)');
       hideCards(cardName);
       gameScore += 7;
       numOfMatchedCards += 2;
       scoreOutput();
+      flippedCard = "";
+      cardOne = "";
     } else if (cardName !== flippedCard) {
+      $(card).find('div').addClass('flipped');
       cardClick('off');
       $(card).css('transform', 'rotatey(180deg)');
+
       setTimeout(function () {
-        $(card).css('animation', 'wiggle 0.3s');
-        $(cardOne).css('animation', 'wiggle 0.3s');
+        $('.memory-card').css('animation', 'wiggle 0.3s');
         setTimeout(function () {
-          $(card).css('animation', 'none');
-          $(cardOne).css('animation', 'none');
-          $(".memory-card").css('transform', 'none');
-          cardClick('on');
+          $('.memory-card').css('animation', 'none');
+          $(card).find('div').removeClass('flipped');
+          $(cardOne).find('div').removeClass('flipped');
+          flippedCard = "";
+          cardOne = "";
+
         }, 1000);
       }, 2000);
       console.log("not a match!");
@@ -146,9 +180,10 @@ function cardFlip(card, cardName) {
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
     }
-    flippedCard = "";
   };
-  turnEnd();
+  setTimeout(function () {
+    turnEnd();
+  }, 4000);
 }
 
 function turnEnd() {
