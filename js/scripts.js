@@ -76,28 +76,7 @@ function topScore(scoreArray) {
   ticker();
 }
 
-// Ticker Output
-function ticker() {
-  $('.ticker').empty();
-  var i = 1;
-  $('.ticker').append('<span class="ticker-item">Top Scores: </span>');
-  topScores.map(function(topScore) {
-    $('.ticker').append('<span class="ticker-item">#' + i + ': "' + topScore.name + '" '+ topScore.score + '</span>');
-    i++;
-  });
-}
-
-// Game Play Functions-------------INCOMPLETE
-//Toggle Level Visibility
-function toggleLevel(_round) {
-  if (_round === 1) {
-    $('#level-' + _round).css('display', 'flex');
-    $('#new-game').css('display', 'none');
-  } else if ((_round > 1) && (_round <= 5)) {
-    $('#level-' + _round).css('display', 'flex');
-    $('#level-' + (_round - 1)).css('display', 'none');
-  }
-}
+// Game Play Functions
 
 // Start Game Function
 function newRound() {
@@ -133,25 +112,6 @@ function findPlayCards(_round) {
   return playCards;
 }
 
-// Card Click Listener
-function cardClick() {
-  $('.memory-card').off('click').on('click', function() {
-    cardFlip(this, $(this).find('div').attr('class'));
-  });
-
-}
-
-// Card Output
-function cardOutput(_round) {
-  var i = 1;
-  findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id"card-card" class="' + card.name + '"><div>' + card.svg + '</div></div>');
-    i++;
-  });
-  cardClick();
-}
-
-
 // Turn Play Function ---------- INCOMPLETE
 function cardFlip(card, cardName) {
   if (!flippedCard) {
@@ -161,12 +121,11 @@ function cardFlip(card, cardName) {
   } else if (flippedCard) {
     if (cardName === flippedCard) {
       $(card).css('transform', 'rotatey(180deg)');
-      
+      hideCards(cardName);
       gameScore += 7;
       numOfMatchedCards += 2;
       scoreOutput();
     } else if (cardName !== flippedCard) {
-
       $(card).css('transform', 'rotatey(180deg)');
       setTimeout(function () {
         $(card).css('animation', 'wiggle 0.3s');
@@ -182,7 +141,6 @@ function cardFlip(card, cardName) {
       lives -= 1;
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
-
     }
     flippedCard = "";
   };
@@ -191,14 +149,10 @@ function cardFlip(card, cardName) {
 
 function turnEnd() {
   if (lives === 0) {
-    console.log("game over")
     gameEnd("lose");
   } else if (lives > 0) {
     if (numOfMatchedCards >= playCards.length) {
       newRound();
-      console.log("new round")
-    } else if (numOfMatchedCards < playCards.length) {
-      console.log("take another turn")
     }
   }
 }
@@ -212,9 +166,49 @@ function gameEnd(winOrLose) {
   winnerLoserScreen(winOrLose);
 }
 
+// // // Front End Functions // // //
+//Toggle Level Visibility
+function toggleLevel(_round) {
+  if (_round === 1) {
+    $('#level-' + _round).css('display', 'flex').addClass('animation-' + _round);
+    $('#new-game').css('display', 'none');
+  } else if ((_round > 1) && (_round <= 5)) {
+    $('#level-' + _round).css('display', 'flex').addClass('animation-' + _round);
+    $('#level-' + (_round - 1)).css('display', 'none').removeClass('animation-' + (_round - 1));
+  }
+}
+
+// Ticker Output
+function ticker() {
+  var i = 1;
+  $('.ticker').empty();
+  $('.ticker').append('<span class="ticker-item">Top Scores: </span>');
+  topScores.map(function(topScore) {
+    $('.ticker').append('<span class="ticker-item">#' + i + ': "' + topScore.name + '" '+ topScore.score + '</span>');
+    i++;
+  });
+}
+
+// Card Click Listener
+function cardClick() {
+  $('.memory-card').off('click').on('click', function() {
+    cardFlip(this, $(this).find('div').attr('class'));
+  });
+}
+
+// Card Output
+function cardOutput(_round) {
+  var i = 1;
+  findPlayCards(_round).map(function(card) {
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id"card-card" class="' + card.name + '"><div>' + card.svg + '</div></div>');
+    i++;
+  });
+  cardClick();
+}
+
 // Winner/Loser screen
 function winnerLoserScreen(didWinOrLose) {
-  $('.game-board').css('display', 'none');
+  $('#level-' + (_round - 1)).css('display', 'none').removeClass('animation-' + (_round - 1));
   if (didWinOrLose === "win") {
     alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
@@ -229,8 +223,14 @@ function scoreOutput() {
   $('#score').html('<h3>Score: ' + gameScore + '</h3>');
 }
 
+// Lives output
 function livesOutput() {
   $('#lives').html('<h3>Lives: ' + lives + '</h3>');
+}
+
+// Hide Cards
+function hideCards(card) {
+  $('.' + card).parent().css('visibility', 'hidden');
 }
 
 // // // Front end logic // // //
