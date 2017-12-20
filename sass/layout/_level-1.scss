@@ -1,7 +1,13 @@
 #level-1 {
   background-image: url(../img/landscape/tron.jpeg);
   @include level-board-size;
-  display: none;
+
+  min-width: 320px;
+  min-height: 320px;
+  height: 100vh;
+  background-color: #220446;
+  overflow: hidden;
+  // display: none;
 }
 
 .level-1-foreground {
@@ -10,14 +16,6 @@
   background-color: #ffffff3d;
   display: flex;
   align-items: center;
-}
-
-#level-1 {
-	min-width: 320px;
-	min-height: 320px;
-	height: 100vh;
-	background-color: #220446;
-	overflow: hidden;
 }
 
 @keyframes wave-y {
