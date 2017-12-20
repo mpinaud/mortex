@@ -133,11 +133,6 @@ function cardOutput(_round) {
   });
   cardClick();
 }
-//
-
-// Turn Play Function ---------- INCOMPLETE
-function cardFlip(card, cardName) {
-  if (!flippedCard) {
 
 // Turn Play Function ---------- INCOMPLETE
 function cardFlip(card, cardName) {
