@@ -1,0 +1,34 @@
+#loser-screen {
+  font-family: 'arcadeclassicregular';
+  h2 {
+    font-size: $font-you-lose;
+    color: white;
+    text-align: center;
+    transform: rotateX(50%);
+    transform: rotateY(50%);
+  }
+  button {
+    width: 100%;
+    height: 50px;
+    font-size: 28px;
+    background-color: hotpink;
+    border-radius: 10px;
+    font-family: 'arcadeclassicregular';
+  }
+  button:hover {
+
+  }
+}
+
+.lose {
+  
+}
+
+@keyframes full-rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
