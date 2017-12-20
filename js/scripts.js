@@ -92,6 +92,7 @@ function toggleLevel(_round) {
 function newRound() {
   playCards = [];
   if (round > 5) {
+    console.log("calling end game")
     endGame(userName, gameScore);
   } else if (round <= 5) {
     cardOutput(round);
@@ -132,7 +133,7 @@ function cardClick() {
 function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="' + card.name + '"<i>' + card.svg + '</i></div>');
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="' + card.name + '"<div>' + card.svg + '</div></div>');
     i++;
   });
   cardClick();
@@ -152,6 +153,7 @@ function cardFlip(cardName) {
     } else if (cardName !== flippedCard) {
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
+      // -1up
       console.log("not a match!");
     }
     flippedCard = "";
@@ -159,6 +161,9 @@ function cardFlip(cardName) {
   console.log(flippedCard);
   if (numOfMatchedCards >= playCards.length) {
     newRound();
+    console.log("new round")
+  } else if (numOfMatchedCards < playCards.length) {
+    console.log("another turn")
   }
 }
 
@@ -166,6 +171,15 @@ function cardFlip(cardName) {
 function endGame(name, score) {
   previousGameScores.push(new ScoreStore(name, score));
   topScore(previousGameScores);
+  // send to function to show winner/loser screen -------- INCOMPLETE
+}
+
+// Winner/Loser screen
+function winnerScreen(boolean) {
+  $('.game-board').css('display', 'none');
+  if (boolean) {
+
+  }
 }
 
 // // // Front end logic // // //
