@@ -87,6 +87,7 @@ function newRound() {
     cardOutput(round);
     toggleLevel(round);
     lives = round;
+    livesOutput();
     numOfMatchedCards = 0;
     round++;
   }
@@ -139,6 +140,7 @@ function cardFlip(card, cardName) {
       console.log("not a match!");
 
       lives -= 1;
+      livesOutput();
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
     }
@@ -184,7 +186,7 @@ function ticker() {
   $('.ticker').empty();
   $('.ticker').append('<span class="ticker-item">Top Scores: </span>');
   topScores.map(function(topScore) {
-    $('.ticker').append('<span class="ticker-item">#' + i + ': "' + topScore.name + '" '+ topScore.score + '</span>');
+    $('.ticker').append('<span class="ticker-item"> - - - - ' + i + ': ' + topScore.name + ' - '+ topScore.score + '</span>');
     i++;
   });
 }
@@ -208,12 +210,12 @@ function cardOutput(_round) {
 
 // Winner/Loser screen
 function winnerLoserScreen(didWinOrLose) {
-  $('#level-' + (_round - 1)).css('display', 'none').removeClass('animation-' + (_round - 1));
+  $('#level-' + (round - 1)).css('display', 'none').removeClass('animation-' + (round - 1));
   if (didWinOrLose === "win") {
     alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
-    alert('you idiot! You can\'t remember shit!');
+    alert('You shit-for-brains! Try harder next time!');
     $('#loser-screen').css('display', 'flex');
   }
 }
@@ -225,7 +227,7 @@ function scoreOutput() {
 
 // Lives output
 function livesOutput() {
-  $('#lives').html('<h3>Lives: ' + lives + '</h3>');
+  $('#life').html('<h3>Lives: ' + (lives - 1) + '</h3>');
 }
 
 // Hide Cards
@@ -238,7 +240,9 @@ $(function() {
 // Local Storage for score
   if (localStorage.previousScores) {
   previousGameScores = JSON.parse(localStorage.previousScores);
-}
+  }
+
+  topScore();
 // New Game
   $('#new-game-start').submit(function(event) {
     event.preventDefault();
@@ -250,7 +254,7 @@ $(function() {
 // Play Another Game
   $('#play-again').click(function() {
     gameEnd(userName, gameScore);
-    // output top scores --------------INCOMPLETE
+    topScore();
   });
 
 // Quit Game
