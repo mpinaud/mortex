@@ -1,7 +1,7 @@
 #level-5 {
   background-image: url(../img/landscape/birds.jpg);
   @include level-board-size;
-  // display: none;
+  display: none;
   overflow: hidden;
 }
 
