@@ -3,6 +3,7 @@
   overflow: hidden;
   perspective: 75px;
   @include level-board-size;
+  display: none;
 }
 
 // #level-3 {
