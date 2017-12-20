@@ -148,38 +148,32 @@ function cardFlip(card, cardName) {
 
     flippedCard = cardName;
     cardOne = card;
+    turnEnd();
   } else if (flippedCard) {
     if (cardName === flippedCard) {
-      $(card).find('div').addClass('flipped');
       $(card).css('transform', 'rotatey(180deg)');
-      hideCards(cardName);
-      gameScore += 7;
-      numOfMatchedCards += 2;
-      scoreOutput();
-      flippedCard = "";
-      cardOne = "";
+      setTimeout(function() {
+        hideCards(cardName);
+        gameScore += 7;
+        numOfMatchedCards += 2;
+        scoreOutput();
+        turnEnd();
+      }, 2000);
     } else if (cardName !== flippedCard) {
-      $(card).find('div').addClass('flipped');
+      lives -= 1;
       cardClick('off');
       $(card).css('transform', 'rotatey(180deg)');
-
       setTimeout(function () {
         $('.memory-card').css('animation', 'wiggle 0.3s');
         setTimeout(function () {
           $('.memory-card').css('animation', 'none');
-          $(card).find('div').removeClass('flipped');
-          $(cardOne).find('div').removeClass('flipped');
-          flippedCard = "";
-          cardOne = "";
-
         }, 1000);
+        turnEnd();
+        console.log("not a match!");
       }, 2000);
-      console.log("not a match!");
-      lives -= 1;
-      livesOutput();
-      // TOGGLE ERROR ANIMATION
-      // FLIP CARDS BACK
     }
+    livesOutput();
+    flippedCard = "";
   };
   setTimeout(function () {
     turnEnd();
@@ -190,7 +184,6 @@ function turnEnd() {
   if (lives === 0) {
     gameEnd("lose");
   } else if (lives > 0) {
-
     if (numOfMatchedCards >= playCards.length) {
       newRound();
     }
