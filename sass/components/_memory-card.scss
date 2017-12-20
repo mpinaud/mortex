@@ -39,8 +39,8 @@
   .memory-card {
     position: relative;
     perspective: 800px;
-    width: 50px;
-    min-height: 75px;
+    width: 86px;
+    min-height: 125px;
     @include card-flex-style;
   }
 }
