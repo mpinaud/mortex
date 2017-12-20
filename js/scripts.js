@@ -87,7 +87,6 @@ function ticker() {
   });
 }
 
-
 // Game Play Functions-------------INCOMPLETE
 //Toggle Level Visibility
 function toggleLevel(_round) {
