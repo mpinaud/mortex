@@ -7,6 +7,7 @@ var previousGameScores = [];
 var amountOfTopScores = 10;
 var topScores = [];
 var round = 1;
+var lives = 0;
 var gameScore = 0;
 var flippedCard = "";
 var numOfMatchedCards = 0;
@@ -92,11 +93,11 @@ function toggleLevel(_round) {
 function newRound() {
   playCards = [];
   if (round > 5) {
-    console.log("calling end game")
-    endGame(userName, gameScore);
+    gameEnd("win");
   } else if (round <= 5) {
     cardOutput(round);
     toggleLevel(round);
+    lives = round;
     numOfMatchedCards = 0;
     round++;
   }
@@ -139,7 +140,7 @@ function cardOutput(_round) {
   cardClick();
 }
 
-// Turn Play Function ---------- INCOMPLETE
+// Turn Play Functions ---------- INCOMPLETE
 function cardFlip(cardName) {
   if (!flippedCard) {
     // TOGGLE CARD FLIP ANIMATION
@@ -149,36 +150,49 @@ function cardFlip(cardName) {
       // TOGGLE CARD VISIBILITY BY CLASS
       gameScore += 7;
       numOfMatchedCards += 2;
-      console.log("match! gameScore=" + gameScore + " & numOfMatchedCards=" + numOfMatchedCards);
     } else if (cardName !== flippedCard) {
+      lives -= 1;
+      // Output new number of 1ups to screen, maybe error message?
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
-      // -1up
-      console.log("not a match!");
     }
     flippedCard = "";
   };
-  console.log(flippedCard);
-  if (numOfMatchedCards >= playCards.length) {
-    newRound();
-    console.log("new round")
-  } else if (numOfMatchedCards < playCards.length) {
-    console.log("another turn")
+  turnEnd();
+}
+
+function turnEnd() {
+  if (lives === 0) {
+    console.log("game over")
+    gameEnd("lose");
+  } else if (lives > 0) {
+    if (numOfMatchedCards >= playCards.length) {
+      newRound();
+      console.log("new round")
+    } else if (numOfMatchedCards < playCards.length) {
+      console.log("take another turn")
+    }
   }
 }
 
 // End Game Function
-function endGame(name, score) {
-  previousGameScores.push(new ScoreStore(name, score));
-  topScore(previousGameScores);
-  // send to function to show winner/loser screen -------- INCOMPLETE
+function gameEnd(winOrLose) {
+  if (winOrLose === "win") {
+    previousGameScores.push(new ScoreStore(userName, gameScore));
+    topScore(previousGameScores);
+  };
+  winnerLoserScreen(winOrLose);
 }
 
 // Winner/Loser screen
-function winnerScreen(boolean) {
+function winnerLoserScreen(didWinOrLose) {
   $('.game-board').css('display', 'none');
-  if (boolean) {
-
+  if (didWinOrLose === "win") {
+    alert('"Winner winner, chicken dinner!" - Guy Fieri');
+    $('#winner-screen').css('display', 'flex');
+  } else if (didWinOrLose === "lose") {
+    alert('you idiot! You can\'t remember shit!');
+    $('#loser-screen').css('display', 'flex');
   }
 }
 
@@ -197,7 +211,7 @@ $(function() {
   });
 // Play Another Game
   $('#play-again').click(function() {
-    endGame(userName, gameScore);
+    gameEnd(userName, gameScore);
     // output top scores --------------INCOMPLETE
   });
 
