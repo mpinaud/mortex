@@ -160,9 +160,9 @@ function cardFlip(cardName) {
       // TOGGLE CARD VISIBILITY BY CLASS
       gameScore += 7;
       numOfMatchedCards += 2;
+      scoreOutput();
     } else if (cardName !== flippedCard) {
       lives -= 1;
-      // Output new number of 1ups to screen, maybe error message?
       // TOGGLE ERROR ANIMATION
       // FLIP CARDS BACK
     }
@@ -206,6 +206,15 @@ function winnerLoserScreen(didWinOrLose) {
   }
 }
 
+// Score output
+function scoreOutput() {
+  $('#score').html('<h3>Score: ' + gameScore + '</h3>');
+}
+
+function livesOutput() {
+  $('#lives').html('<h3>Lives: ' + lives + '</h3>');
+}
+
 // // // Front end logic // // //
 $(function() {
 // Local Storage for score
@@ -216,6 +225,7 @@ $(function() {
   $('#new-game-start').submit(function(event) {
     event.preventDefault();
     userName = $('#player-name').val();
+    $('#player').html('<h3>Player: ' + userName + '</h3>');
     gameScore = 0;
     newRound();
   });
