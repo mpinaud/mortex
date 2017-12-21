@@ -11,6 +11,7 @@ var lives = 0;
 var gameScore = 0;
 var flippedCard = "";
 var numOfMatchedCards = 0;
+var hints = 5;
 
 // Stored Scores Constructor
 function ScoreStore(name, score) {
@@ -113,39 +114,19 @@ function findPlayCards(_round) {
   return playCards;
 }
 
-// Card Click Listener
-function cardClick() {
-  $('.memory-card').off('click').on('click', function() {
-    cardFlip(this, $(this).find('div').attr('class'));
-  });
-
-}
-
-// Card Output
-function cardOutput(_round) {
-  var i = 1;
-  findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id="card" class=' +  card.name +  '>'+
-                                                                '<figure class="front">1</figure>'+
-                                                                '<figure class="back">' + card.svg + '</figure>'+
-                                                              '</div>');
-    i++;
-  });
-  cardClick();
-}
-
 // Turn Play Function ---------- INCOMPLETE
-function cardFlip(card, cardName) {
+function cardFlip(cardFlipMe, cardName) {
+  console.log(cardName);
+  console.log(cardFlipMe);
   if (!flippedCard) {
-    $(card).css('transform', 'rotatey(180deg)');
-    $(card).off('click');
-
+    $(cardFlipMe).css('transform', 'rotatey(180deg)');
+    $(cardFlipMe).off('click');
     flippedCard = cardName;
-    cardOne = card;
+    cardOne = cardFlipMe;
     turnEnd();
   } else if (flippedCard) {
     if (cardName === flippedCard) {
-      $(card).css('transform', 'rotatey(180deg)');
+      $(cardFlipMe).css('transform', 'rotatey(180deg)');
       setTimeout(function() {
         hideCards(cardName);
         gameScore += 7;
@@ -153,27 +134,33 @@ function cardFlip(card, cardName) {
         scoreOutput();
         turnEnd();
       }, 2000);
+      cardOne = "";
+      flippedCard = "";
     } else if (cardName !== flippedCard) {
       lives -= 1;
       cardClick('off');
-      $(card).css('transform', 'rotatey(180deg)');
+      $(cardFlipMe).css('transform', 'rotatey(180deg)');
       setTimeout(function () {
         $('.memory-card').css('animation', 'wiggle 0.3s');
         setTimeout(function () {
           $('.memory-card').css('animation', 'none');
+          $(".memory-card").css('transform', 'rotatey(0deg)');
         }, 1000);
         cardClick('on');
         turnEnd();
-        console.log("not a match!");
+        livesOutput();
       }, 2000);
+      cardOne = "";
+      flippedCard = "";
+      turnEnd();
     }
-    livesOutput();
+    cardOne = "";
     flippedCard = "";
+    livesOutput();
   };
 }
 
 function turnEnd() {
-  console.log("turn-end");
   if (lives === 0) {
     gameEnd("lose");
   } else if (lives > 0) {
@@ -204,6 +191,20 @@ function toggleLevel(_round) {
   }
 }
 
+// // Card Output
+// function cardOutput(_round) {
+//   var i = 1;
+//   findPlayCards(_round).map(function(card) {
+//     $('#level-' + _round + ' .memory-card.card-' + i).append('<div id="card" class=' + card.name + '>' +
+//                                                                '<figure class="front">1</figure>' +
+//                                                                '<figure class="back">' + card.svg + '</figure>' +
+//                                                              '</div>'
+//                                                            );
+//     i++;
+//   });
+//   cardClick('on');
+// }
+
 // Ticker Output
 function ticker() {
   var i = 1;
@@ -220,7 +221,7 @@ function cardClick(toggle) {
   if (toggle === 'on') {
     console.log('click on');
     $('.memory-card').off('click').on('click', function() {
-      cardFlip(this, $(this).find('div').attr('class'));
+      cardFlip($(this).find('section').attr('class'), $(this).find('section figure').attr('class'));
     });
   } else if (toggle === 'off') {
     console.log('click off');
@@ -228,11 +229,15 @@ function cardClick(toggle) {
   }
 }
 
-// Card Output
+
+// Card Output' + card.svg + '
 function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<div id"card-card" class="' + card.name + '"><div>' + card.svg + '</div></div>');
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<section class="card">'+
+                                                                '<figure class="' + card.name + '">me myself and i</figure>'+
+                                                                '<figure>' + card.svg + '</figure>'+
+                                                              '</section>');
     i++;
   });
   cardClick('on');
@@ -245,8 +250,7 @@ function winnerLoserScreen(didWinOrLose) {
     alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
-    alert('You shit-for-brains! Try harder next time!');
-    $('#loser-screen').css('display', 'flex');
+    $('#loser-screen').css('display', 'flex').addClass('animation-loser');
   }
 }
 
@@ -286,12 +290,17 @@ $(function() {
     gameEnd(userName, gameScore);
     topScore();
   });
-
-// Quit Game
-})
-
 //Hint button
-$('#hint-button').submit(function() {
-  alert("hello");
+  $('button#hint-button').click(function() {
+    if (hints === 0) {
+      alert("you're out of hints");
+    } else {
+      hints += -1;
+      $('.card').css('animation', 'rotatey 5s');
+      setTimeout(function () {
+        $('.card').css('animation', 'none');
+      }, 5000);
+    }
+  });
+// Quit Game
 });
-// (round).css('animation', 'rotate-right');

@@ -173,3 +173,12 @@ $wheel: black;
     transform: rotate(360deg);
   }
 }
+
+@keyframes rotatey {
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
