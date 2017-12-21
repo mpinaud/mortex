@@ -121,7 +121,6 @@ function cardFlip(cardMain, figure, flippingCard) {
   if (!flippedCard) {
     $(flippingCard).off('click').css('transform', 'rotatey(180deg)');
     flippedCard = figure;
-    turnEnd();
   } else if (flippedCard) {
     if (figure === flippedCard) {
       cardClick('off');
@@ -132,6 +131,7 @@ function cardFlip(cardMain, figure, flippingCard) {
         numOfMatchedCards += 2;
         scoreOutput();
         turnEnd();
+        // cardClick('on');
       }, 300);
       flippedCard = "";
     } else if (figure !== flippedCard) {
@@ -143,13 +143,12 @@ function cardFlip(cardMain, figure, flippingCard) {
         setTimeout(function () {
           $('.card').css('animation', 'none');
           $('.card').css('transform', 'rotatey(0deg)');
+          setTimeout(function() {
+            turnEnd();
+          }, 300);
         }, 1000);
-        cardClick('on');
-        turnEnd();
         livesOutput();
       }, 1000);
-      flippedCard = "";
-      turnEnd();
     }
     flippedCard = "";
     livesOutput();
@@ -163,6 +162,8 @@ function turnEnd() {
   } else if (lives > 0) {
     if (numOfMatchedCards >= playCards.length) {
       newRound();
+    } else if (numOfMatchedCards < playCards.length) {
+      cardClick('on');
     }
   }
 }
