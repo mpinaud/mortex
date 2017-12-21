@@ -12,16 +12,6 @@
   height: 66%;
 }
 
-body {
-  background: black;
-  height: 100vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  perspective: 75px;
-}
-
 .animation-3 {
   .rings-three {
     .ring-three {
@@ -75,11 +65,4 @@ body {
       transform: translateZ(2px);
     }
   }
-
-}
-
-#level-3 {
-  background-image: url(../img/landscape/storm.jpg);
-  @include level-board-size;
-  display: none;
 }
