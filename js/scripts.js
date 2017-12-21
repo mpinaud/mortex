@@ -289,3 +289,9 @@ $(function() {
 
 // Quit Game
 })
+
+//Hint button
+$('.hint-button').click(function() {
+  alert("hello");
+});
+// (round).css('animation', 'rotate-right');
