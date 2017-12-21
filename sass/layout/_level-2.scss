@@ -1,11 +1,11 @@
 #level-2 {
+  @include level-board-size;
   background: #000b5d;
   height: 100vh;
   overflow: hidden;
   justify-content: center;
   align-items: center;
   perspective: 75px;
-  @include level-board-size;
   display: none;
 }
 
