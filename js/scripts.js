@@ -119,10 +119,8 @@ function cardFlip(cardMain, figure, flippingCard) {
   console.log(cardMain);
   console.log(figure);
   if (!flippedCard) {
-    $(cardMain).off('click');
-    $(flippingCard).css('transform', 'rotatey(180deg)');
+    $(flippingCard).off('click').css('transform', 'rotatey(180deg)');
     flippedCard = figure;
-    cardOne = cardMain;
     turnEnd();
   } else if (flippedCard) {
     if (figure === flippedCard) {
@@ -136,7 +134,6 @@ function cardFlip(cardMain, figure, flippingCard) {
         turnEnd();
         cardClick('on');
       }, 300);
-      cardOne = "";
       flippedCard = "";
     } else if (figure !== flippedCard) {
       lives -= 1;
@@ -152,11 +149,9 @@ function cardFlip(cardMain, figure, flippingCard) {
         turnEnd();
         livesOutput();
       }, 1000);
-      cardOne = "";
       flippedCard = "";
       turnEnd();
     }
-    cardOne = "";
     flippedCard = "";
     livesOutput();
   };
