@@ -34,5 +34,11 @@
   div {
     z-index: 2;
     transform: rotateY(0deg);
+    background-color: white;
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
+
 }

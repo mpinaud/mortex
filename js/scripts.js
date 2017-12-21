@@ -217,7 +217,7 @@ function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
     $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="card">' +
-                                                                '<div>' + card.name + '</div>' +
+                                                                '<div><img src="img/eye.png"></div>' +
                                                                 '<figure id="round-' + _round + '-card-' + i + '-figure" class="' + card.name + '">' + card.svg + '</figure>'+
                                                               '</div>');
     $('.' + card.name).css('background', card.background);
