@@ -11,6 +11,7 @@ var lives = 0;
 var gameScore = 0;
 var flippedCard = "";
 var numOfMatchedCards = 0;
+var hints = 5;
 
 // Stored Scores Constructor
 function ScoreStore(name, score) {
@@ -227,6 +228,7 @@ function cardOutput(_round) {
                                                               '</div>');
     i++;
   });
+
   setTimeout(function() {
     $('div.card').css('transform', 'rotateY(180deg)');
     setTimeout(function() {
@@ -236,6 +238,7 @@ function cardOutput(_round) {
       }, 300);
     }, 3000);
   }, 500);
+
 }
 
 // Winner/Loser screen
@@ -285,6 +288,17 @@ $(function() {
     gameEnd(userName, gameScore);
     topScore();
   });
-
+//Hint button
+  $('button#hint-button').click(function() {
+    if (hints === 0) {
+      alert("you're out of hints");
+    } else {
+      hints += -1;
+      $('.card').css('animation', 'rotatey 7000ms');
+      setTimeout(function () {
+        $('.card').css('animation', 'none');
+      }, 7000);
+    }
+  });
 // Quit Game
-})
+});
