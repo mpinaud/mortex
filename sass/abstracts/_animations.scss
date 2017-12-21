@@ -162,7 +162,7 @@ $wheel: black;
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-320deg);
+    transform: rotate(-360deg);
   }
 }
 @keyframes rotate-right {
@@ -171,5 +171,14 @@ $wheel: black;
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes rotatey {
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(360deg);
   }
 }

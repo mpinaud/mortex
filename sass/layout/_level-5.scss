@@ -8,11 +8,12 @@
   overflow: hidden;
   display: none;
 }
-
+.round-five-cards {
+  animation: rotate-left 40s linear infinite;
+}
 .level-5-foreground {
   width: 69%;
   height: 66%;
-  background-color: #ffffff3d;
   display: flex;
   align-items: center;
 }

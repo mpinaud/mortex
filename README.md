@@ -15,7 +15,6 @@ _This application is a demonstration of using CSS and JavaScript, including SASS
 * Perform Git atom . command to open all files in repo.
 * View index.html in browser.
 * No other setup or install necessary.
-* Or [click here]() to view in browser now.
 
 ## Specs
 
@@ -23,25 +22,21 @@ _The app will allow a player to enter a player name._
 * _Example Input: Player enters name._
 * _Example Output: Player's name is saved by game._
 
-_The game will indicate what round it is. There are 4 rounds._
+_The game will indicate what round it is. There are 5 rounds._
 * _Example Input: Game displays that it is Round 1._
 * _Example Output: round 1 is displayed._
 
-_For Round 1, the game displays 4 cards on dashboard._
+_For Round 1, the game displays 2 cards on dashboard._
 * _Example Input: Round 1 has begun._
-* _Example Output: Four cards are displayed facedown on game dash._
+* _Example Output: Two cards are displayed facedown on game dash._
 
 _When user clicks on card, card flips over._
 * _Example Input: User clicks on memory card._
 * _Example Output: Card that is clicked, flips over to reveal graphic._
 
-_The game will include a countdown animation when cards are flipped._
-* _Example Input: Player clicks on card._
-* _Example Output: Game gives player 3 seconds to view flipped cards._
-
 _When user clicks on second card, second card flips over and match is successful._
 * _Example Input: User clicks on second memory card._
-* _Example Output: Second card that is clicked, flips over to reveal graphic. If match is successful, player gets a point and cards fly off the screen._
+* _Example Output: Second card that is clicked, flips over to reveal graphic. If match is successful, player gets points and cards fly off the screen._
 
 _Or, when user clicks on second card, second card flips over and match is unsuccessful._
 * _Example Input: User clicks on second memory card._
@@ -55,23 +50,22 @@ _When player loses or wins game, a screen fades in or is displayed with player s
 * _Example Input: User clicks on memory card and match is incorrect._
 * _Example Output: After player makes an incorrect match 4 times, player loses game._
 
-_The app will allow for 4 rounds (4 cards, 8 cards, 16 cards, 32 cards)._
+_The app will allow for 5 rounds (2 cards, 4 cards, 8 cards, 16 cards, 32 cards)._
 * _Example Input: After player completes a round, the next round begins._
 * _Example Output: When player has successfully completed the round of play and matched all cards, player advances to next round._
 
 _The app will keep score of game._
 * _Example Input: Game will display a scoreboard._
-* _Example Output: For each match of cards, player receives 13 points. For not using Hints, player receives 101 points._
+* _Example Output: For each match of cards, player receives 13 points. For not using Hints, player receives 101 points. There is a max of 217 points for the highest score._
 
 _The app will include a Hints feature._
 * _Example Input: Player clicks on hint feature button._
 * _Example Output: Once hints is clicked, game will rotate cards 360 degrees for a sneak peek view._
 
+## Extra Features - non-MVP
 _For mobile device play, game will be displayed in landscape mode only._
 * _Example Input: Player plays game on phone._
 * _Example Output: Game is playable only on landscape mode._
-
-## Extra Features - non-MVP
 
 _The app will include modes of play (easy, medium, difficult)._
 * _Example Input: Game will display an area to play different levels._
@@ -87,7 +81,7 @@ _The app will include an Easter Egg scene._
 
 ## Known Bugs
 
-_Text_
+
 
 ## Support and contact details
 

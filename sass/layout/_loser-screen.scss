@@ -1,7 +1,7 @@
 #loser-screen {
   @include level-board-size;
   font-family: 'arcadeclassicregular';
-  // display: none;
+  display: none;
   .loser-text {
     width: 2081px;
     height: 715px;
