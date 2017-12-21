@@ -240,7 +240,6 @@ function cardOutput(_round) {
 function winnerLoserScreen(didWinOrLose) {
   $('#level-' + (round - 1)).css('display', 'none').removeClass('animation-' + (round - 1));
   if (didWinOrLose === "win") {
-    alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
     $('#loser-screen').css('display', 'flex').addClass('animation-loser');
@@ -279,9 +278,9 @@ $(function() {
     newRound();
   });
 // Play Another Game
-  $('#play-again').click(function() {
-    gameEnd(userName, gameScore);
-    topScore();
+  $('.reset-button').click(function() {
+    gameEnd('win');
+    location.reload();
   });
 //Hint button
   $('button#hint-button').click(function() {
