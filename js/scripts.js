@@ -291,7 +291,7 @@ $(function() {
 })
 
 //Hint button
-$('.hint-button').click(function() {
+$('#hint-button').submit(function() {
   alert("hello");
 });
 // (round).css('animation', 'rotate-right');
