@@ -20,30 +20,29 @@ function ScoreStore(name, score) {
 }
 
 // Card Constructor
-function Card(name, color, background, svg) {
+function Card(name, background, svg) {
   this.name = name;
-  this.color = color;
   this.background = background;
   this.svg = svg;
 }
 
 // Cards
-deckOfCards.push(new Card('bacteria', fill="#239D60", '#F7F39A', '<img src="img/svg/bacteria.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('beaks', fill="#FAFAFA", '#7C73E6', '<img src="img/svg/beaks.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('blink', fill="#D02E77", '#FFFEE6', '<img src="img/svg/blink.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('bug', fill="#6DB193", '#323232', '<img src="img/svg/bug.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('diamond', fill="#FFF1C1", '#78B7BB', '<img src="img/svg/diamond-catcher.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('eye', fill="#0881A3", '#FFFDFB', '<img src="img/svg/eye-diamond.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('flower', fill="#00B8C0", '#1B3C68', '<img src="img/svg/flower.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('foureyes', fill="#0074E4", '#E9FFB2', '<img src="img/svg/four-eyes.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('qbert', fill="#D9FAFF", '#005792', '<img src="img/svg/q-bert.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('rain', fill="#CC376D", '#D1F386', '<img src="img/svg/rain.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('space', fill="#FF5C5C", '#FFE5B9', '<img src="img/svg/space-station.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('square', fill="#8AAE92", '#F4F9F4', '<img src="img/svg/square-vortex.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('sunray', fill="#259F6C", '#FAFCD6', '<img src="img/svg/sunray.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('tongue', fill="#F67280", '#6C5B7B', '<img src="img/svg/tongue.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('triangle', fill="#FFDC76", '#4A2C2C', '<img src="img/svg/triangle-.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('wave', fill="#ECECEC", '#4D4D4D', '<img src="img/svg/wave.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('bacteria', '#F75940', '<img src="img/svg/bacteria.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('beaks', '#F677C1', '<img src="img/svg/beaks.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('blink', '#8BC34A', '<img src="img/svg/blink.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('bug', '#FC3A52', '<img src="img/svg/bug.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('diamond', '#2CA4BF', '<img src="img/svg/diamond-catcher.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('eye', '#FFFDFB', '<img src="img/svg/eye-diamond.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('flower', '#EE046C', '<img src="img/svg/flower.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('foureyes', '#DD105E', '<img src="img/svg/four-eyes.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('qbert', '#FFAF00', '<img src="img/svg/q-bert.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('rain', '#28CC9E', '<img src="img/svg/rain.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('space', '#40A798', '<img src="img/svg/space-station.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('square', '#FFF200', '<img src="img/svg/square-vortex.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('sunray', '#C327AB', '<img src="img/svg/sunray.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('tongue', '#0881A3', '<img src="img/svg/tongue.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('triangle', '#F86254', '<img src="img/svg/triangle-.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('wave', '#DC4712', '<img src="img/svg/wave.svg" alt="Memory card image">'));
 
 // Default Previous Scores
 previousGameScores.push(new ScoreStore('Jerry', 1000));
