@@ -71,17 +71,4 @@
       transform: translateZ(2px);
     }
   }
-@keyframes wave-y {
 
-  // 0%,
-  // 40%,
-  80% {
-    transform: scaleX(1) scaleY(1);
-  }
-
-  // 20%,
-  // 60%,
-  100% {
-    transform: scaleX(1.2) scaleY(1.3);
-  }
-}
