@@ -29,12 +29,10 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: blue;
     transform: rotateY(180deg);
   }
   div {
     z-index: 2;
     transform: rotateY(0deg);
-    background-color: red;
   }
 }

@@ -10,7 +10,6 @@ body {
 }
 
 #sky {
-  // position: relative;
   z-index: 99;
   height: 275px;
   perspective: 5000px;
@@ -19,6 +18,7 @@ body {
   div {
     transform-style: preserve-3d;
   }
+
   .card-winner {
     animation: flyWinner 10000ms linear infinite;
     &_head-winner {
@@ -40,6 +40,7 @@ body {
   }
 }
 
+
 @keyframes flyWinner {
   0% {
     transform: rotateX(-120deg) rotateZ(0deg) rotateX(10deg);
@@ -60,6 +61,7 @@ body {
       transform: translate3d(-100%, 0, 0);
       }
   }
+
 
     .ticker-wrapper-winner {
     height: 30em;
@@ -109,6 +111,7 @@ body {
     }
   }
 }
+
 
 @keyframes rotateWinner {
   0% {

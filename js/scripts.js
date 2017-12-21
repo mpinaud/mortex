@@ -20,30 +20,29 @@ function ScoreStore(name, score) {
 }
 
 // Card Constructor
-function Card(name, color, background, svg) {
+function Card(name, background, svg) {
   this.name = name;
-  this.color = color;
   this.background = background;
   this.svg = svg;
 }
 
 // Cards
-deckOfCards.push(new Card('bacteria', 'red', 'white', '<img src="img/svg/bacteria.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('beaks', 'red', 'white', '<img src="img/svg/beaks.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('blink', 'red', 'white', '<img src="img/svg/blink.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('bug', 'red', 'white', '<img src="img/svg/bug.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('diamond', 'red', 'white', '<img src="img/svg/diamond-catcher.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('eye', 'red', 'white', '<img src="img/svg/eye-diamond.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('flower', 'red', 'white', '<img src="img/svg/flower.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('foureyes', 'red', 'white', '<img src="img/svg/four-eyes.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('qbert', 'red', 'white', '<img src="img/svg/q-bert.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('rain', 'red', 'white', '<img src="img/svg/rain.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('space', 'red', 'white', '<img src="img/svg/space-station.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('square', 'red', 'white', '<img src="img/svg/square-vortex.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('sunray', 'red', 'white', '<img src="img/svg/sunray.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('tongue', 'red', 'white', '<img src="img/svg/tongue.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('triangle', 'red', 'white', '<img src="img/svg/triangle-.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('wave', 'red', 'white', '<img src="img/svg/wave.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('bacteria', '#F75940', '<img src="img/svg/bacteria.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('beaks', '#F677C1', '<img src="img/svg/beaks.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('blink', '#8BC34A', '<img src="img/svg/blink.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('bug', '#FC3A52', '<img src="img/svg/bug.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('diamond', '#2CA4BF', '<img src="img/svg/diamond-catcher.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('eye', '#FFFDFB', '<img src="img/svg/eye-diamond.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('flower', '#EE046C', '<img src="img/svg/flower.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('foureyes', '#DD105E', '<img src="img/svg/four-eyes.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('qbert', '#FFAF00', '<img src="img/svg/q-bert.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('rain', '#28CC9E', '<img src="img/svg/rain.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('space', '#40A798', '<img src="img/svg/space-station.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('square', '#FFF200', '<img src="img/svg/square-vortex.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('sunray', '#C327AB', '<img src="img/svg/sunray.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('tongue', '#0881A3', '<img src="img/svg/tongue.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('triangle', '#F86254', '<img src="img/svg/triangle-.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('wave', '#DC4712', '<img src="img/svg/wave.svg" alt="Memory card image">'));
 
 // Default Previous Scores
 previousGameScores.push(new ScoreStore('Jerry', 1000));
@@ -219,8 +218,10 @@ function cardOutput(_round) {
   findPlayCards(_round).map(function(card) {
     $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="card">' +
                                                                 '<div>' + card.name + '</div>' +
-                                                                '<figure class="' + card.name + '">' + card.svg + '</figure>'+
+                                                                '<figure id="round-' + _round + '-card-' + i + '-figure" class="' + card.name + '">' + card.svg + '</figure>'+
                                                               '</div>');
+    $('.' + card.name).css('background', card.background);
+    $
     i++;
   });
 
@@ -233,14 +234,12 @@ function cardOutput(_round) {
       }, 300);
     }, 3000);
   }, 500);
-
 }
 
 // Winner/Loser screen
 function winnerLoserScreen(didWinOrLose) {
   $('#level-' + (round - 1)).css('display', 'none').removeClass('animation-' + (round - 1));
   if (didWinOrLose === "win") {
-    alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
     $('#loser-screen').css('display', 'flex').addClass('animation-loser');
