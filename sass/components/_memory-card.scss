@@ -1,10 +1,11 @@
 #level-1 {
-  transform-origin: right center;
+  // transform-origin: right center;
   .memory-card {
     position: relative;
-    perspective: 800px;
+    perspective: 1200px;
     width: 250px;
     min-height: 350px;
+    height: 350px;
     @include card-flex-style;
   }
 }
@@ -12,36 +13,40 @@
 #level-2 {
   .memory-card {
     position: relative;
-    perspective: 800px;
+    perspective: 1200px;
     width: 250px;
     min-height: 350px;
+    height: 350px;
     @include card-flex-style;
   }
 }
 #level-3 {
   .memory-card {
     position: relative;
-    perspective: 800px;
+    perspective: 1200px;
     width: 250px;
     min-height: 350px;
+    height: 350px;
     @include card-flex-style;
   }
 }
 #level-4 {
   .memory-card {
     position: relative;
-    perspective: 800px;
+    perspective: 1200px;
     width: 140px;
     min-height: 200px;
+    height: 200px;
     @include card-flex-style;
   }
 }
 #level-5 {
   .memory-card {
     position: relative;
-    perspective: 800px;
+    perspective: 1200px;
     width: 86px;
     min-height: 125px;
+    height: 125px;
     @include card-flex-style;
   }
 }

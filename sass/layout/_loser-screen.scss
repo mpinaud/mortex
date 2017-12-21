@@ -28,6 +28,7 @@
     padding: 5px;
     font-family: 'arcadeclassicregular';
   }
+
 }
 
 @keyframes full-rotate {
@@ -40,7 +41,7 @@
 }
 
 body {
-  background: red;
+  // background: red;
   height: 100vh;
   overflow: hidden;
   display: flex;
