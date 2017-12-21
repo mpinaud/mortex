@@ -1,142 +1,144 @@
-// body {
-//   background: white;
-//   height: 100vh;
-//   overflow: hidden;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   perspective: 75px;
-// }
-//
-// #sky {
-//   z-index: 99;
-//   height: 900px;
-//   perspective: 700px;
-//   filter: drop-shadow(0px 250px 10px rgba(0, 0, 0, 0.2));
-//
-//   div {
-//     transform-style: preserve-3d;
-//   }
-//   .card {
-//     animation: fly 10000ms linear infinite;
-//     &_head {
-//       height: 200px;
-//       width: 300px;
-//       border-right: 400px solid;
-//       border-bottom: 200px solid black;
-//       border-left: 15px solid;
-//       transform-origin: 100% 100%;
-//       transform: rotateX(-50deg);
-//     }
-//   }
-//   .credits {
-//     font-size: 70px;
-//     color: red;
-//     transform: rotateX(-180deg);
-//     height: 100%;
-//     width: 1200px;
-//   }
-// }
-//
-// @keyframes fly {
-//   0% {
-//     transform: rotateX(-120deg) rotateZ(0deg) rotateX(10deg);
-//   }
-//   100% {
-//     transform: rotateX(-120deg) rotateZ(360deg) rotateX(10deg);
-//   }
-// }
-//
-// #credits {
-//
-//   @keyframes scroll {
-//     0% {
-//       transform: translate3d(0, 0, 0);
-//       visibility: visible;
-//     }
-//     100% {
-//       transform: translate3d(-100%, 0, 0);
-//       }
-//   }
-//
-//     .ticker-wrapper {
-//     height: 30em;
-//     width: 100%;
-//     overflow: hidden;
-//     background-color: black;
-//     position: fixed;
-//     bottom: 0;
-//     left: 0;
-//     right: 0;
-//   }
-//
-//   .ticker {
-//     display: inline-block;
-//     height: 0px;
-//     white-space: nowrap;
-//     animation: scroll 30s linear infinite;
-//     padding-left: 100%;
-//   }
-//
-//   .ticker-item {
-//     transform: rotateX(-180deg);
-//     color: white;
-//     display: inline-block;
-//     font-size: 300px;
-//   }
-// }
-//
-// // BACKGROUND //
-// .rings {
-//   .ring {
-//     right: 0;
-//     position: absolute;
-//     animation: rotate 10000ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite alternate;
-//     transform-style: preserve-3d;
-//     .ring_inner {
-//       border-radius: 100%;
-//     }
-//     @for $i from 0 through 30 {
-//       &:nth-child(#{$i + 1}) .ring_inner {
-//         width: $i * 50px;
-//         height: $i * 20px;
-//         border: 15px solid rgb(255, 0, 178);
-//         animation: wave 5000ms $i * 50ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite;
-//         filter: blur(30px);
-//       }
-//     }
-//   }
-// }
-//
-// @keyframes rotate {
-//   0% {
-//     transform: translate(-50%, -50%) rotateX(50deg);
-//   }
-//   100% {
-//     transform: translate(-50%, -50%) rotateX(50deg);
-//   }
-// }
-//
-// @keyframes wave {
-//   0% {
-//     transform: translateZ(0px);
-//   }
-//   8% {
-//     transform: translateZ(-60px);
-//   }
-//   20% {
-//     transform: translateZ(40px);
-//   }
-//   30% {
-//     transform: translateZ(-20px);
-//   }
-//   50% {
-//     transform: translateZ(10px);
-//   }
-//   80% {
-//     transform: translateZ(-5px);
-//   }
-//   100% {
-//     transform: translateZ(2px);
-//   }
-// }
+body {
+  background: white;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 75px;
+  font-family: 'arcadeclassicregular';
+}
+
+#sky {
+  // position: relative;
+  z-index: 99;
+  height: 275px;
+  perspective: 5000px;
+  filter: drop-shadow(0px 250px 10px rgba(0, 0, 0, 0.2));
+
+  div {
+    transform-style: preserve-3d;
+  }
+  .card-winner {
+    animation: flyWinner 10000ms linear infinite;
+    &_head-winner {
+      height: 200px;
+      width: 300px;
+      border-right: 400px solid;
+      border-bottom: 200px solid black;
+      border-left: 15px solid;
+      transform-origin: 100% 100%;
+      transform: rotateX(-50deg);
+    }
+  }
+  .credits {
+    font-size: 70px;
+    color: black;
+    transform: rotateX(-180deg);
+    height: 100%;
+    width: 1200px;
+  }
+}
+
+@keyframes flyWinner {
+  0% {
+    transform: rotateX(-120deg) rotateZ(0deg) rotateX(10deg);
+  }
+  100% {
+    transform: rotateX(-120deg) rotateZ(360deg) rotateX(10deg);
+  }
+}
+
+#credits {
+
+  @keyframes troll {
+    0% {
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0);
+      }
+  }
+
+    .ticker-wrapper-winner {
+    height: 30em;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .ticker-winner {
+    display: inline-block;
+    height: 0px;
+    white-space: nowrap;
+    animation: troll 30s linear infinite;
+    padding-left: 100%;
+  }
+
+  .ticker-item-winner {
+    transform: rotateX(-180deg);
+    color: white;
+    display: inline-block;
+    font-size: 300px;
+  }
+}
+
+// BACKGROUND //
+.rings-winner {
+  .ring-winner {
+    right: 0;
+    position: absolute;
+    animation: rotateWinner 10000ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite alternate;
+    transform-style: preserve-3d;
+    .ring_inner-winner {
+      border-radius: 100%;
+    }
+    @for $i from 0 through 30 {
+      &:nth-child(#{$i + 1}) .ring_inner-winner {
+        width: $i * 50px;
+        height: $i * 20px;
+        border: 15px solid rgb(255, 0, 178);
+        animation: waveWinner 5000ms $i * 50ms cubic-bezier(0.545, 0.080, 0.520, 0.975) infinite;
+        filter: blur(30px);
+      }
+    }
+  }
+}
+
+@keyframes rotateWinner {
+  0% {
+    transform: translate(-50%, -50%) rotateX(50deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotateX(50deg);
+  }
+}
+
+@keyframes waveWinner {
+  0% {
+    transform: translateZ(0px);
+  }
+  8% {
+    transform: translateZ(-60px);
+  }
+  20% {
+    transform: translateZ(40px);
+  }
+  30% {
+    transform: translateZ(-20px);
+  }
+  50% {
+    transform: translateZ(10px);
+  }
+  80% {
+    transform: translateZ(-5px);
+  }
+  100% {
+    transform: translateZ(2px);
+  }
+}

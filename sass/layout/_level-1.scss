@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   perspective: 75px;
-  // display: none;
+  display: none;
 
 }
 
@@ -70,7 +70,7 @@
     100% {
       transform: translateZ(2px);
     }
-    
+  }
 @keyframes wave-y {
 
   // 0%,
