@@ -1,5 +1,5 @@
 #level-1 {
-  // background-image: url(../img/landscape/tron.jpeg);
+
   @include level-board-size;
   min-width: 320px;
   min-height: 320px;
@@ -10,10 +10,9 @@
 }
 
 .level-1-foreground {
+  position: absolute;
   width: 69%;
   height: 66%;
-  display: flex;
-  align-items: center;
 }
 
 .animation-1 {
