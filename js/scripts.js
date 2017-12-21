@@ -120,7 +120,6 @@ function cardFlip(cardFlipMe, cardName) {
   if (!flippedCard) {
     $(cardFlipMe).css('transform', 'rotatey(180deg)');
     $(cardFlipMe).off('click');
-
     flippedCard = cardName;
     cardOne = cardFlipMe;
     turnEnd();
@@ -147,7 +146,8 @@ function cardFlip(cardFlipMe, cardName) {
           $(".memory-card").css('transform', 'rotatey(0deg)');
         }, 1000);
         cardClick('on');
-        console.log("not a match!");
+        turnEnd();
+        livesOutput();
       }, 2000);
       cardOne = "";
       flippedCard = "";
@@ -160,7 +160,6 @@ function cardFlip(cardFlipMe, cardName) {
 }
 
 function turnEnd() {
-  console.log("turn-end");
   if (lives === 0) {
     gameEnd("lose");
   } else if (lives > 0) {
@@ -191,6 +190,20 @@ function toggleLevel(_round) {
   }
 }
 
+// // Card Output
+// function cardOutput(_round) {
+//   var i = 1;
+//   findPlayCards(_round).map(function(card) {
+//     $('#level-' + _round + ' .memory-card.card-' + i).append('<div id="card" class=' + card.name + '>' +
+//                                                                '<figure class="front">1</figure>' +
+//                                                                '<figure class="back">' + card.svg + '</figure>' +
+//                                                              '</div>'
+//                                                            );
+//     i++;
+//   });
+//   cardClick('on');
+// }
+
 // Ticker Output
 function ticker() {
   var i = 1;
@@ -207,13 +220,14 @@ function cardClick(toggle) {
   if (toggle === 'on') {
     console.log('click on');
     $('.memory-card').off('click').on('click', function() {
-      cardFlip($(this).find('section').attr('class'), $(this).find('div figure').attr('class'));
+      cardFlip($(this).find('section').attr('class'), $(this).find('section figure').attr('class'));
     });
   } else if (toggle === 'off') {
     console.log('click off');
     $('.memory-card').off('click');
   }
 }
+
 
 // Card Output' + card.svg + '
 function cardOutput(_round) {
@@ -235,8 +249,7 @@ function winnerLoserScreen(didWinOrLose) {
     alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
-    alert('You shit-for-brains! Try harder next time!');
-    $('#loser-screen').css('display', 'flex');
+    $('#loser-screen').css('display', 'flex').addClass('animation-loser');
   }
 }
 
