@@ -28,22 +28,22 @@ function Card(name, color, background, svg) {
 }
 
 // Cards
-deckOfCards.push(new Card('bacteria', 'red', 'white', '<img src="img/svg/bacteria.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('beaks', 'red', 'white', '<img src="img/svg/beaks.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('blink', 'red', 'white', '<img src="img/svg/blink.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('bug', 'red', 'white', '<img src="img/svg/bug.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('diamond', 'red', 'white', '<img src="img/svg/diamond-catcher.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('eye', 'red', 'white', '<img src="img/svg/eye-diamond.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('flower', 'red', 'white', '<img src="img/svg/flower.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('foureyes', 'red', 'white', '<img src="img/svg/four-eyes.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('qbert', 'red', 'white', '<img src="img/svg/q-bert.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('rain', 'red', 'white', '<img src="img/svg/rain.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('space', 'red', 'white', '<img src="img/svg/space-station.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('square', 'red', 'white', '<img src="img/svg/square-vortex.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('sunray', 'red', 'white', '<img src="img/svg/sunray.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('tongue', 'red', 'white', '<img src="img/svg/tongue.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('triangle', 'red', 'white', '<img src="img/svg/triangle-.svg" alt="Memory card image">'));
-deckOfCards.push(new Card('wave', 'red', 'white', '<img src="img/svg/wave.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('bacteria', fill="#239D60", '#F7F39A', '<img src="img/svg/bacteria.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('beaks', fill="#FAFAFA", '#7C73E6', '<img src="img/svg/beaks.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('blink', fill="#D02E77", '#FFFEE6', '<img src="img/svg/blink.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('bug', fill="#6DB193", '#323232', '<img src="img/svg/bug.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('diamond', fill="#FFF1C1", '#78B7BB', '<img src="img/svg/diamond-catcher.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('eye', fill="#0881A3", '#FFFDFB', '<img src="img/svg/eye-diamond.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('flower', fill="#00B8C0", '#1B3C68', '<img src="img/svg/flower.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('foureyes', fill="#0074E4", '#E9FFB2', '<img src="img/svg/four-eyes.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('qbert', fill="#D9FAFF", '#005792', '<img src="img/svg/q-bert.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('rain', fill="#CC376D", '#D1F386', '<img src="img/svg/rain.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('space', fill="#FF5C5C", '#FFE5B9', '<img src="img/svg/space-station.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('square', fill="#8AAE92", '#F4F9F4', '<img src="img/svg/square-vortex.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('sunray', fill="#259F6C", '#FAFCD6', '<img src="img/svg/sunray.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('tongue', fill="#F67280", '#6C5B7B', '<img src="img/svg/tongue.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('triangle', fill="#FFDC76", '#4A2C2C', '<img src="img/svg/triangle-.svg" alt="Memory card image">'));
+deckOfCards.push(new Card('wave', fill="#ECECEC", '#4D4D4D', '<img src="img/svg/wave.svg" alt="Memory card image">'));
 
 // Default Previous Scores
 previousGameScores.push(new ScoreStore('Jerry', 1000));
@@ -219,8 +219,10 @@ function cardOutput(_round) {
   findPlayCards(_round).map(function(card) {
     $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="card">' +
                                                                 '<div>' + card.name + '</div>' +
-                                                                '<figure class="' + card.name + '">' + card.svg + '</figure>'+
+                                                                '<figure id="round-' + _round + '-card-' + i + '-figure" class="' + card.name + '">' + card.svg + '</figure>'+
                                                               '</div>');
+    $('.' + card.name).css('background', card.background);
+    $
     i++;
   });
 
@@ -233,14 +235,12 @@ function cardOutput(_round) {
       }, 300);
     }, 3000);
   }, 500);
-
 }
 
 // Winner/Loser screen
 function winnerLoserScreen(didWinOrLose) {
   $('#level-' + (round - 1)).css('display', 'none').removeClass('animation-' + (round - 1));
   if (didWinOrLose === "win") {
-    alert('"Winner winner, chicken dinner!" - Guy Fieri');
     $('#winner-screen').css('display', 'flex');
   } else if (didWinOrLose === "lose") {
     $('#loser-screen').css('display', 'flex').addClass('animation-loser');

@@ -1,7 +1,7 @@
 #new-game {
   background-image: url(../img/landscape/spheres.jpg);
   @include level-board-size;
-  display: none;
+  // display: none;
 }
 
 .new-game-foreground {
