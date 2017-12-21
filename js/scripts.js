@@ -165,6 +165,7 @@ function cardFlip(card, cardName) {
         }, 1000);
         turnEnd();
         console.log("not a match!");
+        cardClick('on');
       }, 2000);
     }
     livesOutput();
