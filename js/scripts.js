@@ -115,41 +115,43 @@ function findPlayCards(_round) {
 }
 
 // Turn Play Function ---------- INCOMPLETE
-function cardFlip(cardFlipMe, cardName) {
-  console.log(cardName);
-  console.log(cardFlipMe);
+function cardFlip(cardMain, figure, flippingCard) {
+  console.log(cardMain);
+  console.log(figure);
   if (!flippedCard) {
-    $(cardFlipMe).css('transform', 'rotatey(180deg)');
-    $(cardFlipMe).off('click');
-    flippedCard = cardName;
-    cardOne = cardFlipMe;
+    $(cardMain).off('click');
+    $(flippingCard).css('transform', 'rotatey(180deg)');
+    flippedCard = figure;
+    cardOne = cardMain;
     turnEnd();
   } else if (flippedCard) {
-    if (cardName === flippedCard) {
-      $(cardFlipMe).css('transform', 'rotatey(180deg)');
+    if (figure === flippedCard) {
+      cardClick('off');
+      $(flippingCard).css('transform', 'rotatey(180deg)');
       setTimeout(function() {
-        hideCards(cardName);
+        hideCards(figure);
         gameScore += 7;
         numOfMatchedCards += 2;
         scoreOutput();
         turnEnd();
-      }, 2000);
+        cardClick('on');
+      }, 300);
       cardOne = "";
       flippedCard = "";
-    } else if (cardName !== flippedCard) {
+    } else if (figure !== flippedCard) {
       lives -= 1;
       cardClick('off');
-      $(cardFlipMe).css('transform', 'rotatey(180deg)');
+      $(flippingCard).css('transform', 'rotatey(180deg)');
       setTimeout(function () {
-        $('.memory-card').css('animation', 'wiggle 0.3s');
+        $('.card').css('animation', 'wiggle 0.3s');
         setTimeout(function () {
-          $('.memory-card').css('animation', 'none');
-          $(".memory-card").css('transform', 'rotatey(0deg)');
+          $('.card').css('animation', 'none');
+          $('.card').css('transform', 'rotatey(0deg)');
         }, 1000);
         cardClick('on');
         turnEnd();
         livesOutput();
-      }, 2000);
+      }, 1000);
       cardOne = "";
       flippedCard = "";
       turnEnd();
@@ -160,6 +162,7 @@ function cardFlip(cardFlipMe, cardName) {
   };
 }
 
+// End Of Turn Function
 function turnEnd() {
   if (lives === 0) {
     gameEnd("lose");
@@ -191,20 +194,6 @@ function toggleLevel(_round) {
   }
 }
 
-// // Card Output
-// function cardOutput(_round) {
-//   var i = 1;
-//   findPlayCards(_round).map(function(card) {
-//     $('#level-' + _round + ' .memory-card.card-' + i).append('<div id="card" class=' + card.name + '>' +
-//                                                                '<figure class="front">1</figure>' +
-//                                                                '<figure class="back">' + card.svg + '</figure>' +
-//                                                              '</div>'
-//                                                            );
-//     i++;
-//   });
-//   cardClick('on');
-// }
-
 // Ticker Output
 function ticker() {
   var i = 1;
@@ -219,28 +208,37 @@ function ticker() {
 // Card Click Listener
 function cardClick(toggle) {
   if (toggle === 'on') {
-    console.log('click on');
-    $('.memory-card').off('click').on('click', function() {
-      cardFlip($(this).find('section').attr('class'), $(this).find('section figure').attr('class'));
+    console.log("click on");
+    $('.card').off('click').on('click', function() {
+      cardFlip($(this).attr('class'), $(this).find('figure').attr('class'), this);
     });
   } else if (toggle === 'off') {
-    console.log('click off');
-    $('.memory-card').off('click');
+    console.log("click off");
+    $('.card').off('click');
   }
 }
-
 
 // Card Output' + card.svg + '
 function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
-    $('#level-' + _round + ' .memory-card.card-' + i).append('<section class="card">'+
-                                                                '<figure class="' + card.name + '">me myself and i</figure>'+
-                                                                '<figure>' + card.svg + '</figure>'+
-                                                              '</section>');
+    $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="card">' +
+                                                                '<div >' + card.name + '</div>' +
+                                                                '<figure class="' + card.name + '">' + card.svg + '</figure>'+
+                                                              '</div>');
     i++;
   });
-  cardClick('on');  
+
+  setTimeout(function() {
+    $('div.card').css('transform', 'rotateY(180deg)');
+    setTimeout(function() {
+      $('div.card').css('transform', 'rotateY(0deg)');
+      setTimeout(function() {
+        cardClick('on');
+      }, 300);
+    }, 3000);
+  }, 500);
+
 }
 
 // Winner/Loser screen
