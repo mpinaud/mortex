@@ -21,30 +21,4 @@
     height: auto;
     width: 100%;
   }
-  #card {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    transform-style: preserve-3d;
-    transition: transform 1s;
-  }
-  #card figure {
-    margin: 0;
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-  }
-  .front {
-    background: red;
-  }
-  .back {
-    background: blue;
-    transform: rotateY( 180deg );
-  }
-  #card { transform-origin: right center; }
-  .flipped {
-    transform: translateX( -100% ) rotateY( -180deg );
-  }
 }

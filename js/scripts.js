@@ -139,7 +139,6 @@ function cardFlip(card, cardName) {
   if (!flippedCard) {
     $(card).css('transform', 'rotatey(180deg)');
     $(card).off('click');
-    $(card).find('div').addClass('flipped');
 
     flippedCard = cardName;
     cardOne = card;
@@ -163,6 +162,7 @@ function cardFlip(card, cardName) {
         setTimeout(function () {
           $('.memory-card').css('animation', 'none');
         }, 1000);
+        cardClick('on');
         turnEnd();
         console.log("not a match!");
       }, 2000);
@@ -170,12 +170,10 @@ function cardFlip(card, cardName) {
     livesOutput();
     flippedCard = "";
   };
-  setTimeout(function () {
-    turnEnd();
-  }, 4000);
 }
 
 function turnEnd() {
+  console.log("turn-end");
   if (lives === 0) {
     gameEnd("lose");
   } else if (lives > 0) {
