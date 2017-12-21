@@ -240,7 +240,7 @@ function cardOutput(_round) {
                                                               '</section>');
     i++;
   });
-  cardClick('on');
+  cardClick('on');  
 }
 
 // Winner/Loser screen
@@ -296,10 +296,10 @@ $(function() {
       alert("you're out of hints");
     } else {
       hints += -1;
-      $('.card').css('animation', 'rotatey 5s');
+      $('.card').css('animation', 'rotatey 7000ms');
       setTimeout(function () {
         $('.card').css('animation', 'none');
-      }, 5000);
+      }, 7000);
     }
   });
 // Quit Game

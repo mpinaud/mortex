@@ -6,7 +6,7 @@
   align-items: center;
   perspective: 75px;
   @include level-board-size;
-  // display: none;
+  display: none;
 }
 
 .level-2-foreground {
