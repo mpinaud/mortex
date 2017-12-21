@@ -132,7 +132,6 @@ function cardFlip(cardMain, figure, flippingCard) {
         numOfMatchedCards += 2;
         scoreOutput();
         turnEnd();
-        cardClick('on');
       }, 300);
       flippedCard = "";
     } else if (figure !== flippedCard) {
