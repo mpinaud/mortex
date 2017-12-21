@@ -29,14 +29,12 @@
     position: absolute;
     top: 0;
     left: 0;
+    background-color: blue;
+    transform: rotateY(180deg);
   }
-  div:nth-child(1) {
+  div {
     z-index: 2;
     transform: rotateY(0deg);
     background-color: red;
-  }
-  figure:nth-child(2) {
-    background-color: blue;
-    transform: rotateY(180deg);
   }
 }

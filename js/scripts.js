@@ -119,11 +119,8 @@ function cardFlip(cardMain, figure, flippingCard) {
   console.log(cardMain);
   console.log(figure);
   if (!flippedCard) {
-    $(cardMain).off('click');
-    $(flippingCard).css('transform', 'rotatey(180deg)');
+    $(flippingCard).off('click').css('transform', 'rotatey(180deg)');
     flippedCard = figure;
-    cardOne = cardMain;
-    turnEnd();
   } else if (flippedCard) {
     if (figure === flippedCard) {
       cardClick('off');
@@ -134,9 +131,8 @@ function cardFlip(cardMain, figure, flippingCard) {
         numOfMatchedCards += 2;
         scoreOutput();
         turnEnd();
-        cardClick('on');
+        // cardClick('on');
       }, 300);
-      cardOne = "";
       flippedCard = "";
     } else if (figure !== flippedCard) {
       lives -= 1;
@@ -147,16 +143,13 @@ function cardFlip(cardMain, figure, flippingCard) {
         setTimeout(function () {
           $('.card').css('animation', 'none');
           $('.card').css('transform', 'rotatey(0deg)');
+          setTimeout(function() {
+            turnEnd();
+          }, 300);
         }, 1000);
-        cardClick('on');
-        turnEnd();
         livesOutput();
       }, 1000);
-      cardOne = "";
-      flippedCard = "";
-      turnEnd();
     }
-    cardOne = "";
     flippedCard = "";
     livesOutput();
   };
@@ -169,6 +162,8 @@ function turnEnd() {
   } else if (lives > 0) {
     if (numOfMatchedCards >= playCards.length) {
       newRound();
+    } else if (numOfMatchedCards < playCards.length) {
+      cardClick('on');
     }
   }
 }
@@ -223,7 +218,7 @@ function cardOutput(_round) {
   var i = 1;
   findPlayCards(_round).map(function(card) {
     $('#level-' + _round + ' .memory-card.card-' + i).append('<div class="card">' +
-                                                                '<div >' + card.name + '</div>' +
+                                                                '<div>' + card.name + '</div>' +
                                                                 '<figure class="' + card.name + '">' + card.svg + '</figure>'+
                                                               '</div>');
     i++;

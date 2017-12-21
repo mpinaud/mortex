@@ -1,4 +1,5 @@
 #level-1 {
+
   @include level-board-size;
   background: #000b5d;
   height: 100vh;
@@ -7,6 +8,7 @@
   align-items: center;
   perspective: 75px;
   // display: none;
+
 }
 
 .level-1-foreground {
@@ -44,6 +46,7 @@
       transform: translate(-50%, -50%) rotateX(50deg);
     }
   }
+}
 
   @keyframes waveOne {
     0% {
@@ -67,5 +70,18 @@
     100% {
       transform: translateZ(2px);
     }
+    
+@keyframes wave-y {
+
+  // 0%,
+  // 40%,
+  80% {
+    transform: scaleX(1) scaleY(1);
+  }
+
+  // 20%,
+  // 60%,
+  100% {
+    transform: scaleX(1.2) scaleY(1.3);
   }
 }
