@@ -1,6 +1,6 @@
 # M O R T E X
 
-##### An extreme game of memory
+##### Ones escape through an unknown vortex by the power of memory
 
 #### By Adam Smith, Mikey Pinaud, Griffin P. Longtin and Cheryl Frankenfield, 12/18/17
 
