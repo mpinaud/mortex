@@ -6,7 +6,7 @@
 
 ## Description
 
-_This application is a demonstration of using CSS and JavaScript, including SASS practices to play the game of memory and matching alike cards. This game showcases CSS flexbox, responsive design, animations, transitions and transform properties._
+_This application is a demonstration of using CSS and JavaScript, including SASS practices to play the game of memory and matching alike cards. This game showcases CSS flexbox, animations, transitions and transform properties._
 
 ## Setup/Installation Requirements
 _[View on web browser](https://mpinaud.github.io/match-3d/)_
