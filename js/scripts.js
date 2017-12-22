@@ -45,16 +45,16 @@ deckOfCards.push(new Card('triangle', '#F86254', '<img src="img/svg/triangle-.sv
 deckOfCards.push(new Card('wave', '#DC4712', '<img src="img/svg/wave.svg" alt="Memory card image">'));
 
 // Default Previous Scores
-previousGameScores.push(new ScoreStore('Jerry', 1000));
-previousGameScores.push(new ScoreStore('Terry', 900));
-previousGameScores.push(new ScoreStore('Larry', 800));
-previousGameScores.push(new ScoreStore('Perry', 700));
-previousGameScores.push(new ScoreStore('Barry', 600));
-previousGameScores.push(new ScoreStore('Harry', 500));
-previousGameScores.push(new ScoreStore('Shari', 400));
-previousGameScores.push(new ScoreStore('Mary', 300));
-previousGameScores.push(new ScoreStore('Gary', 200));
-previousGameScores.push(new ScoreStore('Carrie', 100));
+previousGameScores.push(new ScoreStore('Jerry', 210));
+previousGameScores.push(new ScoreStore('Terry', 203));
+previousGameScores.push(new ScoreStore('Larry', 182));
+previousGameScores.push(new ScoreStore('Perry', 168));
+previousGameScores.push(new ScoreStore('Barry', 133));
+previousGameScores.push(new ScoreStore('Harry', 119));
+previousGameScores.push(new ScoreStore('Shari', 98));
+previousGameScores.push(new ScoreStore('Mary', 84));
+previousGameScores.push(new ScoreStore('Gary', 63));
+previousGameScores.push(new ScoreStore('Carrie', 49));
 
 // // // Game functions // // //
 
@@ -169,10 +169,8 @@ function turnEnd() {
 
 // End Game Function
 function gameEnd(winOrLose) {
-  if (winOrLose === "win") {
-    previousGameScores.push(new ScoreStore(userName, gameScore));
-    topScore(previousGameScores);
-  };
+  previousGameScores.push(new ScoreStore(userName, gameScore));
+  topScore(previousGameScores);
   winnerLoserScreen(winOrLose);
 }
 
@@ -281,6 +279,10 @@ $(function() {
   $('#play-again').click(function() {
     gameEnd(userName, gameScore);
     topScore();
+  });
+  // Reset button {
+  $("#reset-button").click(function() {
+    location.reload();
   });
 //Hint button
   $('button#hint-button').click(function() {
