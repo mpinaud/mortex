@@ -17,6 +17,7 @@ _This application is a demonstration of using CSS and JavaScript, including SASS
 * No other setup or install necessary.
 
 ## Specs
+_The app will play theme song on load and will restart when new game starts._
 
 _The app will allow a player to enter a player name._
 * _Example Input: Player enters name._
@@ -42,13 +43,13 @@ _Or, when user clicks on second card, second card flips over and match is unsucc
 * _Example Input: User clicks on second memory card._
 * _Example Output: Second card that is clicked, flips over to reveal graphic. If match is NOT successful, cards shake to give error indication. Cards then flip over and player resumes matching._
 
-_The game will allow the player to have 4 chances or lives per round._
-* _Example Input: User clicks on memory card and match is incorrect._
-* _Example Output: After player makes an incorrect match 4 times, player loses game._
+_The game will allow the player to have chances or lives per round number._
+* _Example Input: Level 1 one life. Level 2 two lives Level 3 three lives. etc... User clicks on memory card and match is incorrect._
+* _Example Output: After player makes an incorrect match round number times, player loses game._
 
 _When player loses or wins game, a screen fades in or is displayed with player score and play again button._
-* _Example Input: User clicks on memory card and match is incorrect._
-* _Example Output: After player makes an incorrect match 4 times, player loses game._
+* _Example Input: After player win or loss user clicks on try again button._
+* _Example Output: Game will restart at user name screen._
 
 _The app will allow for 5 rounds (2 cards, 4 cards, 8 cards, 16 cards, 32 cards)._
 * _Example Input: After player completes a round, the next round begins._
@@ -58,14 +59,25 @@ _The app will keep score of game._
 * _Example Input: Game will display a scoreboard._
 * _Example Output: For each match of cards, player receives 13 points. For not using Hints, player receives 101 points. There is a max of 217 points for the highest score._
 
-_The app will include a Hints feature._
+_The app will include a 5 Hints feature._
 * _Example Input: Player clicks on hint feature button._
 * _Example Output: Once hints is clicked, game will rotate cards 360 degrees for a sneak peek view._
 
-## Extra Features - non-MVP
+_The app will include a Game Over or Win Screen animation._
+* _Example Input: Player win game._
+* _Example Output: Game will show Win credit cut scene screen._
+* _Example Input: Player lose game._
+* _Example Output: Game will show Game Over screen._
+
+## Extra Features - non-MVP wishlist
 _For mobile device play, game will be displayed in landscape mode only._
 * _Example Input: Player plays game on phone._
 * _Example Output: Game is playable only on landscape mode._
+
+_User not use 5 Hints will give bonus points_
+* _Example Input: User wins round without using Hint button._
+* _Example Output: User will gain 505 points for not using 1 Hint. 404 points for using 1 hint. 303 points for using 2. etc..._
+
 
 _The app will include modes of play (easy, medium, difficult)._
 * _Example Input: Game will display an area to play different levels._
@@ -76,8 +88,8 @@ _The app will include audio for wins or losses._
 * _Example Output: When player wins, a success song or sound is played. When player loses, a death song or audio is played._
 
 _The app will include an Easter Egg scene._
-* _Example Input: Player wins game and/or player wins game and receives bonus._
-* _Example Output: When player wins game and bonus points, Credits scene is played prior to new game beginning._
+* _Example Input: Player wins game with no deaths and no hints used._
+* _Example Output: Ultimate player cut scene will play before end credits._
 
 ## Known Bugs
 
