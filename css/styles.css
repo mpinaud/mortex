@@ -1,0 +1,2389 @@
+.countdown {
+  font-size: 2em;
+  padding: 5px;
+  margin: 0 auto;
+  color: teal; }
+
+.card-1 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.8s 27ms infinite; }
+
+.card-2 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.9s 76ms infinite; }
+
+.card-3 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.2s 468ms infinite; }
+
+.card-4 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.3s 487ms infinite; }
+
+.card-5 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 7s 235ms infinite; }
+
+.card-6 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.6s 171ms infinite; }
+
+.card-7 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.9s 273ms infinite; }
+
+.card-8 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.2s 310ms infinite; }
+
+.card-9 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.9s 20ms infinite; }
+
+.card-10 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.4s 487ms infinite; }
+
+.card-11 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.8s 479ms infinite; }
+
+.card-12 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.2s 212ms infinite; }
+
+.card-13 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.3s 319ms infinite; }
+
+.card-14 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.9s 282ms infinite; }
+
+.card-15 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.1s 450ms infinite; }
+
+.card-16 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6s 364ms infinite; }
+
+.card-17 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.5s 224ms infinite; }
+
+.card-18 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.7s 334ms infinite; }
+
+.card-19 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.6s 219ms infinite; }
+
+.card-20 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.6s 466ms infinite; }
+
+.card-21 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.1s 81ms infinite; }
+
+.card-22 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.7s 196ms infinite; }
+
+.card-23 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.3s 355ms infinite; }
+
+.card-24 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.2s 357ms infinite; }
+
+.card-25 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.1s 329ms infinite; }
+
+.card-26 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.8s 311ms infinite; }
+
+.card-27 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.2s 475ms infinite; }
+
+.card-28 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.7s 111ms infinite; }
+
+.card-29 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 5.4s 12ms infinite; }
+
+.card-30 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.1s 31ms infinite; }
+
+.card-31 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.6s 370ms infinite; }
+
+.card-32 {
+  position: relative;
+  transition: transform 1.2s;
+  animation: floating 6.9s 21ms infinite; }
+
+.icon-card {
+  position: relative;
+  width: 90px;
+  height: 90px; }
+  .icon-card .out {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: black; }
+    .icon-card .out .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .icon-card .out .one, .icon-card .out .two {
+      position: relative;
+      background-color: white;
+      width: 90px;
+      height: 10px; }
+    .icon-card .out .one {
+      transform: rotate(90deg); }
+  .icon-card .in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: black; }
+    .icon-card .in .div-con {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+    .icon-card .in .one, .icon-card .in .two {
+      position: relative;
+      border-radius: 5px;
+      background-color: white;
+      width: 60px;
+      height: 10px; }
+    .icon-card .in .one {
+      transform: rotate(45deg); }
+    .icon-card .in .two {
+      transform: rotate(-45deg); }
+
+.rotate {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  animation: rotate-left 1.3s linear infinite; }
+
+.icon-card {
+  animation: rotate-right 3s linear infinite; }
+
+@keyframes floating {
+  0% {
+    top: 5px; }
+  25% {
+    top: -5px; }
+  50% {
+    top: 5px; }
+  75% {
+    top: -5px; }
+  100% {
+    top: 5px; } }
+@keyframes wiggle {
+  0% {
+    left: 15px; }
+  25% {
+    left: -15px; }
+  50% {
+    left: 15px; }
+  75% {
+    left: -15px; }
+  100% {
+    left: 15px; } }
+@keyframes scale {
+  0% {
+    transform: scale(1); }
+  25% {
+    transform: scale(0.75); }
+  50% {
+    transform: scale(0.5); }
+  75% {
+    transform: scale(0.25); }
+  100% {
+    transform: scale(0); } }
+@keyframes rotate-left {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-360deg); } }
+@keyframes rotate-right {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
+@keyframes rotatey {
+  0% {
+    transform: rotatey(0deg); }
+  100% {
+    transform: rotatey(360deg); } }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@font-face {
+  font-family: 'arcadeclassicregular';
+  src: url("../fonts/arcadeclassic-webfont.woff2") format("woff2"), url("../fonts/arcadeclassic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+#new-game {
+  background-image: url(../img/landscape/spheres.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
+
+.new-game-foreground {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 69%;
+  height: 66%;
+  background-color: #0000009e;
+  position: absolute;
+  padding: 98px; }
+  .new-game-foreground h1 {
+    font-family: 'Monoton', cursive;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 8em;
+    width: 100%;
+    margin: 20px 20px;
+    text-shadow: 10px 10px 4px #ee67b2; }
+
+form#new-game-start {
+  width: 100%;
+  height: 111px;
+  text-align: center; }
+
+button {
+  width: 19%;
+  height: 50px;
+  font-size: 28px;
+  background-color: hotpink;
+  border-radius: 10px; }
+
+input#player-name {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 47px;
+  font-size: 50px;
+  border-radius: 20px; }
+
+#level-1 {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000b5d;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  perspective: 75px;
+  display: none; }
+
+.level-1-foreground {
+  position: absolute;
+  width: 69%;
+  height: 66%; }
+
+.animation-1 .rings-one .ring-one {
+  position: absolute;
+  animation: rotateOne 10000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  transform-style: preserve-3d; }
+  .animation-1 .rings-one .ring-one .ring_inner-one {
+    border-radius: 100%; }
+  .animation-1 .rings-one .ring-one:nth-child(1) .ring_inner-one {
+    width: 0px;
+    height: 0px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(2) .ring_inner-one {
+    width: 50px;
+    height: 70px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 50ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(3) .ring_inner-one {
+    width: 100px;
+    height: 140px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(4) .ring_inner-one {
+    width: 150px;
+    height: 210px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(5) .ring_inner-one {
+    width: 200px;
+    height: 280px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(6) .ring_inner-one {
+    width: 250px;
+    height: 350px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(7) .ring_inner-one {
+    width: 300px;
+    height: 420px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(8) .ring_inner-one {
+    width: 350px;
+    height: 490px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(9) .ring_inner-one {
+    width: 400px;
+    height: 560px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(10) .ring_inner-one {
+    width: 450px;
+    height: 630px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(11) .ring_inner-one {
+    width: 500px;
+    height: 700px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(12) .ring_inner-one {
+    width: 550px;
+    height: 770px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 550ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(13) .ring_inner-one {
+    width: 600px;
+    height: 840px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(14) .ring_inner-one {
+    width: 650px;
+    height: 910px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 650ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(15) .ring_inner-one {
+    width: 700px;
+    height: 980px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(16) .ring_inner-one {
+    width: 750px;
+    height: 1050px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(17) .ring_inner-one {
+    width: 800px;
+    height: 1120px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(18) .ring_inner-one {
+    width: 850px;
+    height: 1190px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 850ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(19) .ring_inner-one {
+    width: 900px;
+    height: 1260px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(20) .ring_inner-one {
+    width: 950px;
+    height: 1330px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 950ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(21) .ring_inner-one {
+    width: 1000px;
+    height: 1400px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(22) .ring_inner-one {
+    width: 1050px;
+    height: 1470px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(23) .ring_inner-one {
+    width: 1100px;
+    height: 1540px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(24) .ring_inner-one {
+    width: 1150px;
+    height: 1610px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(25) .ring_inner-one {
+    width: 1200px;
+    height: 1680px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(26) .ring_inner-one {
+    width: 1250px;
+    height: 1750px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(27) .ring_inner-one {
+    width: 1300px;
+    height: 1820px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(28) .ring_inner-one {
+    width: 1350px;
+    height: 1890px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(29) .ring_inner-one {
+    width: 1400px;
+    height: 1960px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(30) .ring_inner-one {
+    width: 1450px;
+    height: 2030px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-1 .rings-one .ring-one:nth-child(31) .ring_inner-one {
+    width: 1500px;
+    height: 2100px;
+    border: 15px solid #0000b2;
+    animation: waveOne 10000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+@keyframes rotateOne {
+  0% {
+    transform: translate(-50%, -50%) rotateX(50deg); }
+  100% {
+    transform: translate(-50%, -50%) rotateX(50deg); } }
+@keyframes waveOne {
+  0% {
+    transform: translateZ(0px); }
+  8% {
+    transform: translateZ(-60px); }
+  20% {
+    transform: translateZ(40px); }
+  30% {
+    transform: translateZ(-20px); }
+  50% {
+    transform: translateZ(10px); }
+  80% {
+    transform: translateZ(-5px); }
+  100% {
+    transform: translateZ(2px); } }
+#level-2 {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #000b5d;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  perspective: 75px;
+  display: none; }
+
+.level-2-foreground {
+  position: absolute;
+  width: 69%;
+  height: 66%; }
+
+.animation-2 .rings-two .ring-two {
+  position: absolute;
+  animation: rotateTwo 10000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  transform-style: preserve-3d; }
+  .animation-2 .rings-two .ring-two .ring_inner-two {
+    border-radius: 100%; }
+  .animation-2 .rings-two .ring-two:nth-child(1) .ring_inner-two {
+    width: 0px;
+    height: 0px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(2) .ring_inner-two {
+    width: 50px;
+    height: 20px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 50ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(3) .ring_inner-two {
+    width: 100px;
+    height: 40px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(4) .ring_inner-two {
+    width: 150px;
+    height: 60px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(5) .ring_inner-two {
+    width: 200px;
+    height: 80px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(6) .ring_inner-two {
+    width: 250px;
+    height: 100px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(7) .ring_inner-two {
+    width: 300px;
+    height: 120px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(8) .ring_inner-two {
+    width: 350px;
+    height: 140px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(9) .ring_inner-two {
+    width: 400px;
+    height: 160px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(10) .ring_inner-two {
+    width: 450px;
+    height: 180px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(11) .ring_inner-two {
+    width: 500px;
+    height: 200px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(12) .ring_inner-two {
+    width: 550px;
+    height: 220px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 550ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(13) .ring_inner-two {
+    width: 600px;
+    height: 240px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(14) .ring_inner-two {
+    width: 650px;
+    height: 260px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 650ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(15) .ring_inner-two {
+    width: 700px;
+    height: 280px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(16) .ring_inner-two {
+    width: 750px;
+    height: 300px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(17) .ring_inner-two {
+    width: 800px;
+    height: 320px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(18) .ring_inner-two {
+    width: 850px;
+    height: 340px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 850ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(19) .ring_inner-two {
+    width: 900px;
+    height: 360px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(20) .ring_inner-two {
+    width: 950px;
+    height: 380px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 950ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(21) .ring_inner-two {
+    width: 1000px;
+    height: 400px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(22) .ring_inner-two {
+    width: 1050px;
+    height: 420px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(23) .ring_inner-two {
+    width: 1100px;
+    height: 440px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(24) .ring_inner-two {
+    width: 1150px;
+    height: 460px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(25) .ring_inner-two {
+    width: 1200px;
+    height: 480px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(26) .ring_inner-two {
+    width: 1250px;
+    height: 500px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(27) .ring_inner-two {
+    width: 1300px;
+    height: 520px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(28) .ring_inner-two {
+    width: 1350px;
+    height: 540px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(29) .ring_inner-two {
+    width: 1400px;
+    height: 560px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(30) .ring_inner-two {
+    width: 1450px;
+    height: 580px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .animation-2 .rings-two .ring-two:nth-child(31) .ring_inner-two {
+    width: 1500px;
+    height: 600px;
+    border: 15px solid #ff00b2;
+    animation: waveTwo 5000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+@keyframes rotateTwo {
+  0% {
+    transform: translate(-50%, -50%) rotateX(50deg); }
+  100% {
+    transform: translate(-50%, -50%) rotateX(50deg); } }
+@keyframes waveTwo {
+  0% {
+    transform: translateZ(0px); }
+  8% {
+    transform: translateZ(-60px); }
+  20% {
+    transform: translateZ(40px); }
+  30% {
+    transform: translateZ(-20px); }
+  50% {
+    transform: translateZ(10px); }
+  80% {
+    transform: translateZ(-5px); }
+  100% {
+    transform: translateZ(2px); } }
+#level-3 {
+  background: #19151f;
+  overflow: hidden;
+  perspective: 75px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-3-foreground {
+  position: absolute;
+  width: 69%;
+  height: 66%; }
+
+.animation-3 .rings-three .ring-three {
+  position: absolute;
+  animation: rotateThree 10000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  transform-style: preserve-3d; }
+  .animation-3 .rings-three .ring-three .ring_inner-three {
+    border-radius: 100%; }
+  .animation-3 .rings-three .ring-three:nth-child(1) .ring_inner-three {
+    width: 0px;
+    height: 0px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(2) .ring_inner-three {
+    width: 50px;
+    height: 70px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 50ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(3) .ring_inner-three {
+    width: 100px;
+    height: 140px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(4) .ring_inner-three {
+    width: 150px;
+    height: 210px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(5) .ring_inner-three {
+    width: 200px;
+    height: 280px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(6) .ring_inner-three {
+    width: 250px;
+    height: 350px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(7) .ring_inner-three {
+    width: 300px;
+    height: 420px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(8) .ring_inner-three {
+    width: 350px;
+    height: 490px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(9) .ring_inner-three {
+    width: 400px;
+    height: 560px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(10) .ring_inner-three {
+    width: 450px;
+    height: 630px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(11) .ring_inner-three {
+    width: 500px;
+    height: 700px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(12) .ring_inner-three {
+    width: 550px;
+    height: 770px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 550ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(13) .ring_inner-three {
+    width: 600px;
+    height: 840px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(14) .ring_inner-three {
+    width: 650px;
+    height: 910px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 650ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(15) .ring_inner-three {
+    width: 700px;
+    height: 980px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(16) .ring_inner-three {
+    width: 750px;
+    height: 1050px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(17) .ring_inner-three {
+    width: 800px;
+    height: 1120px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(18) .ring_inner-three {
+    width: 850px;
+    height: 1190px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 850ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(19) .ring_inner-three {
+    width: 900px;
+    height: 1260px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(20) .ring_inner-three {
+    width: 950px;
+    height: 1330px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 950ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(21) .ring_inner-three {
+    width: 1000px;
+    height: 1400px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(22) .ring_inner-three {
+    width: 1050px;
+    height: 1470px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(23) .ring_inner-three {
+    width: 1100px;
+    height: 1540px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(24) .ring_inner-three {
+    width: 1150px;
+    height: 1610px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(25) .ring_inner-three {
+    width: 1200px;
+    height: 1680px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(26) .ring_inner-three {
+    width: 1250px;
+    height: 1750px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(27) .ring_inner-three {
+    width: 1300px;
+    height: 1820px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(28) .ring_inner-three {
+    width: 1350px;
+    height: 1890px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(29) .ring_inner-three {
+    width: 1400px;
+    height: 1960px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(30) .ring_inner-three {
+    width: 1450px;
+    height: 2030px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+  .animation-3 .rings-three .ring-three:nth-child(31) .ring_inner-three {
+    width: 1500px;
+    height: 2100px;
+    border: 15px solid #e597cb;
+    animation: waveThree 5000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(3px); }
+@keyframes rotateThree {
+  0% {
+    transform: translate(-50%, -50%) rotateX(250deg); }
+  100% {
+    transform: translate(-50%, -50%) rotateX(300deg); } }
+@keyframes waveThree {
+  0% {
+    transform: translateZ(0px); }
+  8% {
+    transform: translateZ(-60px); }
+  20% {
+    transform: translateZ(40px); }
+  30% {
+    transform: translateZ(-20px); }
+  50% {
+    transform: translateZ(10px); }
+  80% {
+    transform: translateZ(-5px); }
+  100% {
+    transform: translateZ(2px); } }
+#level-4 {
+  background: black;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  perspective: 75px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-4-foreground {
+  position: absolute;
+  width: 69%;
+  height: 66%; }
+
+.animation-4 .rings-four .ring-four {
+  position: absolute;
+  animation: rotateFour 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  transform-style: preserve-3d; }
+  .animation-4 .rings-four .ring-four .ring_inner-four {
+    border-radius: 0%; }
+  .animation-4 .rings-four .ring-four:nth-child(1) .ring_inner-four {
+    width: 0px;
+    height: 0px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(2) .ring_inner-four {
+    width: 90px;
+    height: 30px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(3) .ring_inner-four {
+    width: 180px;
+    height: 60px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(4) .ring_inner-four {
+    width: 270px;
+    height: 90px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(5) .ring_inner-four {
+    width: 360px;
+    height: 120px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(6) .ring_inner-four {
+    width: 450px;
+    height: 150px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(7) .ring_inner-four {
+    width: 540px;
+    height: 180px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(8) .ring_inner-four {
+    width: 630px;
+    height: 210px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 1050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(9) .ring_inner-four {
+    width: 720px;
+    height: 240px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(10) .ring_inner-four {
+    width: 810px;
+    height: 270px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 1350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(11) .ring_inner-four {
+    width: 900px;
+    height: 300px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(12) .ring_inner-four {
+    width: 990px;
+    height: 330px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 1650ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(13) .ring_inner-four {
+    width: 1080px;
+    height: 360px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 1800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(14) .ring_inner-four {
+    width: 1170px;
+    height: 390px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 1950ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(15) .ring_inner-four {
+    width: 1260px;
+    height: 420px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 2100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(16) .ring_inner-four {
+    width: 1350px;
+    height: 450px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 2250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(17) .ring_inner-four {
+    width: 1440px;
+    height: 480px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 2400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(18) .ring_inner-four {
+    width: 1530px;
+    height: 510px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 2550ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(19) .ring_inner-four {
+    width: 1620px;
+    height: 540px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 2700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(20) .ring_inner-four {
+    width: 1710px;
+    height: 570px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 2850ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(21) .ring_inner-four {
+    width: 1800px;
+    height: 600px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 3000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(22) .ring_inner-four {
+    width: 1890px;
+    height: 630px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 3150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(23) .ring_inner-four {
+    width: 1980px;
+    height: 660px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 3300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(24) .ring_inner-four {
+    width: 2070px;
+    height: 690px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 3450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(25) .ring_inner-four {
+    width: 2160px;
+    height: 720px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 3600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(26) .ring_inner-four {
+    width: 2250px;
+    height: 750px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 3750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(27) .ring_inner-four {
+    width: 2340px;
+    height: 780px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 3900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(28) .ring_inner-four {
+    width: 2430px;
+    height: 810px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 4050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(29) .ring_inner-four {
+    width: 2520px;
+    height: 840px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 4200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(30) .ring_inner-four {
+    width: 2610px;
+    height: 870px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 4350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+  .animation-4 .rings-four .ring-four:nth-child(31) .ring_inner-four {
+    width: 2700px;
+    height: 900px;
+    border: 30px solid #0061ff;
+    animation: waveFour 5000ms 4500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(40px); }
+@keyframes rotateFour {
+  0% {
+    transform: translate(-50%, -50%) rotateX(0deg); }
+  100% {
+    transform: translate(-50%, -50%) rotateX(0deg); } }
+@keyframes waveFour {
+  0% {
+    transform: translateZ(0px); }
+  8% {
+    transform: translateZ(-60px); }
+  20% {
+    transform: translateZ(40px); }
+  30% {
+    transform: translateZ(-20px); }
+  50% {
+    transform: translateZ(10px); }
+  80% {
+    transform: translateZ(-5px); }
+  100% {
+    transform: translateZ(2px); } }
+#level-5 {
+  background: #19151f;
+  overflow: hidden;
+  perspective: 75px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none; }
+
+.level-5-foreground {
+  position: absolute;
+  width: 69%;
+  height: 66%;
+  animation: rotate-right 40s linear infinite; }
+
+.animation-5 .rings-five .ring-five {
+  position: absolute;
+  animation: rotateFive 10s cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  transform-style: preserve-3d; }
+  .animation-5 .rings-five .ring-five .ring_inner-five {
+    border-radius: 100%; }
+  .animation-5 .rings-five .ring-five:nth-child(1) .ring_inner-five {
+    width: 0px;
+    height: 0px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(2) .ring_inner-five {
+    width: 150px;
+    height: 70px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 50ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(3) .ring_inner-five {
+    width: 300px;
+    height: 140px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(4) .ring_inner-five {
+    width: 450px;
+    height: 210px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(5) .ring_inner-five {
+    width: 600px;
+    height: 280px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(6) .ring_inner-five {
+    width: 750px;
+    height: 350px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(7) .ring_inner-five {
+    width: 900px;
+    height: 420px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(8) .ring_inner-five {
+    width: 1050px;
+    height: 490px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(9) .ring_inner-five {
+    width: 1200px;
+    height: 560px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(10) .ring_inner-five {
+    width: 1350px;
+    height: 630px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(11) .ring_inner-five {
+    width: 1500px;
+    height: 700px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(12) .ring_inner-five {
+    width: 1650px;
+    height: 770px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 550ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(13) .ring_inner-five {
+    width: 1800px;
+    height: 840px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(14) .ring_inner-five {
+    width: 1950px;
+    height: 910px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 650ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(15) .ring_inner-five {
+    width: 2100px;
+    height: 980px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(16) .ring_inner-five {
+    width: 2250px;
+    height: 1050px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(17) .ring_inner-five {
+    width: 2400px;
+    height: 1120px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(18) .ring_inner-five {
+    width: 2550px;
+    height: 1190px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 850ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(19) .ring_inner-five {
+    width: 2700px;
+    height: 1260px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(20) .ring_inner-five {
+    width: 2850px;
+    height: 1330px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 950ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(21) .ring_inner-five {
+    width: 3000px;
+    height: 1400px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(22) .ring_inner-five {
+    width: 3150px;
+    height: 1470px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(23) .ring_inner-five {
+    width: 3300px;
+    height: 1540px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(24) .ring_inner-five {
+    width: 3450px;
+    height: 1610px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(25) .ring_inner-five {
+    width: 3600px;
+    height: 1680px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(26) .ring_inner-five {
+    width: 3750px;
+    height: 1750px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(27) .ring_inner-five {
+    width: 3900px;
+    height: 1820px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(28) .ring_inner-five {
+    width: 4050px;
+    height: 1890px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(29) .ring_inner-five {
+    width: 4200px;
+    height: 1960px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(30) .ring_inner-five {
+    width: 4350px;
+    height: 2030px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-5 .rings-five .ring-five:nth-child(31) .ring_inner-five {
+    width: 4500px;
+    height: 2100px;
+    border: 15px solid #51514f;
+    animation: waveFive 10s 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+@keyframes rotateFive {
+  0% {
+    transform: translate(-50%, -50%) rotateX(0deg); }
+  100% {
+    transform: translate(-50%, -50%) rotateX(0deg); } }
+@keyframes waveFive {
+  0% {
+    transform: translateZ(0px); }
+  8% {
+    transform: translateZ(-60px); }
+  20% {
+    transform: translateZ(40px); }
+  30% {
+    transform: translateZ(-20px); }
+  50% {
+    transform: translateZ(10px); }
+  80% {
+    transform: translateZ(-5px); }
+  100% {
+    transform: translateZ(2px); } }
+#loser-screen {
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  font-family: 'arcadeclassicregular';
+  display: none; }
+  #loser-screen .loser-text {
+    width: 2081px;
+    height: 715px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: red; }
+  #loser-screen h2 {
+    font-size: 10em;
+    color: white;
+    text-align: center;
+    transform: translate7(-50%);
+    animation: full-rotate 2s both ease-in-out; }
+  #loser-screen button {
+    color: black;
+    z-index: 2;
+    width: 640px;
+    font-size: 28px;
+    background-color: #edff00;
+    border-radius: 10px;
+    padding: 5px;
+    font-family: 'arcadeclassicregular'; }
+
+@keyframes full-rotate {
+  from {
+    transform: rotate(0deg) scale(0); }
+  to {
+    transform: rotate(360deg) scale(1); } }
+body {
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 75px; }
+
+.animation-loser .rings-loser .ring-loser {
+  position: absolute;
+  animation: rotateLoser 10s cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+  transform-style: preserve-3d; }
+  .animation-loser .rings-loser .ring-loser .ring_inner-loser {
+    border-radius: 0%; }
+  .animation-loser .rings-loser .ring-loser:nth-child(1) .ring_inner-loser {
+    width: 0px;
+    height: 0px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(2) .ring_inner-loser {
+    width: 40px;
+    height: 40px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(3) .ring_inner-loser {
+    width: 80px;
+    height: 80px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(4) .ring_inner-loser {
+    width: 120px;
+    height: 120px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(5) .ring_inner-loser {
+    width: 160px;
+    height: 160px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(6) .ring_inner-loser {
+    width: 200px;
+    height: 200px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(7) .ring_inner-loser {
+    width: 240px;
+    height: 240px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(8) .ring_inner-loser {
+    width: 280px;
+    height: 280px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 1050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(9) .ring_inner-loser {
+    width: 320px;
+    height: 320px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(10) .ring_inner-loser {
+    width: 360px;
+    height: 360px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 1350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(11) .ring_inner-loser {
+    width: 400px;
+    height: 400px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(12) .ring_inner-loser {
+    width: 440px;
+    height: 440px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 1650ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(13) .ring_inner-loser {
+    width: 480px;
+    height: 480px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 1800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(14) .ring_inner-loser {
+    width: 520px;
+    height: 520px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 1950ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(15) .ring_inner-loser {
+    width: 560px;
+    height: 560px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 2100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(16) .ring_inner-loser {
+    width: 600px;
+    height: 600px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 2250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(17) .ring_inner-loser {
+    width: 640px;
+    height: 640px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 2400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(18) .ring_inner-loser {
+    width: 680px;
+    height: 680px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 2550ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(19) .ring_inner-loser {
+    width: 720px;
+    height: 720px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 2700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(20) .ring_inner-loser {
+    width: 760px;
+    height: 760px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 2850ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(21) .ring_inner-loser {
+    width: 800px;
+    height: 800px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 3000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(22) .ring_inner-loser {
+    width: 840px;
+    height: 840px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 3150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(23) .ring_inner-loser {
+    width: 880px;
+    height: 880px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 3300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(24) .ring_inner-loser {
+    width: 920px;
+    height: 920px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 3450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(25) .ring_inner-loser {
+    width: 960px;
+    height: 960px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 3600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(26) .ring_inner-loser {
+    width: 1000px;
+    height: 1000px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 3750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(27) .ring_inner-loser {
+    width: 1040px;
+    height: 1040px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 3900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(28) .ring_inner-loser {
+    width: 1080px;
+    height: 1080px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 4050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(29) .ring_inner-loser {
+    width: 1120px;
+    height: 1120px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 4200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(30) .ring_inner-loser {
+    width: 1160px;
+    height: 1160px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 4350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+  .animation-loser .rings-loser .ring-loser:nth-child(31) .ring_inner-loser {
+    width: 1200px;
+    height: 1200px;
+    border: 30px solid black;
+    animation: waveLoser 5000ms 4500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(0px); }
+@keyframes rotateLoser {
+  0% {
+    transform: translate(-50%, -50%) rotateZ(0deg); }
+  100% {
+    transform: translate(-50%, -50%) rotateZ(180deg); } }
+@keyframes waveLoser {
+  0% {
+    transform: translateZ(0px); }
+  8% {
+    transform: translateZ(-60px); }
+  20% {
+    transform: translateZ(40px); }
+  30% {
+    transform: translateZ(-20px); }
+  50% {
+    transform: translateZ(10px); }
+  80% {
+    transform: translateZ(-5px); }
+  100% {
+    transform: translateZ(2px); } }
+#winner-screen {
+  display: none; }
+
+body {
+  background: white;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 75px;
+  font-family: 'arcadeclassicregular'; }
+
+#sky {
+  z-index: 99;
+  height: 275px;
+  perspective: 5000px;
+  filter: drop-shadow(0px 250px 10px rgba(0, 0, 0, 0.2)); }
+  #sky div {
+    transform-style: preserve-3d; }
+  #sky .card-winner {
+    animation: flyWinner 10000ms linear infinite; }
+    #sky .card-winner_head-winner {
+      height: 200px;
+      width: 300px;
+      border-right: 400px solid;
+      border-bottom: 200px solid black;
+      border-left: 15px solid;
+      transform-origin: 100% 100%;
+      transform: rotateX(-50deg); }
+  #sky .credits {
+    font-size: 70px;
+    color: black;
+    transform: rotateX(-180deg);
+    height: 100%;
+    width: 1200px; }
+
+@keyframes flyWinner {
+  0% {
+    transform: rotateX(-120deg) rotateZ(0deg) rotateX(10deg); }
+  100% {
+    transform: rotateX(-120deg) rotateZ(360deg) rotateX(10deg); } }
+@keyframes troll {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible; }
+  100% {
+    transform: translate3d(-100%, 0, 0); } }
+#credits .ticker-wrapper-winner {
+  height: 30em;
+  width: 100%;
+  overflow: hidden;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+#credits .ticker-winner {
+  display: inline-block;
+  height: 0px;
+  white-space: nowrap;
+  animation: troll 30s linear infinite;
+  padding-left: 100%; }
+#credits .ticker-item-winner {
+  transform: rotateX(-180deg);
+  color: white;
+  display: inline-block;
+  font-size: 300px; }
+
+.rings-winner .ring-winner {
+  right: 0;
+  position: absolute;
+  animation: rotateWinner 10000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite alternate;
+  transform-style: preserve-3d; }
+  .rings-winner .ring-winner .ring_inner-winner {
+    border-radius: 100%; }
+  .rings-winner .ring-winner:nth-child(1) .ring_inner-winner {
+    width: 0px;
+    height: 0px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(2) .ring_inner-winner {
+    width: 50px;
+    height: 20px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 50ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(3) .ring_inner-winner {
+    width: 100px;
+    height: 40px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(4) .ring_inner-winner {
+    width: 150px;
+    height: 60px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(5) .ring_inner-winner {
+    width: 200px;
+    height: 80px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(6) .ring_inner-winner {
+    width: 250px;
+    height: 100px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(7) .ring_inner-winner {
+    width: 300px;
+    height: 120px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(8) .ring_inner-winner {
+    width: 350px;
+    height: 140px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(9) .ring_inner-winner {
+    width: 400px;
+    height: 160px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(10) .ring_inner-winner {
+    width: 450px;
+    height: 180px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(11) .ring_inner-winner {
+    width: 500px;
+    height: 200px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(12) .ring_inner-winner {
+    width: 550px;
+    height: 220px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 550ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(13) .ring_inner-winner {
+    width: 600px;
+    height: 240px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(14) .ring_inner-winner {
+    width: 650px;
+    height: 260px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 650ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(15) .ring_inner-winner {
+    width: 700px;
+    height: 280px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(16) .ring_inner-winner {
+    width: 750px;
+    height: 300px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 750ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(17) .ring_inner-winner {
+    width: 800px;
+    height: 320px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(18) .ring_inner-winner {
+    width: 850px;
+    height: 340px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 850ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(19) .ring_inner-winner {
+    width: 900px;
+    height: 360px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(20) .ring_inner-winner {
+    width: 950px;
+    height: 380px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 950ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(21) .ring_inner-winner {
+    width: 1000px;
+    height: 400px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(22) .ring_inner-winner {
+    width: 1050px;
+    height: 420px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1050ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(23) .ring_inner-winner {
+    width: 1100px;
+    height: 440px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(24) .ring_inner-winner {
+    width: 1150px;
+    height: 460px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1150ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(25) .ring_inner-winner {
+    width: 1200px;
+    height: 480px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(26) .ring_inner-winner {
+    width: 1250px;
+    height: 500px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1250ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(27) .ring_inner-winner {
+    width: 1300px;
+    height: 520px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(28) .ring_inner-winner {
+    width: 1350px;
+    height: 540px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1350ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(29) .ring_inner-winner {
+    width: 1400px;
+    height: 560px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(30) .ring_inner-winner {
+    width: 1450px;
+    height: 580px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1450ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+  .rings-winner .ring-winner:nth-child(31) .ring_inner-winner {
+    width: 1500px;
+    height: 600px;
+    border: 15px solid #ff00b2;
+    animation: waveWinner 5000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    filter: blur(30px); }
+
+@keyframes rotateWinner {
+  0% {
+    transform: translate(-50%, -50%) rotateX(50deg); }
+  100% {
+    transform: translate(-50%, -50%) rotateX(50deg); } }
+@keyframes waveWinner {
+  0% {
+    transform: translateZ(0px); }
+  8% {
+    transform: translateZ(-60px); }
+  20% {
+    transform: translateZ(40px); }
+  30% {
+    transform: translateZ(-20px); }
+  50% {
+    transform: translateZ(10px); }
+  80% {
+    transform: translateZ(-5px); }
+  100% {
+    transform: translateZ(2px); } }
+.game-board .scoreboard-static {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  width: 100%;
+  height: 76px;
+  background-color: black;
+  color: white;
+  font-family: 'arcadeclassicregular';
+  font-size: 3em;
+  justify-content: center; }
+.game-board button {
+  width: 100%;
+  height: 50px;
+  font-size: 28px;
+  background-color: hotpink;
+  border-radius: 10px;
+  padding: 3px;
+  font-family: 'arcadeclassicregular';
+  font-size: 1em;
+  color: white; }
+.game-board #player, .game-board #score, .game-board #life, .game-board #hint {
+  padding: 5px 45px;
+  margin: 5px 5px; }
+
+#level-1 .round-one-cards {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+
+#level-2 .round-two-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-2 .column {
+  display: flex;
+  flex-direction: column; }
+#level-2 .column:nth-child(1) {
+  justify-content: center; }
+#level-2 .column:nth-child(2) {
+  justify-content: center; }
+
+#level-3 .round-three-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-3 .column {
+  flex-direction: column; }
+#level-3 .column:nth-child(1) {
+  justify-content: space-around; }
+#level-3 .column:nth-child(2) {
+  align-self: center; }
+#level-3 .column:nth-child(3) {
+  align-self: center; }
+#level-3 .column:nth-child(4) {
+  justify-content: space-around; }
+
+#level-4 .round-four-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-4 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+#level-4 .column .memory-card:nth-child(1) {
+  align-self: flex-start; }
+#level-4 .column .memory-card:nth-child(2) {
+  align-self: flex-end; }
+#level-4 .column:nth-child(2) {
+  justify-content: space-around; }
+#level-4 .column:nth-child(3) {
+  align-self: center; }
+#level-4 .column:nth-child(4) {
+  justify-content: space-between; }
+#level-4 .column:nth-child(5) {
+  align-self: center; }
+#level-4 .column:nth-child(6) {
+  justify-content: space-around; }
+#level-4 .column .memory-card:nth-child(7) {
+  align-self: flex-end; }
+
+#level-5 .round-five-cards {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center; }
+#level-5 .column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+#level-5 .column:nth-child(2), #level-5 .column:nth-child(8) {
+  justify-content: unsafe; }
+
+#level-1 .memory-card {
+  position: relative;
+  perspective: 1200px;
+  width: 250px;
+  min-height: 350px;
+  height: 350px;
+  margin: 30px 30px; }
+  #level-1 .memory-card .card {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    position: relative; }
+  #level-1 .memory-card figure {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg); }
+  #level-1 .memory-card div {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: white; }
+    #level-1 .memory-card div img {
+      width: 100%;
+      height: auto; }
+
+#level-2 .memory-card {
+  position: relative;
+  perspective: 1200px;
+  width: 250px;
+  min-height: 350px;
+  height: 350px;
+  margin: 30px 30px; }
+  #level-2 .memory-card .card {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    position: relative; }
+  #level-2 .memory-card figure {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg); }
+  #level-2 .memory-card div {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: white; }
+    #level-2 .memory-card div img {
+      width: 100%;
+      height: auto; }
+
+#level-3 .memory-card {
+  position: relative;
+  perspective: 1200px;
+  width: 250px;
+  min-height: 350px;
+  height: 350px;
+  margin: 30px 30px; }
+  #level-3 .memory-card .card {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    position: relative; }
+  #level-3 .memory-card figure {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg); }
+  #level-3 .memory-card div {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: white; }
+    #level-3 .memory-card div img {
+      width: 100%;
+      height: auto; }
+
+#level-4 .memory-card {
+  position: relative;
+  perspective: 1200px;
+  width: 140px;
+  min-height: 200px;
+  height: 200px;
+  margin: 30px 30px; }
+  #level-4 .memory-card .card {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    position: relative; }
+  #level-4 .memory-card figure {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg); }
+  #level-4 .memory-card div {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: white; }
+    #level-4 .memory-card div img {
+      width: 100%;
+      height: auto; }
+
+#level-5 .memory-card {
+  position: relative;
+  perspective: 1200px;
+  width: 86px;
+  min-height: 125px;
+  height: 125px;
+  margin: 30px 30px; }
+  #level-5 .memory-card .card {
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    transform-style: preserve-3d;
+    transform-origin: center;
+    position: relative; }
+  #level-5 .memory-card figure {
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: rotateY(180deg); }
+  #level-5 .memory-card div {
+    z-index: 2;
+    transform: rotateY(0deg);
+    background-color: white; }
+    #level-5 .memory-card div img {
+      width: 100%;
+      height: auto; }
+
+#hall-of-fame {
+  width: 100%; }
+@keyframes scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+    visibility: visible; }
+  100% {
+    transform: translate3d(-100%, 0, 0); } }
+  #hall-of-fame .ticker {
+    display: inline-block;
+    height: 4em;
+    line-height: 3em;
+    white-space: nowrap;
+    animation: scroll 30s linear infinite;
+    padding-left: 100%; }
+  #hall-of-fame .ticker-wrapper {
+    height: 3em;
+    width: 100%;
+    overflow: hidden;
+    background-color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0; }
+  #hall-of-fame .ticker-item {
+    color: white;
+    padding: 2px 2px;
+    font-size: 2em;
+    display: inline-block;
+    font-family: 'arcadeclassicregular'; }
+
+/*# sourceMappingURL=styles.css.map */
