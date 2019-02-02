@@ -35,6 +35,7 @@ This application is a demonstration of using CSS and JavaScript, including SASS 
   * clearInterval()
   * setTimeout()
   * JSON.parse()
+* How to implement audio
 
 ## Technologies Used
 
@@ -45,7 +46,7 @@ This application is a demonstration of using CSS and JavaScript, including SASS 
 
 ## Setup
 
-* Clone this repository from https://github.com/mpinaud/tidy
+* Clone this repository from https://github.com/mpinaud/mortex
 
 ## License
 
