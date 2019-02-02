@@ -1,8 +1,6 @@
 # M O R T E X
 
-##### Ones escape through an unknown vortex by the power of memory
-
-#### By Adam Smith, Mikey Pinaud, Griffin P. Longtin and Cheryl Frankenfield, 12/18/17
+Ones escape through an unknown vortex by the power of memory
 
 ## Description
 
@@ -94,11 +92,7 @@ _The app will include an Easter Egg scene._
 
 ## Known Bugs
 
-
-
-## Support and contact details
-
-_If you have any issues, questions, ideas or concerns, please contact us._
+* Is not responsive and is most optimal through desktop view
 
 ## Technologies Used
 
@@ -109,6 +103,6 @@ _If you have any issues, questions, ideas or concerns, please contact us._
 
 ### License
 
-*This is open source.*
+* This is open source
 
-Copyright (c) 2017 **_Adam Smith, Mikey Pinaud, Griffin P. Longtin and Cheryl Frankenfield_**
+## By Adam Smith, Mikey Pinaud, Griffin P. Longtin and Cheryl Frankenfield 12/18/17
