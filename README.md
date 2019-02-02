@@ -9,8 +9,7 @@ Ones escape from an unknown vortex through the power of memory
 
 ## Known Bugs
 
-* Is not responsive and only optimal through desktop view using Chrome
-* Not supported in Safari, IE, Firefox
+* Is not responsive and only optimal through desktop view using Chrome and not supported on Safari, IE or Firefox
 
 ## Play
 https://mpinaud.github.io/mortex/
